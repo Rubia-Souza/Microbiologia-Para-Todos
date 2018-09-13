@@ -57,16 +57,3 @@ let numeroMaterias = document.querySelectorAll(".tema").length;
 
 barraProgressoEl.style.width = ((100 * (Jogador.level + 1)) / numeroMaterias) + "%";
 numeroProgressoEl.innerHTML = (Jogador.level + 1) + "/" + numeroMaterias;
-
-/* teste com botoes*/
-  document.querySelector("#upar").addEventListener('click', function(){
-    Jogador.level++;
-    console.log(Jogador.level);
-    localStorage.setItem('Jogador', JSON.stringify(Jogador));
-  });
-
-  document.querySelector("#desupar").addEventListener('click', function(){
-    Jogador.level--;
-    console.log(Jogador.level);
-    localStorage.setItem('Jogador', JSON.stringify(Jogador));
-  });
