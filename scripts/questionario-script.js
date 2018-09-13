@@ -8,12 +8,12 @@ function btnProxHabilitado(x){
   let btnConfirmarImgEl = document.querySelector('#confirmar-btn > img');
   if(x){
     btnConfirmarEl.disabled = false;
-    btnConfirmarImgEl.src = btnConfirmarImgEl.src.replace('-disabled.', '.');
+    btnConfirmarImgEl.src = btnConfirmarImgEl.src.replace('-disabled.png', '.png');
   }
   else{
     btnConfirmarEl.disabled = true;
     if(btnConfirmarImgEl.src.indexOf('-disabled.') === -1){
-      btnConfirmarImgEl.src = btnConfirmarImgEl.src.replace('.', '-disabled.');
+      btnConfirmarImgEl.src = btnConfirmarImgEl.src.replace('.png', '-disabled.png');
     }
   }
 }
@@ -23,12 +23,12 @@ function btnPularHabilitado(x){
   let btnPularImgEl = document.querySelector('#pular-btn > img');
   if(x){
     btnPulaEl.disabled = false;
-    btnPularImgEl.src = btnPularImgEl.src.replace('-disabled.', '.');
+    btnPularImgEl.src = btnPularImgEl.src.replace('-disabled.png', '.png');
   }
   else{
     btnPulaEl.disabled = true;
     if(btnPularImgEl.src.indexOf('-disabled.') === -1){
-      btnPularImgEl.src = btnPularImgEl.src.replace('.', '-disabled.');
+      btnPularImgEl.src = btnPularImgEl.src.replace('.png', '-disabled.png');
     }
   }
 }
