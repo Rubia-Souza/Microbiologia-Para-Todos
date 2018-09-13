@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Rubens Souza">
+    <meta name="keywords" content="acessibilidade,leitor de tela,screen reader,biologia,vírus,célula,bactéria,fungo,célula animal,célula vegetal,microbiologia,escola,deficientes,ensino,baixa visão,CEFET,CEFET MG,iniciação científica,deficiente visual,estudo">
+    <meta name="description" content="Conteudo de microbiologia dispinível a todos dando foco à acessibilidade de deficientes na web">
+
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Lobster+Two|Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="styles/questionario-style.css">
+    <link rel="stylesheet" href="styles/questionario-cores-style.css">
+    <link rel="stylesheet" href="styles/questionario-media.css">
+    <link rel="shortcut icon" type="image/png" href="imgs/icons/favicon.png">
+    <title>Quiz</title>
+  </head>
+  <body>
+    <audio aria-hidden="true" class="oculto" src=""></audio>
+
+    <!--========================Menu acessibilidade===========================-->
+    <section id="menu-acessibilidade">
+      <ul>
+        <li aria-hidden="true">C</li>
+        <li><button class="botao-contraste botao-imgs" data-contraste="negativo" aria-label="Mudar as cores da página para as escuras"><img src="imgs/icons/quadrado-preto.png" title="Mudar as cores da página para as escuras" alt="Mudar as cores da página para as escuras" class="img-contraste"></button></li>
+        <li><button class="botao-contraste botao-imgs" data-contraste="padrao" aria-label="Mudar as cores da página para as padrões"><img src="imgs/icons/quadrado-branco.png" title="Mudar as cores da página para as padrões" alt="Mudar as cores da página para as padrões" class="img-contraste"></button></li>
+      </ul>
+      <ul>
+        <li aria-hidden="true">F</li>
+        <li><button class="botao-fonte" data-fonte="+" aria-label="Aumentar a fonte"><span aria-hidden="true">A+</span></button></li>
+        <li><button class="botao-fonte" data-fonte="0" aria-label="Voltar a fonte padrão"><span aria-hidden="true">A°</span></button></li>
+        <li><button class="botao-fonte" data-fonte="-" aria-label="Diminuir a fonte"><span aria-hidden="true">A-</span></button></li>
+      </ul>
+      <button id="expandir-menu" aria-label="Expandir o menu com recursos de acessibilidade"><img src="imgs/icons/expandir.png" alt="Expandir o menu com recursos de acessibilidade" title="Expandir o menu com recursos de acessibilidade"></button>
+    </section>
+    <div id="div-modal" aria-hidden="true"></div>
+
+    <main id="conteudo-principal">
+      <h1 tabindex="-1">Questão 1</h1>
+      <section>
+        <button type="button" id="pular-btn"><img src="imgs/icons/pular.png" aria-hidden="true">Pular</button>
+        <p>Questão <span>1</span>/<span>5</span></p>
+        <button type="button" id="confirmar-btn"><img src="imgs/icons/confirmar.png" aria-hidden="true">Confirmar</button>
+      </section></main>
+
+    <!--===============Nav com atalhos de accesskey da página================-->
+    <nav class="oculto" aria-hidden="true">
+      <a href="#conteudo-principal" accesskey="1" tabindex="-1" class="oculto"></a>
+      <a href="#pular-btn" accesskey="2" tabindex="-1" class="oculto"></a>
+      <a href="#confirmar-btn" accesskey="3" tabindex="-1" class="oculto"></a>
+      <a href="#expandir-menu" accesskey="4" tabindex="-1" class="oculto"></a>
+      <a href="index.html" accesskey="5" tabindex="-1" class="oculto"></a>
+    </nav>
+
+    <script src="scripts/bibliotecas/inert-script.js" charset="utf-8"></script>
+    <script src="scripts/perguntas-questionario-script.js" charset="utf-8"></script>
+    <script src="scripts/acessibilidade-questionario.js" charset="utf-8"></script>
+    <script src="scripts/questionario-script.js" charset="utf-8"></script>
+  </body>
+</html>

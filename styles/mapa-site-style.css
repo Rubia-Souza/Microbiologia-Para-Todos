@@ -1,0 +1,29 @@
+main > section:first-of-type{
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-grow: 0;
+}
+
+.secao-site{
+  box-sizing: border-box;
+  margin-bottom: 4%;
+  padding: 1.5% 2%;
+  min-width: 25%;
+  min-height: 15em;
+}
+
+.secao-site > h3 > a{
+  font-size: 0.9em;
+  margin-bottom: 5%;
+}
+
+.secao-site > ul{
+  margin-left: 2.5%;
+}
+
+.secao-site > ul > li{
+  font-size: 1.1em;
+}

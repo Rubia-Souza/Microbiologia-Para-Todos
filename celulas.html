@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="pt-BR" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Rubens Souza">
+    <meta name="keywords" content="acessibilidade,leitor de tela,screen reader,biologia,vírus,célula,bactéria,fungo,célula animal,célula vegetal,microbiologia,escola,deficientes,ensino,baixa visão,CEFET,CEFET MG,iniciação científica,deficiente visual,estudo">
+    <meta name="description" content="Conteudo de microbiologia dispinível a todos dando foco à acessibilidade de deficientes na web">
+
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Lobster+Two|Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main-style.css">
+    <link rel="stylesheet" href="styles/cores-style.css">
+    <link rel="stylesheet" href="styles/medias-style.css" media="screen and (min-width: 2560px), screen and (max-width: 1027px), screen and (max-height: 345px)">
+    <link rel="shortcut icon" type="image/png" href="imgs/icons/favicon.png">
+    <title>Citologia</title>
+  </head>
+  <body data-level="1">
+    <header id="main-header">
+      <!--============Nav para agilizar a navegação pelo teclado=============-->
+      <nav id="menu-nav-acessivel" class="sobe-menu-nav-acessivel">
+        <ul>
+          <li><a href="#conteudo-principal" class="itens-menu-acessivel">Ir para o conteúdo da página<sup aria-hidden="true">[1]</sup><span class="texto-escondido">, atalho: alt + 1</span></a></li>
+          <li><a href="#menus" class="itens-menu-acessivel">Ir para o menu<sup aria-hidden="true">[2]</sup><span class="texto-escondido">, atalho: alt + 2</span></a></li>
+          <li><a href="mapa-site.html" class="itens-menu-acessivel">Ir para o mapa do site<sup aria-hidden="true">[3]</sup><span class="texto-escondido">, atalho: alt + 3</span></a></li>
+        </ul>
+      </nav>
+
+      <section id="menus">
+        <!--=========Menu principal com links para regiões do site===========-->
+        <nav id="menu-nav-principal">
+          <ul>
+            <li><a href="index.html">Página inicial</a></li>
+            <li><a href="mapa-site.html">Mapa do site<sup aria-hidden="true">[3]</sup><span class="texto-escondido">, atalho: alt + 3</span></a></li>
+            <li><a href="sobre-projeto.html">Sobre o projeto</a></li>
+            <li><a href="acessibilidade-site.html">Acessibilidade do site<sup aria-hidden="true">[4]</sup><span class="texto-escondido">, atalho: alt + 4</span></a></li>
+          </ul>
+        </nav>
+
+        <!--========Menu com opções para deixar o site mais acessivel========-->
+        <section id="menu-acessibilidade">
+          <ul>
+            <li aria-hidden="true">Contraste</li>
+            <li><button class="botao-contraste botao-imgs" data-contraste="negativo" aria-label="Mudar as cores da página para as escuras"><img src="imgs/icons/quadrado-preto.png" title="Mudar as cores da página para as escuras" alt="Mudar as cores da página para as escuras" class="img-contraste"></button></li>
+            <li><button class="botao-contraste botao-imgs" data-contraste="padrao" aria-label="Mudar as cores da página para as padrões"><img src="imgs/icons/quadrado-branco.png" title="Mudar as cores da página para as padrões" alt="Mudar as cores da página para as padrões" class="img-contraste"></button></li>
+            <li aria-hidden="true">Fonte</li>
+            <li><button class="botao-fonte" data-fonte="+" aria-label="Aumentar a fonte"><span aria-hidden="true">A+</span></button></li>
+            <li><button class="botao-fonte" data-fonte="0" aria-label="Voltar a fonte padrão"><span aria-hidden="true">A°</span></button></li>
+            <li><button class="botao-fonte" data-fonte="-" aria-label="Diminuir a fonte"><span aria-hidden="true">A-</span></button></li>
+          </ul>
+        </section>
+
+        <!--======================Responsive Menu============================-->
+        <section id="menu-responsive">
+          <button id="botao-hamburguer"><img src="imgs/icons/burguer-menu.png" title="Abrir o menu do site" class="img-hamburguer contraste-altera-img"></button>
+          <img src="imgs/icons/virus.png" alt="Um vírus, que é a logo do site." class="img-virus-responsive contraste-altera-img" aria-hidden="true">
+        </section>
+      </section>
+
+      <!--=============Div abaixo dos menus com a logo do site===============-->
+      <section id="imagem-logo">
+        <span><h1>Microbiologia para Todos</h1></span>
+      </section>
+    </header>
+
+    <aside id="menu-esquerda-group">
+      <section id="menu-esquerda" class="some-menu">
+        <button id="botao-fecha-menu" class="botao-imgs"><img src="imgs/icons/fecha-menu.png" alt="Fechar o menu" title="Fechar o menu" id="img-fecha-menu" class="contraste-altera-img"></button>
+        <img src="imgs/icons/virus.png" alt="Um vírus, que é a logo do site." aria-hidden="true" class="contraste-altera-img">
+        <ul>
+          <li><a href="index.html">Página inicial</a></li>
+          <li><a href="mapa-site.html">Mapa do site</a></li>
+          <li><a href="sobre-projeto.html">Sobre o projeto</a></li>
+          <li><a href="acessibilidade-site.html">Acessibilidade do site</a></li>
+        </ul>
+        <section>
+          <ul>
+            <li aria-hidden="true">Contraste</li>
+            <li><button class="botao-contraste botao-imgs" data-contraste="negativo" aria-label="Mudar as cores da página para as escuras"><img src="imgs/icons/quadrado-preto.png" title="Mudar as cores da página para as escuras" alt="Mudar as cores da página para as escuras" class="img-contraste"></button></li>
+            <li><button class="botao-contraste botao-imgs" data-contraste="padrao" aria-label="Mudar as cores da página para as padrões"><img src="imgs/icons/quadrado-branco.png" title="Mudar as cores da página para as padrões" alt="Mudar as cores da página para as padrões" class="img-contraste"></button></li>
+          </ul>
+          <ul>
+            <li aria-hidden="true">Fonte</li>
+            <li><button class="botao-fonte" data-fonte="+" aria-label="Aumentar a fonte"><span aria-hidden="true">A+</span></button></li>
+            <li><button class="botao-fonte" data-fonte="0" aria-label="Voltar a fonte padrão"><span aria-hidden="true">A°</span></button></li>
+            <li><button class="botao-fonte" data-fonte="-" aria-label="Diminuir a fonte"><span aria-hidden="true">A-</span></button></li>
+          </ul>
+        </section>
+      </section>
+      <div id="div-modal" class="some-div-modal" aria-hidden="true"></div>
+    </aside>
+
+    <!--===================Conteudo principal da página======================-->
+    <main id="conteudo-principal">
+      <h2>Citologia</h2>
+
+      <section class="topico">
+        <h3>Células procariontes:</h3>
+        <p>
+          Tanto as bactérias do reino Monera, pertencentes ao domínio <span lang="la">Bacteria</span>,
+          quanto as que estão no domínio <span lang="la">Archaea</span> são formadas por células
+          procariontes.
+        </p>
+        <p>As principais diferenças dessas células para as eucariontes são:</p>
+        <ul>
+          <li>O seu material genético não está envolvido por uma membrana chamada carioteca</li>
+          <li>Suas organelas não são revestidas por membranas</li>
+          <li>
+            Elas se dividem e duplicam por meio de um processo chamado de
+            <strong>fissão binária</strong>. Esse processo se baseia na
+            duplicação do DNA, dividindo o material genético, junto com a célula,
+            em dois.
+          </li>
+        </ul>
+        <h4>Estruturas externas à parede celular:</h4>
+        <p>Grande parte dessas estruturas tem o objetivo de auxiliar a locomoção da bactéria. Elas podem ser:</p>
+        <ul>
+          <li>
+            <strong>Flagelos:</strong> São longos filamentos presos à membrana
+            plasmática e a parede celular. Eles se movem em rotação no eixo do
+            corpo basal, podendo girar tanto no sentido horário quanto no anti
+            horário. A bactéria consegue alterar a velocidade e a direção de
+            rotação dos flagelos.
+          </li>
+          <li>
+            <strong>Filamentos axiais:</strong> São feixes de fibrilas que iniciam
+            nas extremidades das células formando uma espiral em torno dela.
+          </li>
+          <li>
+            <strong>Fímbrias e pilis:</strong> São pequenos fios, parecidos com
+            pêlos, usados para fixação e transferência de DNA.
+          </li>
+        </ul>
+        <h4>Parede celular procariótica:</h4>
+        <p>
+          A parede celular presente nos procariontes é uma parede semi rígida e
+          elástica, que dá forma à célula, protegendo-a e isolando o seu interior.
+          Ela é formada por macromoléculas de peptideoglicana.
+        </p>
+        <p>
+          Essa parede consegue prevenir a ruptura da célula quando há uma
+          diferença de pressão do seu interior em relação ao meio externo.
+          Além disso, ela protege o interior da célula e serve de suporte para
+          estruturas de locomoção.
+        </p>
+        <h5>Dano a parede celular:</h5>
+        <p>
+          Devido a diferença química das substâncias que formam a parede celular
+          agentes que atuam na parede de certo ser vivo não afetam a de outro.
+          Por esse motivo, medicamentos que afetam bactérias patogênicas, em
+          nosso corpo, não afetam nossas próprias células.
+        </p>
+        <h4>Estruturas internas a parede celular:</h4>
+        <h5>Membrana plasmática:</h5>
+        <p>
+          É uma membrana que reveste o citoplasma da célula, delimitando o seu
+          espaço. Ela é formada principalmente por fosfolipídios e é menos rígida
+          que a membrana presente nas células eucariotas.
+        </p>
+        <h5>Citoplasma:</h5>
+        <p>
+          O citoplasma de uma célula procarionte é constituído por 80% de H<sub>2</sub>O,
+          enzimas, carboidratos, lipídios e outras substâncias. Além disso, ele
+          apresenta as seguintes características:
+        </p>
+        <ul>
+          <li>É semitransparente</li>
+          <li>elástico</li>
+          <li>espesso</li>
+          <li>aquoso</li>
+        </ul>
+        <p>Ele preenche o interior da célula envolvendo as estruturas internas que ela possui.</p>
+        <h5>Nucleóide:</h5>
+        <p>
+          O nucleóide é a região em que o material genético da célula se encontra.
+          O genoma, chamado de <strong>cromossomo bacteriano</strong>,
+          está espalhado nesta parte do citoplasma e assume formatos circulares,
+          alongados ou em forma de halteres. Ele é formado por uma molécula de
+          DNA que realiza a auto replicação da célula.
+        </p>
+        <p>
+          <strong>Observação:</strong> Os seres procariontes podem ter plasmídeos,
+          que são estruturas circulares de RNA que dão resistência a bactéria
+          contra antibióticos, metais tóxicos, produz toxinas ou faz síntese de enzimas.
+        </p>
+        <p>
+          Esse plasmídeo é muitas vezes usado na biotecnologia para induzir a
+          bactéria a trabalhar ou produzir o que desejarmos. Para isso, apenas
+          inserimos nele uma fita de RNA que irá instruir a bactéria a fazer o
+          que queremos.
+        </p>
+        <h5>Ribossomos:</h5>
+        <p>
+          Os ribossomos são estruturas fundamentais para a vida de todas as células,
+          tanto que eles estão presentes nas células procariontes e eucariontes.
+        </p>
+        <p>A sua função é fazer a síntese proteica na célula.</p>
+        <p><strong>Observação:</strong> Muitos antibióticos atuam inibindo a síntese dos ribossomos para combater algumas bactérias.</p>
+        <h5>Endósporos:</h5>
+        <p>
+          São células desidratadas, com a parede celular mais espessa e com
+          camadas adicionais que conseguem sobreviver a condições mais extremas.
+        </p>
+        <p>
+          Os endósporos se desenvolvem dentro da própria bactéria quando estão
+          submetidas a situações mais extremas e são estruturas exclusivas desses seres.
+        </p>
+      </section>
+
+      <section class="topico">
+        <h3>Células Eucariontes:</h3>
+        <h4>Estruturas externas à parede celular:</h4>
+        <p>
+          Os eucariontes podem ter uma de duas principais estruturas exteriores
+          a parede celular, que seriam:
+        </p>
+        <ul>
+          <li>
+            <strong>Flagelos:</strong> São muito mais complexos do que os
+            presentes nos seres procariontes. Eles são cobertos por membranas
+            ou bainhas e realizam movimentos ondulantes ao invés de rotacionar.
+          </li>
+          <li>
+            <strong>Cílios:</strong> São parecidos com pêlos e estão distribuídos ao
+            longo de toda a célula para auxiliar na locomoção.
+          </li>
+        </ul>
+        <p>
+          Tanto os cílios quanto os flagelos possuem citoplasma e são
+          revestidos pela membrana plasmática.
+        </p>
+        <h4>Parede celular eucariótica:</h4>
+        <p>
+          A parede celular não está presente em todos os eucariontes, mas
+          apenas nos seres do reino Plantae e Fungi.
+        </p>
+        <p>
+          Ela é uma estrutura maleável e elástica, com regiões polares e
+          apolares, formada por polissacarídeos como a quitina(nos fungos),
+          celulose(nas plantas) ou a glicana e manana.
+        </p>
+        <p>Nas plantas ela oferece sustentação aos tecidos vegetais.</p>
+        <h4>Estruturas internas a parede celular:</h4>
+        <h5>Membrana plasmática:</h5>
+        <p>
+          É uma membrana lipoproteica constituída de fosfolipídeos e proteínas.
+          As suas funções são:
+        </p>
+        <ul>
+          <li>Proteção do interior da célula</li>
+          <li>Revestir o citoplasma</li>
+          <li>Selecionar o que entra e o que sai(permeabilidade seletiva)</li>
+        </ul>
+        <p>
+          Além disso, a membrana plasmática dos eucariontes consegue fazer os
+          movimentos de <strong>fagocitose</strong> e <strong>pinocitose</strong>.
+          Tanto um quanto o outro estão relacionados a colocar algo do meio exterior
+          para dentro da célula executando um transporte ativo.
+          Mas a <strong>fagocitose</strong> é o ato de “ingerir” alguma substância
+          sólida, já a <strong>pinocitose</strong> é “ingerir” uma substância líquida.
+        </p>
+        <p>
+          O processo de englobar alguma substância para dentro da célula é
+          chamado de <strong>endocitose</strong> e o processo de expelir algo é
+          chamado de <strong>exocitose</strong>.
+        </p>
+        <h5>Citoplasma:</h5>
+        <p>
+          Assim como o citoplasma dos procariontes, ele também é, em grande
+          parte, constituído de água, preenche e envolve as organelas dentro da
+          célula.
+        </p>
+        <p>
+          A principal diferença é que o citoplasma eucarionte possui uma
+          estrutura interna mais elaborada, com pequenos bastões que formam
+          o citoesqueleto. Esse citoesqueleto ajuda no transporte de substâncias
+          no interior da célula e a fazer os movimentos de fagocitose e
+          pinocitose.
+        </p>
+        <p>
+          <strong>Observação:</strong> Muitas enzimas que antes estavam
+          espalhadas no citoplasma dos procariontes agora estão fazem parte de
+          organelas.
+        </p>
+        <h5>Ribossomos:</h5>
+        <p>
+          É a única organela que possui o próprio RNA. Ele é chamado de rRNA ou
+          RNA ribossômico.
+        </p>
+        <p>Sua função é fazer a síntese proteica.</p>
+        <h5>Peroxissomos:</h5>
+        <p>
+          Ele é responsável por neutralizar peróxidos por meio de enzimas como
+          a catalase. No exemplo a seguir ele neutraliza o peróxido H2O2:
+        </p>
+        <p class="text-center">2H<sub>2</sub>O<sub>2</sub> → 2H<sub>2</sub> + O<sub>2</sub></p>
+        <h5>Retículo Endoplasmático Liso(R.E.L):</h5>
+        <p>Ele é uma organela membranosa, localizada próxima ao núcleo, responsável por:</p>
+        <ul>
+          <li>Neutralizar toxinas</li>
+          <li>Armazenar Cálcio(Ca<sup>2+</sup>)</li>
+          <li>Produzir colesterol</li>
+        </ul>
+        <p>
+          Por ser uma organela que consegue neutralizar toxinas, ela está mais
+          abundante nas células presentes nos rins. O mesmo ocorre pelo fato de
+          armazenar  Cálcio, fazendo com que elas estejam em mais abundância nos
+          ossos.
+        </p>
+        <h5>Retículo Endoplasmático Rugoso(R.E.R):</h5>
+        <p>
+          Além de fazer todas as funções do retículo endoplasmático liso ele
+          consegue fazer uma síntese proteica para exportação. Ou seja, as
+          proteínas produzidas por ele serão enviadas para fora da célula
+          (elas são enviadas para o Complexo de Golgi, que as envia para fora).
+        </p>
+        <h5>Complexo de Golgi:</h5>
+        <p>
+          O Complexo de Golgi é uma organela membranosa, que armazena,
+          empacota e secreta as proteínas produzidas pelo Retículo
+          Endoplasmático Rugoso. Além disso, ele possui algumas funções
+          secundárias como:
+        </p>
+        <ul>
+          <li>Possui enzimas que ajudam a fazer a digestão intracelular</li>
+          <li>Envia hormônios para a corrente sanguínea</li>
+          <li>Origina o lisossomo</li>
+          <li>
+            Produz o acrossomo, que é uma enzima digestiva presente na ponta do
+            espermatozóide que digere a parede do ovulo para que possa penetrá-lo
+          </li>
+        </ul>
+        <h5>Lisossomo:</h5>
+        <p>
+          É uma vesícula, originada do Complexo de Golgi, responsável pela
+          digestão intracelular da célula e morte de bactérias e substâncias
+          invasoras.
+        </p>
+        <p>
+          Também fazem a <strong>apoptose/morte celular programada/suicídio</strong>
+          celular que consiste no rompimento de um lisossomo no interior da célula,
+          fazendo suas enzimas a consumirem de dentro para fora.
+        </p>
+        <h5>Mitocôndria:</h5>
+        <p>
+          A mitocôndria é uma das organelas mais importantes da célula, pois é
+          nela que ocorre a <strong>respiração celular</strong>, que gera energia.
+        </p>
+        <p>
+          A respiração celular consiste na quebra da molécula de glicose com o
+          O<sub>2</sub>  para formação de ATP:
+        </p>
+        <p class="text-center">C<sub>6</sub>H<sub>12</sub>O<sub>6</sub> + O<sub>2</sub> → H<sub>2</sub>O + CO<sub>2</sub> + ATP</p>
+        <p>Outras características da mitocôndria são:</p>
+        <ul>
+          <li>Possui uma dupla membrana lipoprotéica</li>
+          <li>Possui um DNA graxo e um rRNA</li>
+          <li>Consegue se auto replicar</li>
+          <li>Consegue fazer a própria síntese proteica</li>
+          <li>Possui H<sub>2</sub>O, açúcar e enzimas para fazer a respiração celular</li>
+        </ul>
+        <h5>Centríolos:</h5>
+        <p>
+          Essas organelas orientam a divisão celular e dão origem aos cílios e
+          flagelos da célula, por exemplo:
+        </p>
+        <ul>
+          <li>Formam os cílios presentes na traqueia e na tuba uterina</li>
+          <li>Formam o flagelo do espermatozoide</li>
+        </ul>
+        <h5>Cloroplasto:</h5>
+        <p>
+          Está presente apenas nas algas e nas plantas, pois ele é responsável
+          por fazer a fotossíntese, pela absorção de luz, água e CO<sub>2</sub>.
+        </p>
+        <p>
+          Além disso, ele também possui uma dupla membrana lipoprotéica,
+          possui DNA e rRNA e consegue se auto replicar.
+        </p>
+        <h5>Vacúolo:</h5>
+        <p>
+          Também está presente apenas nas células vegetais. Eles são como
+          grandes sacos com espaço vazio dentro da célula. Esse espaço vazio é
+          usado para armazenar íons, açúcares, aminoácidos, substâncias venenosas
+          ou água para fazer a regulação osmótica de dentro da célula com o exterior.
+        </p>
+        <p>
+          Além disso, eles também servem como fonte de proteína para sementes
+          que estão em maturação.
+        </p>
+        <h5>Núcleo:</h5>
+        <p>
+          Sua principal diferença em relação ao nucleóide, presente nas células
+          procariotas, é que o seu material genético é revestido por uma membrana
+          chamada carioteca, separando o DNA do meio interior a célula.
+        </p>
+        <p>Você chegou ao final da matéria. Complete o questionário a seguir para desbloquear a próxima:</p>
+      </section>
+
+      <div class="align-btn-center"><a href="questionario.html" class="botao-link">Ir ao questionário</a></div>
+    </main>
+
+    <!--========================Rodapé da página=============================-->
+    <footer>
+      <!--=================Envia o usuário de volta ao topo==================-->
+      <section id="volta-topo">
+        <span class="seta-cima" aria-hidden="true"></span><br>
+        <a href="#main-header">Voltar ao topo</a>
+      </section>
+
+      <!--=========================Créditos==================================-->
+      <section id="final-footer">
+        <article>
+          <h2>Criadores:</h2>
+          <ul>
+            <li>Fátima de Cássia</li>
+            <li>Mariana de Lourdes</li>
+            <li>Rubens Victor</li>
+            <li><a href="creditos.html">Agradecimentos especiais</a></li>
+          </ul>
+        </article>
+
+        <section>
+          <h2>Apoio de:</h2>
+          <img src="imgs/logos/CEFET-MG.png" alt="Logo do CEFET de Minas Gerais" title="Centro Federal de Educação Tecnológica de Minas Gerais" class="contribuintes">
+        </section>
+      </section>
+
+      <a href="#menus" class="links-voltar">Voltar ao menu</a>
+      <a href="#conteudo-principal" class="links-voltar">Voltar ao Conteúdo</a>
+
+      <!--==============Nav com atalhos de accesskey da página===============-->
+      <nav class="oculto" aria-hidden="true">
+        <a href="#conteudo-principal" accesskey="1" tabindex="-1" class="oculto"></a>
+        <a href="#menus" accesskey="2" tabindex="-1" class="oculto"></a>
+        <a href="mapa-site.html" accesskey="3" tabindex="-1" class="oculto"></a>
+        <a href="acessibilidade-site.html" accesskey="4" tabindex="-1" class="oculto"></a>
+        <a href="#menu-nav-acessivel" accesskey="5" tabindex="-1" class="oculto"></a>
+      </nav>
+    </footer>
+
+    <!--========================Scripts JS===================================-->
+    <script src="scripts/header-script.js" charset="utf-8"></script>
+    <script media="screen and (max-width: 1090px)" src="scripts/bibliotecas/inert-script.js" charset="utf-8"></script>
+    <script media="screen and (max-width: 1090px)" src="scripts/responsive-menu-script.js" charset="utf-8"></script>
+    <script src="scripts/acessibilidade-script.js" charset="utf-8"></script>
+    <script src="scripts/materia-script.js" charset="utf-8"></script>
+  </body>
+</html>

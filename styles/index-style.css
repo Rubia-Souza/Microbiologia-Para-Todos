@@ -1,0 +1,105 @@
+#mateiras-bio{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-grow: 0;
+}
+
+.tema{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  text-align: center;
+  box-sizing: border-box;
+  margin-left: 4%;
+  margin-bottom: 4%;
+  max-width: 15em;
+  min-width: 15em;
+}
+
+#mateiras-bio > article:first-of-type{
+  margin-left: 0em;
+}
+
+.img-tema{
+  margin-bottom: 5%;
+}
+
+/*--- estilizando o aside com os status do player*/
+#playerStatus{
+  /* background-color: #262626; */
+  position: fixed;
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  box-sizing: border-box;
+  text-align: center;
+  left: calc(100% - 5.2em);
+  bottom: 10%;
+  width: 17em;
+  height: 4em;
+  border-radius: 6px;
+  transition: left 500ms ease;
+}
+
+#playerStatus:focus-within, #playerStatus:hover{
+  left: calc(100% - 17em);
+}
+
+#playerStatus > a{
+  /* background-color: #FEFEFE;
+  color: #262626; */
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-size: 1.4em;
+  padding: 0.85rem 1.25rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  transition: background-color 500ms ease-out;
+}
+
+#playerStatus > div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#playerStatus p{
+  /* color: white; */
+  margin: 0% 0%;
+}
+
+/*--- Estilizando a barra de progresso*/
+#barra-progresso{
+  /* background-color: #222222; */
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 30px;
+  margin-bottom: 3%;
+  padding: 0.2em 0.2em;
+}
+
+#barra-progresso > div{
+  /* background-color: #769E11; */
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  box-sizing: border-box;
+  width: 1%;
+  border-radius: 30px;
+  height: 1.8em;
+  transition: width 1200ms ease;
+}
+
+#barra-progresso > div > p{
+  /* color: white; */
+  margin-right: 0.3rem;
+}

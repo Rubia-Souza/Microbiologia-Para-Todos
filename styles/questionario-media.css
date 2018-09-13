@@ -1,0 +1,34 @@
+/*----------------------------------------------------------------------------*/
+@media (max-width: 500px){
+  main > section:last-of-type{
+    display: block;
+  }
+
+  #pular-btn, #confirmar-btn{
+    position: relative;
+    left: calc(50% - (7.5em/2));
+  }
+}
+
+@media (max-width: 340px){
+  body{
+    font-size: 1em;
+  }
+
+  main > h1{
+    font-size: 1.6em;
+  }
+
+  main > section:last-of-type > button{
+    font-size: 0.9em;
+  }
+
+  main > section:last-of-type > button > img{
+    height: 18px;
+    width: 18px;
+  }
+
+  .botao-link{
+    font-size: 0.9em;
+  }
+}

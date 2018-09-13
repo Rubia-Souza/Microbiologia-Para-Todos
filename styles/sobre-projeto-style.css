@@ -1,0 +1,19 @@
+#galeria-modelos{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  margin: 0 0;
+  padding: 0.1rem 0.1rem;
+}
+
+#galeria-modelos > figure{
+  margin: 0.2rem 0.2rem;
+}
+
+#galeria-modelos > figure > img{
+  max-width: 13.5em;
+  width: 100%;
+  border-radius: 10px;
+}
