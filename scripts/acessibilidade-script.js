@@ -39,10 +39,10 @@ document.addEventListener('DOMContentLoaded', function(e){
 
   function alteraImg(imgEl, negativo){
     if(negativo === true){
-      imgEl.src = imgEl.src.replace(".", "-white.");
+      imgEl.src = imgEl.src.replace(".png", "-white.png");
     }
     else{
-      imgEl.src = imgEl.src.replace("-white.", ".");
+      imgEl.src = imgEl.src.replace("-white.png", ".png");
     }
   }
 
