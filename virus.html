@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="pt-BR" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Rubens Souza">
+    <meta name="keywords" content="acessibilidade,leitor de tela,screen reader,biologia,vírus,célula,bactéria,fungo,célula animal,célula vegetal,microbiologia,escola,deficientes,ensino,baixa visão,CEFET,CEFET MG,iniciação científica,deficiente visual,estudo">
+    <meta name="description" content="Conteudo de microbiologia dispinível a todos dando foco à acessibilidade de deficientes na web">
+
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Lobster+Two|Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main-style.css">
+    <link rel="stylesheet" href="styles/cores-style.css">
+    <link rel="stylesheet" href="styles/medias-style.css">
+    <link rel="shortcut icon" type="image/png" href="imgs/icons/favicon.png">
+    <title>Vírus</title>
+  </head>
+  <body data-level="4">
+    <header id="main-header">
+      <!--============Nav para agilizar a navegação pelo teclado=============-->
+      <nav id="menu-nav-acessivel" class="sobe-menu-nav-acessivel">
+        <ul>
+          <li><a href="#conteudo-principal" class="itens-menu-acessivel">Ir para o conteúdo da página<sup aria-hidden="true">[1]</sup><span class="texto-escondido">, atalho: alt + 1</span></a></li>
+          <li><a href="#menus" class="itens-menu-acessivel">Ir para o menu<sup aria-hidden="true">[2]</sup><span class="texto-escondido">, atalho: alt + 2</span></a></li>
+          <li><a href="mapa-site.html" class="itens-menu-acessivel">Ir para o mapa do site<sup aria-hidden="true">[3]</sup><span class="texto-escondido">, atalho: alt + 3</span></a></li>
+        </ul>
+      </nav>
+
+      <section id="menus">
+        <!--=========Menu principal com links para regiões do site===========-->
+        <nav id="menu-nav-principal">
+          <ul>
+            <li><a href="index.html">Página inicial</a></li>
+            <li><a href="mapa-site.html">Mapa do site<sup aria-hidden="true">[3]</sup><span class="texto-escondido">, atalho: alt + 3</span></a></li>
+            <li><a href="sobre-projeto.html">Sobre o projeto</a></li>
+            <li><a href="acessibilidade-site.html">Acessibilidade do site<sup aria-hidden="true">[4]</sup><span class="texto-escondido">, atalho: alt + 4</span></a></li>
+          </ul>
+        </nav>
+
+        <!--========Menu com opções para deixar o site mais acessivel========-->
+        <section id="menu-acessibilidade">
+          <ul>
+            <li aria-hidden="true">Contraste</li>
+            <li><button class="botao-contraste botao-imgs" data-contraste="negativo" aria-label="Mudar as cores da página para as escuras"><img src="imgs/icons/quadrado-preto.png" title="Mudar as cores da página para as escuras" alt="Mudar as cores da página para as escuras" class="img-contraste"></button></li>
+            <li><button class="botao-contraste botao-imgs" data-contraste="padrao" aria-label="Mudar as cores da página para as padrões"><img src="imgs/icons/quadrado-branco.png" title="Mudar as cores da página para as padrões" alt="Mudar as cores da página para as padrões" class="img-contraste"></button></li>
+            <li aria-hidden="true">Fonte</li>
+            <li><button class="botao-fonte" data-fonte="+" aria-label="Aumentar a fonte"><span aria-hidden="true">A+</span></button></li>
+            <li><button class="botao-fonte" data-fonte="0" aria-label="Voltar a fonte padrão"><span aria-hidden="true">A°</span></button></li>
+            <li><button class="botao-fonte" data-fonte="-" aria-label="Diminuir a fonte"><span aria-hidden="true">A-</span></button></li>
+          </ul>
+        </section>
+
+        <!--======================Responsive Menu============================-->
+        <section id="menu-responsive">
+          <button id="botao-hamburguer"><img src="imgs/icons/burguer-menu.png" title="Abrir o menu do site" class="img-hamburguer contraste-altera-img"></button>
+          <img src="imgs/icons/virus.png" alt="Um vírus, que é a logo do site." class="img-virus-responsive contraste-altera-img" aria-hidden="true">
+        </section>
+      </section>
+
+      <!--=============Div abaixo dos menus com a logo do site===============-->
+      <section id="imagem-logo">
+        <span><h1>Microbiologia para Todos</h1></span>
+      </section>
+    </header>
+
+    <aside id="menu-esquerda-group">
+      <section id="menu-esquerda" class="some-menu">
+        <button id="botao-fecha-menu" class="botao-imgs"><img src="imgs/icons/fecha-menu.png" alt="Fechar o menu" title="Fechar o menu" id="img-fecha-menu" class="contraste-altera-img"></button>
+        <img src="imgs/icons/virus.png" alt="Um vírus, que é a logo do site." aria-hidden="true" class="contraste-altera-img">
+        <ul>
+          <li><a href="index.html">Página inicial</a></li>
+          <li><a href="mapa-site.html">Mapa do site</a></li>
+          <li><a href="sobre-projeto.html">Sobre o projeto</a></li>
+          <li><a href="acessibilidade-site.html">Acessibilidade do site</a></li>
+        </ul>
+        <section>
+          <ul>
+            <li aria-hidden="true">Contraste</li>
+            <li><button class="botao-contraste botao-imgs" data-contraste="negativo" aria-label="Mudar as cores da página para as escuras"><img src="imgs/icons/quadrado-preto.png" title="Mudar as cores da página para as escuras" alt="Mudar as cores da página para as escuras" class="img-contraste"></button></li>
+            <li><button class="botao-contraste botao-imgs" data-contraste="padrao" aria-label="Mudar as cores da página para as padrões"><img src="imgs/icons/quadrado-branco.png" title="Mudar as cores da página para as padrões" alt="Mudar as cores da página para as padrões" class="img-contraste"></button></li>
+          </ul>
+          <ul>
+            <li aria-hidden="true">Fonte</li>
+            <li><button class="botao-fonte" data-fonte="+" aria-label="Aumentar a fonte"><span aria-hidden="true">A+</span></button></li>
+            <li><button class="botao-fonte" data-fonte="0" aria-label="Voltar a fonte padrão"><span aria-hidden="true">A°</span></button></li>
+            <li><button class="botao-fonte" data-fonte="-" aria-label="Diminuir a fonte"><span aria-hidden="true">A-</span></button></li>
+          </ul>
+        </section>
+      </section>
+      <div id="div-modal" class="some-div-modal" aria-hidden="true"></div>
+    </aside>
+
+    <!--===================Conteudo principal da página======================-->
+    <main id="conteudo-principal">
+      <p class="local-site"><strong>Você está em:</strong> <a href="index.html">Página inicial</a> > Vírus.</p>
+      <h2>Vírus</h2>
+
+      <section class="topico">
+        <h3>Características gerais</h3>
+        <p>
+          Diferente de outros seres os vírus não são considerados seres vivos,
+          por não possuírem células e dependerem do metabolismo delas. Isso faz
+          com que eles sejam parasitas intracelulares obrigatórios, ou seja,
+          dependem totalmente de células para sobreviverem.
+        </p>
+        <p>
+          Esses seres possuem DNA ou RNA próprio e uma estrutura formada por
+          proteínas chamada de capsídeo, que pode ser coberta por um envelope
+          formado de lipídios, proteínas e carboidratos. Os vírus que estão
+          envoltos por um envelope são chamados de <strong>envelopados</strong>
+          e os que estão sem são chamados de <strong>não envelopados</strong>.
+        </p>
+        <p>
+          Alguns exemplos de vírus seriam: Bacteriófagos, adenovírus, poliovírus,
+          vírus da AIDS, vírus da raiva, dentre outros.
+        </p>
+      </section>
+
+      <section class="topico">
+        <h3>Teoria de surgimento dos vírus</h3>
+        <p>
+          Existem duas teorias em relação ao surgimento dos vírus. A primeira
+          diz que eles surgiram a partir de fitas de ácidos nucleicos de replicação
+          independente. A outra diz que eles surgiram a partir de células que foram
+          perdendo a capacidade de sobreviver sozinhas, mas que ainda conseguia se
+          aproveitar do metabolismo das outras.
+        </p>
+      </section>
+
+      <section class="topico">
+        <h3>Estruturas virais</h3>
+        <figure class="topico-img-left">
+          <img src="imgs/imgs-materia/estrutura-viral.png" alt="Vírus com suas estruturas visíveis">
+          <figcaption>Imagem 1, Autor <a href="https://horadaescola.com/biologia/433-virus-biologia">Hora da Escola</a></figcaption>
+        </figure>
+        <h4>Ácido nucleico</h4>
+        <p>O ácido nucléico de um vírus é o seu material genético, que pode ser DNA e/ou RNA.</p>
+        <h4>Capsídeo</h4>
+        <p>
+          O capsídeo é uma estrutura formada por proteínas que envolve o ácido
+          nucléico do vírus como uma cápsula. Ele constitui a maior parte da massa
+          do vírus e protege o material genético contra as nucleases.
+        </p>
+        <h4>Envelope</h4>
+        <figure class="topico-img-right">
+          <img src="imgs/imgs-materia/virus-envelopadao-nao-envelopado.jpg" alt="Diferença entre um vírus envelopado e não envelopado">
+          <figcaption>Imagem 2, Autor <a href="http://cfbbloggers.blogspot.com/2011/03/tipos-de-virus-quanto-presenca-de.html">CFB BLOGGERS</a></figcaption>
+        </figure>
+        <p>
+          Como dito anteriormente, alguns vírus podem possuir envelopes formados
+          por lipídios, proteínas e carboidratos em seu capsídeo.
+        </p>
+        <p>
+          O envelope pode simplesmente envolver o capsídeo do vírus ou pode se
+          integrar ao capsídeo dele. O envelope integrado junto ao capsídeo é mais
+          frágil que apenas o capsídeo, pois torna-se muito mais fácil de rompê-lo.
+        </p>
+      </section>
+
+      <section class="topico">
+        <h3>Tipos</h3>
+        <p>
+          Os vírus são classificados em diferentes grupos morfológicos de acordo
+          com a estrutura do seu capsídeo. Eles são divididos em:
+        </p>
+        <ul>
+          <li>
+            <strong>Helicoidais:</strong> Parecem com bastões e possuem um
+            capsídeo em formato cilíndrico. Os vírus da raiva e da febre
+            hemorrágica se encaixam nesse tipo.
+          </li>
+          <li>
+            <strong>Poliédricos:</strong> O capsídeo tem formato de um icoságono
+            regular de 20 faces. Dois exemplos são o Adenovírus e o Poliovírus.
+          </li>
+          <li>
+            <strong>Envelopados:</strong> O capsídeo do vírus é coberto ou integrado
+            a um envelope e possuem um formato mais esférico. Dois exemplos são
+            o vírus da Herpes e Influenza.
+          </li>
+          <li>
+            <strong>Complexos:</strong> Possuem estruturas adicionais no capsídeo.
+            Por exemplo os Poxvírus.
+          </li>
+          <p>
+            <strong>Observação:</strong> Vírus helicoidais e poliédricos que
+            possuem envelope são chamados de vírus helicoidal envelopado e vírus
+            poliédrico envelopado, respectivamente.
+          </p>
+        </ul>
+      </section>
+
+      <section class="topico">
+        <h3>Vírus DNA e RNA</h3>
+        <p>
+          Os vírus naturalmente possuem uma alta frequência mutacional, ou seja,
+          sofrem mutações muito rapidamente. Aqueles que possuem o RNA como material
+          genético sofrem muito mais mutações que o normal. Isso ocorre, pois o
+          RNA é uma única fita o que torna mais provável de ocorrer um erro/mutação
+          na replicação do material genético.
+        </p>
+        <p>
+          Já vírus com DNA tem uma frequência mutacional menor em relação aos de
+          RNA, pois sempre há a outra fita como guia para a primeira reduzindo a
+          incidência de mutações.
+        </p>
+        <p>
+          Esse é um dos motivos da dificuldade de desenvolver vacinas para os
+          vírus do HIV e da Hepatite C. Por causa do RNA, os dois possuem uma alta
+          taxa de mutação e até que se desenvolva a vacina, seja aplicada e o corpo
+          gere uma memória imunológica o vírus já se alterou.
+        </p>
+        <p>
+          Os vírus conseguem produzir DNA a partir do RNA por meio de um processo
+          chamado <strong>transcriptase reversa</strong>. Esses vírus são chamados
+          de <strong>retrovírus</strong>.
+        </p>
+      </section>
+
+      <section class="topico">
+        <h3>Espectro de hospedeiros</h3>
+        <p>
+          Os vírus conseguem agir em apenas alguns tipos de células devido aos
+          quimiorreceptores dos peplômeros que agem em paredes celulares específicas.
+          Assim, vírus que podem ser letais em plantas não possuem efeito algum
+          em animais, já que eles conseguem atuar apenas em células vegetais e
+          não nas animais.
+        </p>
+        <p>
+          Por esta “limitação”, nós conseguimos usar vírus para atacar células
+          ou bactérias maliciosas em nosso organismo sem causar dano a nenhuma
+          outra célula sem ser aquela a qual o vírus consegue infectar.
+        </p>
+        <p>
+          Nós recomendamos o vídeo do canal <span lang="de">Kurzgesagt</span> – <span lang="en">In a Nutshell</span>
+          <a href="https://www.youtube.com/watch?v=YI3tsmFsrOg" lang="en">The Deadliest Being on Planet Earth – The Bacteriophage</a>
+          que explica como podemos utilizar bacteriófagos para tratamento de doenças.
+        </p>
+      </section>
+
+      <section class="topico">
+        <h3>Multiplicação viral</h3>
+        <figure class="topico-img-left">
+          <img src="imgs/imgs-materia/multiplicacao-viral.png" alt="Ciclo de reprodução viral">
+          <figcaption>Imagem 3, Autor Tortora; Multiplicação viral pág.382 10ªedição</figcaption>
+        </figure>
+        <p>A multiplicação viral ocorre em 5 etapas:</p>
+        <ul>
+          <li>
+            <strong>Adsorção:</strong> O vírus se fixa na parede da célula por
+            meio de proteínas presentes em seu capsídeo. Elas reagem com as
+            proteínas na membrana plasmática permitindo a adesão.
+          </li>
+          <li>
+            <strong>Penetração:</strong> O vírus insere o material genético na
+            célula por meio de endocitose, fusão do envelope com a membrana plasmática
+            ou a própria injeção do ácido nucleico.
+          </li>
+          <li>
+            <strong>Biossíntese:</strong> O material genético viral é transcrito
+            e traduzido pela célula e a  induz a iniciar a síntese de componentes virais.
+          </li>
+          <li>
+            <strong>Maturação:</strong> A célula começa a unir os componentes
+            virais para formar os novos vírus.
+          </li>
+          <li>
+            <strong>Liberação:</strong> Os novos vírus formados saem da célula
+            por lise, rompendo a parede celular, ou por brotamento.
+          </li>
+        </ul>
+        <p>
+          Essa sequência é chamada de <strong>ciclo lítico</strong>, mas existe
+          também o <strong>ciclo lisogênico</strong>. Nele o DNA do vírus se une
+          ao da célula e permanece inerte dentro dela. Durante esse período,
+          quando ocorre a divisão celular da célula hospedeira do vírus, às
+          células-filhas que se formam carregam o material genético do vírus.
+          Após algumas replicações, quando o sistema imunológico da pessoa infectada
+          apresentar algum tipo de fraqueza, o material genético do vírus que estava
+          inerte inicia o ciclo lítico devido ao momento favorável para sua reprodução.
+        </p>
+      </section>
+
+      <section class="topico">
+        <h3>Viroses</h3>
+        <p>Por fim, os vírus causam diversas doenças. Como por exemplo:</p>
+        <ul>
+          <li>AIDS</li>
+          <li>Hepatite</li>
+          <li>Herpes</li>
+          <li>Raiva</li>
+          <li>Varíola</li>
+          <li>Gripe</li>
+          <li>Caxumba</li>
+          <li>Dengue</li>
+        </ul>
+        <p>Entre outras.</p>
+        <p>Você chegou ao final da matéria. Complete o questionário a seguir para desbloquear a próxima:</p>
+      </section>
+
+      <div class="align-btn-center"><a href="questionario.html" class="botao-link">Ir ao questionário</a></div>
+    </main>
+
+    <!--========================Rodapé da página=============================-->
+    <footer>
+      <!--=================Envia o usuário de volta ao topo==================-->
+      <section id="volta-topo">
+        <span class="seta-cima" aria-hidden="true"></span><br>
+        <a href="#main-header">Voltar ao topo</a>
+      </section>
+
+      <!--=========================Créditos==================================-->
+      <section id="final-footer">
+        <article>
+          <h2>Criadores:</h2>
+          <ul>
+            <li>Fátima de Cássia</li>
+            <li>Mariana de Lourdes</li>
+            <li>Rubens Victor</li>
+            <li><a href="creditos.html">Agradecimentos especiais</a></li>
+          </ul>
+        </article>
+
+        <section>
+          <h2>Apoio de:</h2>
+          <img src="imgs/logos/CEFET-MG.png" alt="Logo do CEFET de Minas Gerais" title="Centro Federal de Educação Tecnológica de Minas Gerais" class="contribuintes">
+        </section>
+      </section>
+
+      <a href="#menus" class="links-voltar">Voltar ao menu</a>
+      <a href="#conteudo-principal" class="links-voltar">Voltar ao Conteúdo</a>
+
+      <!--==============Nav com atalhos de accesskey da página===============-->
+      <nav class="oculto" aria-hidden="true">
+        <a href="#conteudo-principal" accesskey="1" tabindex="-1" class="oculto"></a>
+        <a href="#menus" accesskey="2" tabindex="-1" class="oculto"></a>
+        <a href="mapa-site.html" accesskey="3" tabindex="-1" class="oculto"></a>
+        <a href="acessibilidade-site.html" accesskey="4" tabindex="-1" class="oculto"></a>
+        <a href="#menu-nav-acessivel" accesskey="5" tabindex="-1" class="oculto"></a>
+      </nav>
+    </footer>
+
+    <!--========================Scripts JS===================================-->
+    <script src="scripts/header-script.js" charset="utf-8"></script>
+    <script src="scripts/materia-script.js" charset="utf-8"></script>
+    <script src="scripts/bibliotecas/inert-script.js" charset="utf-8"></script>
+    <script src="scripts/responsive-menu-script.js" charset="utf-8"></script>
+    <script src="scripts/acessibilidade-script.js" charset="utf-8"></script>
+  </body>
+</html>
