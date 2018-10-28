@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="pt-BR" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Rubens Souza">
+    <meta name="keywords" content="acessibilidade,leitor de tela,screen reader,biologia,vírus,célula,bactéria,fungo,célula animal,célula vegetal,microbiologia,escola,deficientes,ensino,baixa visão,CEFET,CEFET MG,iniciação científica,deficiente visual,estudo">
+    <meta name="description" content="Conteudo de microbiologia dispinível a todos dando foco à acessibilidade de deficientes na web">
+
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Lobster+Two|Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main-style.css">
+    <link rel="stylesheet" href="styles/cores-style.css">
+    <link rel="stylesheet" href="styles/medias-style.css">
+    <link rel="shortcut icon" type="image/png" href="imgs/icons/favicon.png">
+    <title>Procariontes</title>
+  </head>
+  <body data-level="2">
+    <header id="main-header">
+      <!--============Nav para agilizar a navegação pelo teclado=============-->
+      <nav id="menu-nav-acessivel" class="sobe-menu-nav-acessivel">
+        <ul>
+          <li><a href="#conteudo-principal" class="itens-menu-acessivel">Ir para o conteúdo da página<sup aria-hidden="true">[1]</sup><span class="texto-escondido">, atalho: alt + 1</span></a></li>
+          <li><a href="#menus" class="itens-menu-acessivel">Ir para o menu<sup aria-hidden="true">[2]</sup><span class="texto-escondido">, atalho: alt + 2</span></a></li>
+          <li><a href="mapa-site.html" class="itens-menu-acessivel">Ir para o mapa do site<sup aria-hidden="true">[3]</sup><span class="texto-escondido">, atalho: alt + 3</span></a></li>
+        </ul>
+      </nav>
+
+      <section id="menus">
+        <!--=========Menu principal com links para regiões do site===========-->
+        <nav id="menu-nav-principal">
+          <ul>
+            <li><a href="index.html">Página inicial</a></li>
+            <li><a href="mapa-site.html">Mapa do site<sup aria-hidden="true">[3]</sup><span class="texto-escondido">, atalho: alt + 3</span></a></li>
+            <li><a href="sobre-projeto.html">Sobre o projeto</a></li>
+            <li><a href="acessibilidade-site.html">Acessibilidade do site<sup aria-hidden="true">[4]</sup><span class="texto-escondido">, atalho: alt + 4</span></a></li>
+          </ul>
+        </nav>
+
+        <!--========Menu com opções para deixar o site mais acessivel========-->
+        <section id="menu-acessibilidade">
+          <ul>
+            <li aria-hidden="true">Contraste</li>
+            <li><button class="botao-contraste botao-imgs" data-contraste="negativo" aria-label="Mudar as cores da página para as escuras"><img src="imgs/icons/quadrado-preto.png" title="Mudar as cores da página para as escuras" alt="Mudar as cores da página para as escuras" class="img-contraste"></button></li>
+            <li><button class="botao-contraste botao-imgs" data-contraste="padrao" aria-label="Mudar as cores da página para as padrões"><img src="imgs/icons/quadrado-branco.png" title="Mudar as cores da página para as padrões" alt="Mudar as cores da página para as padrões" class="img-contraste"></button></li>
+            <li aria-hidden="true">Fonte</li>
+            <li><button class="botao-fonte" data-fonte="+" aria-label="Aumentar a fonte"><span aria-hidden="true">A+</span></button></li>
+            <li><button class="botao-fonte" data-fonte="0" aria-label="Voltar a fonte padrão"><span aria-hidden="true">A°</span></button></li>
+            <li><button class="botao-fonte" data-fonte="-" aria-label="Diminuir a fonte"><span aria-hidden="true">A-</span></button></li>
+          </ul>
+        </section>
+
+        <!--======================Responsive Menu============================-->
+        <section id="menu-responsive">
+          <button id="botao-hamburguer"><img src="imgs/icons/burguer-menu.png" title="Abrir o menu do site" class="img-hamburguer contraste-altera-img"></button>
+          <img src="imgs/icons/virus.png" alt="Um vírus, que é a logo do site." class="img-virus-responsive contraste-altera-img" aria-hidden="true">
+        </section>
+      </section>
+
+      <!--=============Div abaixo dos menus com a logo do site===============-->
+      <section id="imagem-logo">
+        <span><h1>Microbiologia para Todos</h1></span>
+      </section>
+    </header>
+
+    <aside id="menu-esquerda-group">
+      <section id="menu-esquerda" class="some-menu">
+        <button id="botao-fecha-menu" class="botao-imgs"><img src="imgs/icons/fecha-menu.png" alt="Fechar o menu" title="Fechar o menu" id="img-fecha-menu" class="contraste-altera-img"></button>
+        <img src="imgs/icons/virus.png" alt="Um vírus, que é a logo do site." aria-hidden="true" class="contraste-altera-img">
+        <ul>
+          <li><a href="index.html">Página inicial</a></li>
+          <li><a href="mapa-site.html">Mapa do site</a></li>
+          <li><a href="sobre-projeto.html">Sobre o projeto</a></li>
+          <li><a href="acessibilidade-site.html">Acessibilidade do site</a></li>
+        </ul>
+        <section>
+          <ul>
+            <li aria-hidden="true">Contraste</li>
+            <li><button class="botao-contraste botao-imgs" data-contraste="negativo" aria-label="Mudar as cores da página para as escuras"><img src="imgs/icons/quadrado-preto.png" title="Mudar as cores da página para as escuras" alt="Mudar as cores da página para as escuras" class="img-contraste"></button></li>
+            <li><button class="botao-contraste botao-imgs" data-contraste="padrao" aria-label="Mudar as cores da página para as padrões"><img src="imgs/icons/quadrado-branco.png" title="Mudar as cores da página para as padrões" alt="Mudar as cores da página para as padrões" class="img-contraste"></button></li>
+          </ul>
+          <ul>
+            <li aria-hidden="true">Fonte</li>
+            <li><button class="botao-fonte" data-fonte="+" aria-label="Aumentar a fonte"><span aria-hidden="true">A+</span></button></li>
+            <li><button class="botao-fonte" data-fonte="0" aria-label="Voltar a fonte padrão"><span aria-hidden="true">A°</span></button></li>
+            <li><button class="botao-fonte" data-fonte="-" aria-label="Diminuir a fonte"><span aria-hidden="true">A-</span></button></li>
+          </ul>
+        </section>
+      </section>
+      <div id="div-modal" class="some-div-modal" aria-hidden="true"></div>
+    </aside>
+
+    <!--===================Conteudo principal da página======================-->
+    <main id="conteudo-principal">
+      <p class="local-site"><strong>Você está em:</strong> <a href="index.html">Página inicial</a> > Procariontes.</p>
+      <h2>Procariontes: Domínio Bacteria e Archaea</h2>
+
+      <section class="topico">
+        <p>
+          Tanto o Domínio Bacteria, quanto o Domínio Archaea, são constituídos
+          por células procariontes. Sendo que cada domínio é dividido em filos,
+          os filos em classes e assim por diante.
+        </p>
+        <h3>Domínio Bacteria</h3>
+        <p>
+          Muitos pensam que as bactérias são seres malvados, que apenas causam
+          doenças, mas na realidade apenas algumas espécies de bactérias que
+          causam doenças em humanos, animais, plantas ou qualquer outro organismo.
+        </p>
+        <p>O Domínio Bacteria contém o reino monera, que é formado por bactérias e cianobactérias.</p>
+        <p>
+          As bactérias e as cianobactérias possuem a parede celular formada por
+          umas rede de macromoléculas de carboidrato e proteína chamada de peptidoglicano.
+          Elas são seres unicelulares, não possuem carioteca e podem apresentar um plasmídeo
+          (estrutura genética circular que confere resistência à bactéria), flagelos
+          ou fímbrias. As cianobactérias são seres autotróficos, enquanto muitas
+          bactérias são heterotróficas.
+        </p>
+        <h4>Tipos</h4>
+        <p>
+          O Domínio Bactéria é extremamente diverso, contendo uma grande
+          biodiversidade de seres, que são agrupados em filos para
+          facilitar o seu estudo. As bactérias podem ser:
+        </p>
+        <h5>Gram-negativas</h5>
+        <p>Entre as bactérias gram-negativas inclui o filo das proteobactérias, que é dividido em:</p>
+        <p>
+          <strong>Alpha-proteobacteria:</strong> São bactérias fixadoras de Nitrogênio
+          (N<sub>2</sub>), quimioautotróficas e quimioheterotróficas.
+        </p>
+        <p>
+          <strong>Beta-proteobacteria:</strong> Inclui bactérias quimioautotróficas
+          e quimioheterótrofas.
+        </p>
+        <p>
+          <strong>Gama-proteobacteria:</strong> Inclui
+          <span class="nome-cientifico" lang="la">Pseudomonales</span>,
+          <span class="nome-cientifico" lang="la">Pasteurellales</span>,
+          <span class="nome-cientifico" lang="la">Vibrionales</span>, entre outras.
+        </p>
+        <p>
+          <strong>Epsilon-proteobacteria:</strong> Inclui
+          <span class="nome-cientifico" lang="la">Campylobacter</span> e
+          <span class="nome-cientifico" lang="la">Helicobacter</span>
+        </p>
+        <p>
+          <strong>Bactérias fotossintéticas púrpuras e verdes:</strong> São
+          bactérias fotoautotróficas, que utilizam a energia luminosa e o CO<sub>2</sub>
+          para obtenção de alimento. Diferentemente das cianobactérias, nesse
+          processo, elas não produzem O<sub>2</sub>.
+        </p>
+        <p>
+          É bom ressaltar que não existem bactérias gram-negativas apenas nas
+          proteobactérias. Um exemplo são as cianobactérias, que são autotróficas
+          e utilizam da energia luminosa e do gás carbônico para a fotossíntese,
+          produzindo gás oxigênio.
+        </p>
+        <h5>Gram-positivas</h5>
+        <p>
+          As bactérias gram-positivas são divididas entre aquelas que possuem um
+          índice G+C alto e as que possuem o índice G+C baixo.
+        </p>
+        <p>
+          <strong>G+C alto:</strong> Inclui as bactérias
+          <span class="nome-cientifico" lang="la">Mycobacterium</span>,
+          <span class="nome-cientifico" lang="la">Corynebacterium</span> e
+          <span class="nome-cientifico" lang="la">Actinomycetes</span>.
+        </p>
+        <p>
+          <strong>G+C baixo:</strong> Inclui as bactérias comuns do solo, as do
+          ácido lático e diversas bactérias que são patogênicas aos humanos.
+        </p>
+        <h4>Importância das bactérias</h4>
+        <h5>Mutualismo</h5>
+        <p>
+          As bactérias fazem parte de diversas relações mutualísticas.
+          Relações as quais os dois seres dependem um do outro para sobreviver.
+          Por exemplo:
+        </p>
+        <p>
+          Existem diversas bactérias no sistema digestivo das vacas que fazem a
+          digestão da celulose. Também existem bactérias em nosso intestino que
+          produzem as vitaminas K e B12, que são fundamentais para nosso organismo.
+        </p>
+        <h5>Ciclo do nitrogênio</h5>
+        <p>
+          As bactérias do gênero
+          <span class="nome-cientifico" lang="la">Rhizobium</span> fazem uma
+          relação mutualística com plantas leguminosas. As bactérias vivem nas
+          raízes das leguminosas e transformam NO<sub>(g)</sub>,
+          NO<sup>-</sup><sub>(g)</sub>, PO<sup>-3</sup> e N<sub>2(g)</sub> em
+          nutrientes para o solo. Assim, elas contribuem para a fixação do
+          nitrogênio e a continuidade do seu ciclo.
+        </p>
+        <h5>Biorremediação</h5>
+        <p>
+          Bactérias da ordem <span class="nome-cientifico" lang="la">Oceanospirillales</span> conseguem consumir petróleo.
+          Assim, elas conseguem agir como biorremediadoras para limpar alguma
+          região que foi poluída com o derramamento dele.
+        </p>
+        <h5>Bioindicadores</h5>
+        <p>
+          Os liquens são formados por uma relação mutualística entre fungos e
+          algas ou cianobactérias. Eles são muito sensíveis a poluição,
+          principalmente a quantidade de enxofre presente no ar. Deste modo,
+          conseguimos identificar regiões com grande quantidade de poluentes
+          pela quantidade de liquens presentes e o seu período de vida na região.
+        </p>
+        <h5>Biotecnologia</h5>
+        <p>
+          Por meio da engenharia genética, nós conseguimos induzir bactérias a
+          executar determinadas ações ou produzir determinadas substâncias inserindo
+          uma fita de RNA ou DNA em seu plasmídeo, como veremos mais à frente na
+          matéria de biotecnologia.
+        </p>
+        <h5>Bactérias causadoras de doenças</h5>
+        <p>Bactérias são causadoras de diversas doenças como:</p>
+        <ul>
+          <li>Lepra</li>
+          <li>Leptospirose</li>
+          <li>Tétano</li>
+          <li>Coqueluche</li>
+          <li>Meningite</li>
+        </ul>
+        <p>Entre diversas outras.</p>
+      </section>
+
+      <section class="topico">
+        <h3>Domínio Archaea</h3>
+        <p>
+          Em 1970, foi descoberto um novo tipo de célula procariótica. As suas
+          paredes celulares não continham peptideoglicana e sua sequência de rRNA
+          era diferente dos eucariontes e dos seres do Domínio Bactérias. Devido
+          a essas diferenças, esses organismos formaram um novo domínio, O Domínio
+          Archaea.
+        </p>
+        <p>
+          Ele é um Domínio altamente diverso, em que muitos apresentam uma
+          morfologia convencional, mas diversos outros possuem morfologias
+          incomuns. Só para se ter uma noção dessas diferenças há seres que:
+        </p>
+        <ul>
+          <li>Realizam fissão binária</li>
+          <li>Realizam fragmentação</li>
+          <li>Realizam brotamento</li>
+          <li>São gram-positivos</li>
+          <li>São gram-negativos</li>
+          <li>Não possuem parede celular</li>
+        </ul>
+        <p>Entre outras características.</p>
+        <p>
+          Esses procariotos geralmente são encontrados em ambientes que
+          apresentam condições extremas e são chamados de <strong>extremófilos</strong>.
+          Nesse grupo, eles são divididos em:
+        </p>
+        <ul>
+          <li><strong>Halófilos:</strong> Vivem em ambientes com alta concentração salina</li>
+          <li><strong>Termófilos:</strong> Vivem em ambientes com altas temperaturas</li>
+          <li><strong>Acidófilos:</strong> Vivem em ambientes com pH extremamente ácido</li>
+        </ul>
+        <p>
+          Além dos extremófilos, existem os <strong>metanógenos</strong>, que são estritamente
+          anaeróbios e produzem CH<sub>4</sub> a partir de CO<sub>2</sub> e H, e
+          diversas outras divisões no Domínio Archaea.
+        </p>
+        <p>
+          Por mais que tenhamos listado diversos tipos de procariontes do Domínio
+          Archaea e do Domínio Bacteria, Isso constitui apenas uma pequena quantidade
+          desses seres. Ainda há uma grande quantidade desconhecida que não pode
+          ser estudada por ser difícil de isolá-los e identificá-los.
+        </p>
+        <p>Você chegou ao final da matéria. Complete o questionário a seguir para desbloquear a próxima:</p>
+      </section>
+
+      <div class="align-btn-center"><a href="questionario.html" class="botao-link">Ir ao questionário</a></div>
+    </main>
+
+    <!--========================Rodapé da página=============================-->
+    <footer>
+      <!--=================Envia o usuário de volta ao topo==================-->
+      <section id="volta-topo">
+        <span class="seta-cima" aria-hidden="true"></span><br>
+        <a href="#main-header">Voltar ao topo</a>
+      </section>
+
+      <!--=========================Créditos==================================-->
+      <section id="final-footer">
+        <article>
+          <h2>Criadores:</h2>
+          <ul>
+            <li>Fátima de Cássia</li>
+            <li>Mariana de Lourdes</li>
+            <li>Rubens Victor</li>
+            <li><a href="creditos.html">Agradecimentos especiais</a></li>
+          </ul>
+        </article>
+
+        <section>
+          <h2>Apoio de:</h2>
+          <img src="imgs/logos/CEFET-MG.png" alt="Logo do CEFET de Minas Gerais" title="Centro Federal de Educação Tecnológica de Minas Gerais" class="contribuintes">
+        </section>
+      </section>
+
+      <a href="#menus" class="links-voltar">Voltar ao menu</a>
+      <a href="#conteudo-principal" class="links-voltar">Voltar ao Conteúdo</a>
+
+      <!--==============Nav com atalhos de accesskey da página===============-->
+      <nav class="oculto" aria-hidden="true">
+        <a href="#conteudo-principal" accesskey="1" tabindex="-1" class="oculto"></a>
+        <a href="#menus" accesskey="2" tabindex="-1" class="oculto"></a>
+        <a href="mapa-site.html" accesskey="3" tabindex="-1" class="oculto"></a>
+        <a href="acessibilidade-site.html" accesskey="4" tabindex="-1" class="oculto"></a>
+        <a href="#menu-nav-acessivel" accesskey="5" tabindex="-1" class="oculto"></a>
+      </nav>
+    </footer>
+
+    <!--========================Scripts JS===================================-->
+    <script src="scripts/header-script.js" charset="utf-8"></script>
+    <script src="scripts/materia-script.js" charset="utf-8"></script>
+    <script src="scripts/bibliotecas/inert-script.js" charset="utf-8"></script>
+    <script src="scripts/responsive-menu-script.js" charset="utf-8"></script>
+    <script src="scripts/acessibilidade-script.js" charset="utf-8"></script>
+  </body>
+</html>
