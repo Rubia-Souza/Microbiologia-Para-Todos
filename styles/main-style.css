@@ -363,6 +363,7 @@ a:hover, a:focus{
 
 figure{
   display: inline-block;
+  text-align: center;
   box-sizing: border-box;
   margin-left: 1.5em;
   margin-bottom: 1em;
@@ -374,6 +375,7 @@ figure{
 figure > img{
   height: auto;
   width: 100%;
+  max-width: 25em;
   margin-bottom: 0.15em;
 }
 
