@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="pt-BR" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Rubens Souza">
+    <meta name="keywords" content="acessibilidade,leitor de tela,screen reader,biologia,vírus,célula,bactéria,fungo,célula animal,célula vegetal,microbiologia,escola,deficientes,ensino,baixa visão,CEFET,CEFET MG,iniciação científica,deficiente visual,estudo">
+    <meta name="description" content="Conteudo de microbiologia dispinível a todos dando foco à acessibilidade de deficientes na web">
+
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Lobster+Two|Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main-style.css">
+    <link rel="stylesheet" href="styles/cores-style.css">
+    <link rel="stylesheet" href="styles/medias-style.css">
+    <link rel="shortcut icon" type="image/png" href="imgs/icons/favicon.png">
+    <title>Eucariontes</title>
+  </head>
+  <body data-level="3">
+    <header id="main-header">
+      <!--============Nav para agilizar a navegação pelo teclado=============-->
+      <nav id="menu-nav-acessivel" class="sobe-menu-nav-acessivel">
+        <ul>
+          <li><a href="#conteudo-principal" class="itens-menu-acessivel">Ir para o conteúdo da página<sup aria-hidden="true">[1]</sup><span class="texto-escondido">, atalho: alt + 1</span></a></li>
+          <li><a href="#menus" class="itens-menu-acessivel">Ir para o menu<sup aria-hidden="true">[2]</sup><span class="texto-escondido">, atalho: alt + 2</span></a></li>
+          <li><a href="mapa-site.html" class="itens-menu-acessivel">Ir para o mapa do site<sup aria-hidden="true">[3]</sup><span class="texto-escondido">, atalho: alt + 3</span></a></li>
+        </ul>
+      </nav>
+
+      <section id="menus">
+        <!--=========Menu principal com links para regiões do site===========-->
+        <nav id="menu-nav-principal">
+          <ul>
+            <li><a href="index.html">Página inicial</a></li>
+            <li><a href="mapa-site.html">Mapa do site<sup aria-hidden="true">[3]</sup><span class="texto-escondido">, atalho: alt + 3</span></a></li>
+            <li><a href="sobre-projeto.html">Sobre o projeto</a></li>
+            <li><a href="acessibilidade-site.html">Acessibilidade do site<sup aria-hidden="true">[4]</sup><span class="texto-escondido">, atalho: alt + 4</span></a></li>
+          </ul>
+        </nav>
+
+        <!--========Menu com opções para deixar o site mais acessivel========-->
+        <section id="menu-acessibilidade">
+          <ul>
+            <li aria-hidden="true">Contraste</li>
+            <li><button class="botao-contraste botao-imgs" data-contraste="negativo" aria-label="Mudar as cores da página para as escuras"><img src="imgs/icons/quadrado-preto.png" title="Mudar as cores da página para as escuras" alt="Mudar as cores da página para as escuras" class="img-contraste"></button></li>
+            <li><button class="botao-contraste botao-imgs" data-contraste="padrao" aria-label="Mudar as cores da página para as padrões"><img src="imgs/icons/quadrado-branco.png" title="Mudar as cores da página para as padrões" alt="Mudar as cores da página para as padrões" class="img-contraste"></button></li>
+            <li aria-hidden="true">Fonte</li>
+            <li><button class="botao-fonte" data-fonte="+" aria-label="Aumentar a fonte"><span aria-hidden="true">A+</span></button></li>
+            <li><button class="botao-fonte" data-fonte="0" aria-label="Voltar a fonte padrão"><span aria-hidden="true">A°</span></button></li>
+            <li><button class="botao-fonte" data-fonte="-" aria-label="Diminuir a fonte"><span aria-hidden="true">A-</span></button></li>
+          </ul>
+        </section>
+
+        <!--======================Responsive Menu============================-->
+        <section id="menu-responsive">
+          <button id="botao-hamburguer"><img src="imgs/icons/burguer-menu.png" title="Abrir o menu do site" class="img-hamburguer contraste-altera-img"></button>
+          <img src="imgs/icons/virus.png" alt="Um vírus, que é a logo do site." class="img-virus-responsive contraste-altera-img" aria-hidden="true">
+        </section>
+      </section>
+
+      <!--=============Div abaixo dos menus com a logo do site===============-->
+      <section id="imagem-logo">
+        <span><h1>Microbiologia para Todos</h1></span>
+      </section>
+    </header>
+
+    <aside id="menu-esquerda-group">
+      <section id="menu-esquerda" class="some-menu">
+        <button id="botao-fecha-menu" class="botao-imgs"><img src="imgs/icons/fecha-menu.png" alt="Fechar o menu" title="Fechar o menu" id="img-fecha-menu" class="contraste-altera-img"></button>
+        <img src="imgs/icons/virus.png" alt="Um vírus, que é a logo do site." aria-hidden="true" class="contraste-altera-img">
+        <ul>
+          <li><a href="index.html">Página inicial</a></li>
+          <li><a href="mapa-site.html">Mapa do site</a></li>
+          <li><a href="sobre-projeto.html">Sobre o projeto</a></li>
+          <li><a href="acessibilidade-site.html">Acessibilidade do site</a></li>
+        </ul>
+        <section>
+          <ul>
+            <li aria-hidden="true">Contraste</li>
+            <li><button class="botao-contraste botao-imgs" data-contraste="negativo" aria-label="Mudar as cores da página para as escuras"><img src="imgs/icons/quadrado-preto.png" title="Mudar as cores da página para as escuras" alt="Mudar as cores da página para as escuras" class="img-contraste"></button></li>
+            <li><button class="botao-contraste botao-imgs" data-contraste="padrao" aria-label="Mudar as cores da página para as padrões"><img src="imgs/icons/quadrado-branco.png" title="Mudar as cores da página para as padrões" alt="Mudar as cores da página para as padrões" class="img-contraste"></button></li>
+          </ul>
+          <ul>
+            <li aria-hidden="true">Fonte</li>
+            <li><button class="botao-fonte" data-fonte="+" aria-label="Aumentar a fonte"><span aria-hidden="true">A+</span></button></li>
+            <li><button class="botao-fonte" data-fonte="0" aria-label="Voltar a fonte padrão"><span aria-hidden="true">A°</span></button></li>
+            <li><button class="botao-fonte" data-fonte="-" aria-label="Diminuir a fonte"><span aria-hidden="true">A-</span></button></li>
+          </ul>
+        </section>
+      </section>
+      <div id="div-modal" class="some-div-modal" aria-hidden="true"></div>
+    </aside>
+
+    <!--===================Conteudo principal da página======================-->
+    <main id="conteudo-principal">
+      <p class="local-site"><strong>Você está em:</strong> <a href="index.html">Página inicial</a> > Eucariontes.</p>
+      <h2>Eucariontes</h2>
+
+      <section class="topico">
+        <h3>Reino protista</h3>
+        <p>O reino protista é formado por algas e protozoários.</p>
+
+        <h4>Protozoários</h4>
+        <p>A palavra protozoário significa animal primitivo. Eles são chamados assim por acreditar-se que são os seres que deram origem aos membros do reino Animalia. Isso principalmente pela semelhança do modo que se alimentam comparado com os animais.</p>
+        <p>
+          Os protozoários são seres <strong>Unicelulares, Eucariontes e Heterotróficos.</strong>
+          Eles podem habitar tanto locais aquáticos como terrestres e se alimentam
+          principalmente de bactérias ou pequenas partículas.
+        </p>
+        <p>Eles podem reproduzir-se sexuadamente ou assexuadamente:</p>
+        <h5>Reprodução assexuada</h5>
+        <p>
+          Eles podem reproduzir-se  por fissão binária, brotamento ou
+          esquizogonia. Este último é uma divisão múltipla do núcleo antes de
+          ocorrer a divisão celular, ocorre uma fissão múltipla. Depois, uma
+          pequena porção do citoplasma se concentra ao redor de cada núcleo
+          formado e então ocorre a separação em células-filhas.
+        </p>
+        <h5>Reprodução sexuada</h5>
+        <p>
+          O processo é chamado de <strong>conjugação</strong>. Diferente do
+          processo bacteriano, as duas células se fundem. Os micronúcleos, que
+          são núcleos haplóides, de cada célula migra para a outra. Então, os
+          micronúcleos se fundem com o que está presente dentro da célula e elas
+          se separam, cada uma saindo fertilizada. Assim, quando as células se
+          dividirem, elas produzem células-filhas com DNA recombinado.
+        </p>
+        <p>
+          Alguns protozoários produzem gametas, que são células sexuais
+          haplóides. Deste modo, na reprodução, os dois gametas se fundem e
+          formam um zigoto diploide.
+        </p>
+        <p>
+          Além dos dois modos de reprodução, alguns protozoários produzem uma
+          estrutura chamada <strong>cisto</strong>. Ele é uma cápsula protetora,
+          que permite que o organismo sobreviva na ausência de alimento, umidade
+          ou oxigênio, quando as temperaturas não são adequadas ou quando
+          compostos tóxicos estão presentes.
+        </p>
+
+        <h4>Algas</h4>
+        <p>
+          As algas são consideradas os ancestrais em comum das plantas, devido
+          a diversas semelhanças como a obtenção de alimento por meio da
+          fotossíntese.
+        </p>
+        <p>
+          As algas são seres <strong>Unicelulares, Autotróficos e vivem em sua maioria em regiões aquáticas.</strong>
+          Algumas algas formam cadeias de células sendo filamentosas ou invés de
+          unicelulares. Além disso, elas não possuem tecidos verdadeiros como as
+          plantas.
+        </p>
+        <p>
+          Elas podem crescer em diversos tipos de ambientes e habitats. Por mais
+          que sejam geralmente encontradas em águas frias temperadas, como em
+          águas costeiras, poças e oceanos, alguns tipos crescem no solo, sobre
+          árvores ou pedras. Já foram encontradas algas que crescem nos pelos de
+          ursos polares e nos pelos das preguiças da América do Sul.
+        </p>
+        <p>
+          Os principais fatores que interferem onde é um local apropriado para
+          crescimento é a disponibilidade de nutrientes apropriados, a umidade,
+          a frequência de luz e a superfície em que elas irão crescer.
+        </p>
+        <p>
+          Grande parte das algas realizam a fotossíntese, porém existem os
+          oomicetos, que são semelhantes aos fungos, agindo como seres
+          quimio-heterotróficos. A clorofila é a principal responsável pela
+          absorção de luz das algas e a que gera as diferentes cores em que elas
+          podem ser encontradas.
+        </p>
+        <p>
+          As algas também pode se reproduzir de modo <strong>sexuado</strong> ou
+          <strong>assexuado</strong>:
+        </p>
+        <h5>Reprodução assexuada</h5>
+        <p>
+          As algas unicelulares realizam a mitose. O seu núcleo, junto a célula,
+          se divide. Os dois núcleos se movem para extremidades opostas e, então,
+          a célula é separada em duas novas células completas.
+        </p>
+        <h5>Reprodução sexuada</h5>
+        <p>Nela ocorre a formação de gametas, fertilização, formação do zigoto e a meiose.</p>
+        <p>As algas, entre suas gerações, alternam entre a reprodução sexuada e assexuada.</p>
+
+        <div class="text-center">
+          <figure class="topico-img-left">
+            <img src="imgs/imgs-materia/reproducao-algas.png" alt="Esquema com os dois tipos de ciclos de reprodução das algas">
+            <figcaption>Imagem 1, Fonte: Tortora; Ciclo de vida de uma alga verde unicelular pág.342 10ªedição</figcaption>
+          </figure>
+        </div>
+
+        <h4>Importância dos seres do reino protista</h4>
+        <p>
+          O protozoário <strong>Nosema Locustae</strong> é vendido como um
+          inseticida não tóxico para ser usado em plantações que estão sendo
+          atacadas por gafanhotos. Como esse protozoário é específico para
+          gafanhotos, eles não causam mal algum a seres humanos.
+        </p>
+        <p>
+          Outros tipo de protozoário está sendo estudado para reduzir a produção
+          de ovos das formigas de fogo. Isso, pois essas formigas causam altos
+          prejuízos na agricultura e picadas dolorosas em humanos. Assim, os
+          pesquisadores buscam um jeito de reduzir pragas desses animais.
+        </p>
+        <p>Alguns protozoários são causadores de doenças como:</p>
+        <ul>
+          <li>Malária</li>
+          <li>Leishmaniose</li>
+          <li>Toxoplasmose</li>
+          <li>Elefantíase</li>
+          <li>Chagas</li>
+        </ul>
+        <p>Já as algas:</p>
+        <ul>
+          <li>São consideradas os seres ancestrais que deram origem às plantas</li>
+          <li>
+            São usadas na indústria alimentícia e na indústria cosmética para
+            produção de sorvetes e esmaltes
+          </li>
+          <li>Algumas causam intoxicação alimentar</li>
+          <li>
+            São fundamentais para a vida do planeta e biodiversidade marinha,
+            pois constituem <strong>as florestas de kelps</strong>. Elas são
+            florestas submersas que produzem a maior parte de gás oxigênio da
+            Terra, sendo assim os verdadeiros pulmões do mundo. Isso pois as
+            árvores consomem grande parte do O<sub>2(g)</sub> que produzem, já as algas
+            conseguem produzir muito mais e consomem quase o mesmo tanto que as
+            árvores.
+          </li>
+        </ul>
+      </section>
+
+      <section class="topico">
+        <h3>Reino Fungi</h3>
+        <p>
+          Os fungos são fundamentais para a vida e cadeia alimentar, já que são
+          capazes de decompor a matéria orgânica morta, reciclando os nutrientes
+          e colocando-os novamente no ciclo da matéria.
+        </p>
+
+        <p>Os membros do reino fungi são seres:</p>
+        <ul>
+          <li>Eucariontes</li>
+          <li>Pluricelulares, com exceção das leveduras, que são unicelulares</li>
+          <li>Heterotróficos</li>
+          <li>São sésseis</li>
+          <li>A parede celular desses seres é formada por quitina</li>
+          <li>A sua dispersão ocorre por meio de esporos</li>
+          <li>Utilizam o glicogênio como reserva energética</li>
+        </ul>
+
+        <p>
+          Uma característica importante desses seres é que eles <strong>não</strong>
+          possuem tecidos verdadeiros, mas sim hifas. Elas podem ser
+          <strong>septadas ou asseptadas</strong>.
+        </p>
+
+        <div class="text-center">
+          <figure class="topico-img-left">
+            <img src="imgs/imgs-materia/hifas-fungo.png" alt="Esquema com os dois tipos de ciclos de reprodução das algas">
+            <figcaption>Imagem 2,  Fonte: <a href="https://moodle.ufsc.br/pluginfile.php/1311301/course/section/972329/Drechsler-Santos%202015%20material%20did%C3%A1tico%20fungos%20encarte%20EAD.pdf">Sistemática vegetal 1: Fungos da UFSC página 13</a></figcaption>
+          </figure>
+        </div>
+
+        <p><strong>Hifas septadas:</strong> Os núcleos são separados por septos.</p>
+
+        <p><strong>Hifas asseptadas:</strong> Os núcleos não são separados por septos.</p>
+
+        <p>
+          O conjunto de hifas forma o micélio, que atua como uma raiz dando
+          sustentação ao fungo e fazendo a absorção e digestão de nutrientes.
+          Ele pode chegar a comprimentos muito maiores que a parte visível do
+          fungo.
+        </p>
+
+        <p>
+          A digestão do fungo é extracorpórea, ou seja ocorre fora do seu corpo,
+          e é feita pelo micélio, que lança por meio das hifas enzimas digestivas
+          e depois absorve os nutrientes. Além da divisão de septos, as hifas são
+          classificadas de acordo com sua função. <strong>Hifas vegetativas</strong>
+          são hifas que absorvem nutrientes e as <strong>hifas reprodutivas</strong>
+          crescem para cima da superfície em que o fungo se encontra e sustentam
+          os esporos reprodutivos.
+        </p>
+
+        <p>
+          Os esporos por sua vez podem ser <strong>assexual</strong> ou
+          <strong>sexual</strong>. Os esporos sexuais são formados pela reprodução
+          sexuada, que é dividida em 3 etapas:
+        </p>
+
+        <ul>
+          <li>
+            <strong>Plasmogamia:</strong> O núcleo haplóide de uma célula
+            doadora penetra no citoplasma de uma célula receptora.
+          </li>
+          <li>
+            <strong>Cariogamia:</strong> O núcleo da doadora e da receptora se
+            unem e formam o núcleo diplóide do zigoto.
+          </li>
+          <li>
+            <strong>Meiose:</strong> O núcleo diplóide origina um núcleo haplóide,
+            esporos sexuais, dos quais alguns podem ser recombinantes genético.
+          </li>
+        </ul>
+
+        <p>Já os <strong>esporos assexuais</strong> são divididos em dois:</p>
+        <ul>
+          <li>
+            <strong>Conidiósporos\Conídios:</strong> Ele é produzido na extremidade
+            do conidióforo e não é armazenado em uma bolsa. Esses esporos podem
+            ser unicelulares ou multicelulares.
+          </li>
+          <li>
+            <strong>Esporangiósporo:</strong> Ele é formado no interior do esporângio (bolsa).
+          </li>
+        </ul>
+
+        <p>
+          As leveduras, diferente dos cogumelos, são fungos unicelulares,não
+          filamentosos e esféricas ou ovais.
+        </p>
+
+        <p>
+          Elas podem se reproduzir de 2 maneiras. As leveduras que se espalham
+          por brotamento são chamadas de <strong>leveduras de brotamento</strong>.
+          Nesse processo o broto se alonga e o núcleo da célula parental se
+          divide. A medida que o broto se alonga, um dos núcleos migra para ele
+          até que a parede celular é sintetizada, separando o broto da célula
+          parental. O outro tipo são as <strong>leveduras de fissão</strong>.
+          Elas dividem-se produzindo duas novas células iguais por meio da fissão
+          binária, em que os seus núcleos se dividem e formam-se duas células-filhas.
+        </p>
+
+        <p>
+          As leveduras podem utilizar do O<sub>2</sub> para respiração, metabolizando
+          hidratos de carbono e formando gás carbônico e água, mas elas também
+          podem fermentar os hidratos de carbono caso não haja oxigênio
+          disponível, o que produz álcool(etanol) e gás carbônico. Esse segundo
+          processo é chamado de fermentação, que é muito utilizado em diversos
+          alimentos do dia a dia.
+        </p>
+
+        <h4>Importância dos fungos</h4>
+        <p>
+          Como dito no início do tópico, os fungos fazem parte do ciclo da
+          matéria orgânica. Por serem decompositores, eles sempre estão
+          presentes no final da cadeia alimentar com o simples propósito de
+          decompor os restos de outros seres que já morreram, desta forma
+          transformando a matéria dos seres mortos em nutrientes que irão
+          retornar a cadeia alimentar.
+        </p>
+
+        <p>
+          Outra importância é que alguns fungos são alucinógenos, como a
+          <span class="nome-cientifico" lang="la">Amanita</span>
+          <span class="nome-cientifico" lang="la">muscaria</span>
+          usada na produção de LSD
+          <span lang=”germanisch”>Lysergsäurediethylamid</span>.
+          Outros são tóxicos como os fungos do gênero
+          <span class="nome-cientifico" lang="la">Aspergillus</span>, que podem ser
+          encontrados no amendoim. Esses fungos produzem a aflatoxina que leva a
+          formação de câncer.
+        </p>
+
+        <p>Eles são causadores de micoses, como:</p>
+        <ul>
+          <li>Pé de atleta</li>
+          <li>Frieira</li>
+          <li>Candidíase</li>
+        </ul>
+
+        <p>Por fim, os fungos são muito utilizados na indústria alimentícia:</p>
+        <ul>
+          <li>
+            São usados na produção de iogurtes, pois algumas espécies produzem
+            o ácido lático
+          </li>
+          <li>
+            O fungo <span class="nome-cientifico" lang="la">Saccharomyces</span>
+            <span class="nome-cientifico" lang="la">cerevisiae</span> é usado na
+            produção de bebidas alcoólicas por fazer fermentação.
+          </li>
+          <li>
+            São usados na produção de queijos
+          </li>
+          <li>
+            Usados na produção de massas também por fazerem fermentação liberando
+            CO<sub>2(g)</sub>que, quando aquecido, aumenta sua agitação e volume e
+            consequentemente fazendo a massa expandir.
+          </li>
+        </ul>
+
+        <h4>Líquens</h4>
+        <p>
+          Os líquens são uma relação mutualística entre fungos e cianobactérias
+          ou algas por meio de micro raízes. Nessa relação o fungo protege a
+          alga e faz a extração de H2O e sais minerais para ela. Já a alga
+          utiliza os recursos extraídos pelo fungo e produz glicose que é
+          dividida entre os dois.
+        </p>
+
+        <p>
+          Esses seres crescem de forma muito lenta e conseguem viver em regiões
+          que apenas as algas ou apenas os fungos não sobreviveriam. Mesmo sendo
+          uma relação mutualística entre algas/cianobactérias e fungos, eles
+          fazem parte do reino fungi.
+        </p>
+
+        <p>
+          Nessa relação, as hifas do fungo formam-se abaixo do corpo líquen
+          formando as <strong>rizinas</strong>, que são estruturas que dão maior
+          fixação a ele. Elas também formam o <strong>córtex</strong>, que é uma
+          camada protetora formada acima das algas.
+        </p>
+
+        <p>
+          Os líquens secretam ácidos orgânicos que desgastam rochas. Com os
+          minerais digeridos, eles acumulam os nutrientes necessários para o
+          crescimento das plantas.
+        </p>
+
+        <p>
+          Por fim, os líquens atuam como bioindicadores de regiões com alto grau
+          de poluição. Isso, pois eles são sensíveis ao enxofre, que é um elemento
+          muito presente nesses locais. Além disso, eles são muito utilizados
+          como corante para roupas.
+        </p>
+
+        <p>Você chegou ao final da matéria. Complete o questionário a seguir para desbloquear a próxima:</p>        
+      </section>
+
+      <div class="align-btn-center"><a href="questionario.html" class="botao-link">Ir ao questionário</a></div>
+    </main>
+
+    <!--========================Rodapé da página=============================-->
+    <footer>
+      <!--=================Envia o usuário de volta ao topo==================-->
+      <section id="volta-topo">
+        <span class="seta-cima" aria-hidden="true"></span><br>
+        <a href="#main-header">Voltar ao topo</a>
+      </section>
+
+      <!--=========================Créditos==================================-->
+      <section id="final-footer">
+        <article>
+          <h2>Criadores:</h2>
+          <ul>
+            <li>Fátima de Cássia</li>
+            <li>Mariana de Lourdes</li>
+            <li>Rubens Victor</li>
+            <li><a href="creditos.html">Agradecimentos especiais</a></li>
+          </ul>
+        </article>
+
+        <section>
+          <h2>Apoio de:</h2>
+          <img src="imgs/logos/CEFET-MG.png" alt="Logo do CEFET de Minas Gerais" title="Centro Federal de Educação Tecnológica de Minas Gerais" class="contribuintes">
+        </section>
+      </section>
+
+      <a href="#menus" class="links-voltar">Voltar ao menu</a>
+      <a href="#conteudo-principal" class="links-voltar">Voltar ao Conteúdo</a>
+
+      <!--==============Nav com atalhos de accesskey da página===============-->
+      <nav class="oculto" aria-hidden="true">
+        <a href="#conteudo-principal" accesskey="1" tabindex="-1" class="oculto"></a>
+        <a href="#menus" accesskey="2" tabindex="-1" class="oculto"></a>
+        <a href="mapa-site.html" accesskey="3" tabindex="-1" class="oculto"></a>
+        <a href="acessibilidade-site.html" accesskey="4" tabindex="-1" class="oculto"></a>
+        <a href="#menu-nav-acessivel" accesskey="5" tabindex="-1" class="oculto"></a>
+      </nav>
+    </footer>
+
+    <!--========================Scripts JS===================================-->
+    <script src="scripts/header-script.js" charset="utf-8"></script>
+    <script src="scripts/materia-script.js" charset="utf-8"></script>
+    <script src="scripts/bibliotecas/inert-script.js" charset="utf-8"></script>
+    <script src="scripts/responsive-menu-script.js" charset="utf-8"></script>
+    <script src="scripts/acessibilidade-script.js" charset="utf-8"></script>
+  </body>
+</html>
