@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="pt-BR" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Rubia Souza">
+    <meta name="keywords" content="acessibilidade,leitor de tela,screen reader,biologia,vírus,célula,bactéria,fungo,célula animal,célula vegetal,microbiologia,escola,deficientes,ensino,baixa visão,CEFET,CEFET MG,iniciação científica,deficiente visual,estudo">
+    <meta name="description" content="Conteudo de microbiologia dispinível a todos dando foco à acessibilidade de deficientes na web">
+
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Lobster+Two|Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main-style.css">
+    <link rel="stylesheet" href="styles/cores-style.css">
+    <link rel="stylesheet" href="styles/medias-style.css">
+    <link rel="shortcut icon" type="image/png" href="imgs/icons/favicon.png">
+    <title>Biotecnologia</title>
+  </head>
+  <body data-level="5">
+    <header id="main-header">
+      <!--============Nav para agilizar a navegação pelo teclado=============-->
+      <nav id="menu-nav-acessivel" class="sobe-menu-nav-acessivel">
+        <ul>
+          <li><a href="#conteudo-principal" class="itens-menu-acessivel">Ir para o conteúdo da página<sup aria-hidden="true">[1]</sup><span class="texto-escondido">, atalho: alt + 1</span></a></li>
+          <li><a href="#menus" class="itens-menu-acessivel">Ir para o menu<sup aria-hidden="true">[2]</sup><span class="texto-escondido">, atalho: alt + 2</span></a></li>
+          <li><a href="mapa-site.html" class="itens-menu-acessivel">Ir para o mapa do site<sup aria-hidden="true">[3]</sup><span class="texto-escondido">, atalho: alt + 3</span></a></li>
+        </ul>
+      </nav>
+
+      <section id="menus">
+        <!--=========Menu principal com links para regiões do site===========-->
+        <nav id="menu-nav-principal">
+          <ul>
+            <li><a href="index.html">Página inicial</a></li>
+            <li><a href="mapa-site.html">Mapa do site<sup aria-hidden="true">[3]</sup><span class="texto-escondido">, atalho: alt + 3</span></a></li>
+            <li><a href="sobre-projeto.html">Sobre o projeto</a></li>
+            <li><a href="acessibilidade-site.html">Acessibilidade do site<sup aria-hidden="true">[4]</sup><span class="texto-escondido">, atalho: alt + 4</span></a></li>
+          </ul>
+        </nav>
+
+        <!--========Menu com opções para deixar o site mais acessivel========-->
+        <section id="menu-acessibilidade">
+          <ul>
+            <li aria-hidden="true">Contraste</li>
+            <li><button class="botao-contraste botao-imgs" data-contraste="negativo" aria-label="Mudar as cores da página para as escuras"><img src="imgs/icons/quadrado-preto.png" title="Mudar as cores da página para as escuras" alt="Mudar as cores da página para as escuras" class="img-contraste"></button></li>
+            <li><button class="botao-contraste botao-imgs" data-contraste="padrao" aria-label="Mudar as cores da página para as padrões"><img src="imgs/icons/quadrado-branco.png" title="Mudar as cores da página para as padrões" alt="Mudar as cores da página para as padrões" class="img-contraste"></button></li>
+            <li aria-hidden="true">Fonte</li>
+            <li><button class="botao-fonte" data-fonte="+" aria-label="Aumentar a fonte"><span aria-hidden="true">A+</span></button></li>
+            <li><button class="botao-fonte" data-fonte="0" aria-label="Voltar a fonte padrão"><span aria-hidden="true">A°</span></button></li>
+            <li><button class="botao-fonte" data-fonte="-" aria-label="Diminuir a fonte"><span aria-hidden="true">A-</span></button></li>
+          </ul>
+        </section>
+
+        <!--======================Responsive Menu============================-->
+        <section id="menu-responsive">
+          <button id="botao-hamburguer"><img src="imgs/icons/burguer-menu.png" title="Abrir o menu do site" class="img-hamburguer contraste-altera-img"></button>
+          <img src="imgs/icons/virus.png" alt="Um vírus, que é a logo do site." class="img-virus-responsive contraste-altera-img" aria-hidden="true">
+        </section>
+      </section>
+
+      <!--=============Div abaixo dos menus com a logo do site===============-->
+      <section id="imagem-logo">
+        <span><h1>Microbiologia para Todos</h1></span>
+      </section>
+    </header>
+
+    <aside id="menu-esquerda-group">
+      <section id="menu-esquerda" class="some-menu">
+        <button id="botao-fecha-menu" class="botao-imgs"><img src="imgs/icons/fecha-menu.png" alt="Fechar o menu" title="Fechar o menu" id="img-fecha-menu" class="contraste-altera-img"></button>
+        <img src="imgs/icons/virus.png" alt="Um vírus, que é a logo do site." aria-hidden="true" class="contraste-altera-img">
+        <ul>
+          <li><a href="index.html">Página inicial</a></li>
+          <li><a href="mapa-site.html">Mapa do site</a></li>
+          <li><a href="sobre-projeto.html">Sobre o projeto</a></li>
+          <li><a href="acessibilidade-site.html">Acessibilidade do site</a></li>
+        </ul>
+        <section>
+          <ul>
+            <li aria-hidden="true">Contraste</li>
+            <li><button class="botao-contraste botao-imgs" data-contraste="negativo" aria-label="Mudar as cores da página para as escuras"><img src="imgs/icons/quadrado-preto.png" title="Mudar as cores da página para as escuras" alt="Mudar as cores da página para as escuras" class="img-contraste"></button></li>
+            <li><button class="botao-contraste botao-imgs" data-contraste="padrao" aria-label="Mudar as cores da página para as padrões"><img src="imgs/icons/quadrado-branco.png" title="Mudar as cores da página para as padrões" alt="Mudar as cores da página para as padrões" class="img-contraste"></button></li>
+          </ul>
+          <ul>
+            <li aria-hidden="true">Fonte</li>
+            <li><button class="botao-fonte" data-fonte="+" aria-label="Aumentar a fonte"><span aria-hidden="true">A+</span></button></li>
+            <li><button class="botao-fonte" data-fonte="0" aria-label="Voltar a fonte padrão"><span aria-hidden="true">A°</span></button></li>
+            <li><button class="botao-fonte" data-fonte="-" aria-label="Diminuir a fonte"><span aria-hidden="true">A-</span></button></li>
+          </ul>
+        </section>
+      </section>
+      <div id="div-modal" class="some-div-modal" aria-hidden="true"></div>
+    </aside>
+
+    <!--===================Conteudo principal da página======================-->
+    <main id="conteudo-principal">
+      <p class="local-site"><strong>Você está em:</strong> <a href="index.html">Página inicial</a> > Biotecnologia.</p>
+      <h2>Biotecnologia</h2>
+
+      <section class="topico">
+        <p>
+          A biotecnologia se baseia no uso de micro-organismos, células ou
+          componentes celulares para fazer pesquisas ou um produto, como: Alimentos,
+          vacinas, antibióticos e vitaminas.
+        </p>
+        <p>
+          Um exemplo são micro-organismos e plantas que estão sendo usados como
+          fábricas para produzir substâncias químicas que os organismos não
+          produzem naturalmente.
+        </p>
+        <p>
+          Tudo isso é feito por meio da inserção de genes em células,
+          chamado de DNA recombinante.
+        </p>
+        <h3>Tecnologia do DNA recombinante</h3>
+        <p>
+          Um gene de um animal pode ser inserido no DNA de uma bactéria. Deste
+          modo, podemos fazer o receptor expressar o gene, que pode codificar um
+          produto comercialmente útil. Por exemplo:
+        </p>
+        <ul>
+          <li>Bactérias com genes insulina são usadas para produzir o hormônio</li>
+          <li>
+            Leveduras portadores de um gene que codifica parte do capsídeo viral
+            do vírus da hepatite B pode ser usado para confecção de vacinas,
+            para que não tenha que ser feita com o micro-organismo completo
+          </li>
+          <li>Criar cópias de uma mesma molécula de DNA, para o uso em experimentos e análises</li>
+        </ul>
+      </section>
+
+      <section class="topico">
+        <h3>Visão geral da tecnologia do DNA recombinante</h3>
+        <p>O procedimento se baseia em 4 passos:</p>
+        <p>
+          Primeiramente, o gene de interesse é inserido no DNA de um vetor
+          <em>in vitro</em>. O DNA deve ser auto replicativo como um plasmídeo
+          ou um genoma viral.
+        </p>
+        <p>Depois o vetor recombinante de DNA é introduzido em uma célula onde ele pode multiplicar-se.</p>
+        <p>
+          A célula que contém o vetor é multiplicada em cultura para formar um
+          clone de muitas células geneticamente idênticas. Assim, o clone de
+          células possui diversas cópias do gene de interesse.
+        </p>
+        <p>
+          A etapa final irá depender do objetivo da clonagem. A partir do clone
+          de células, o pesquisador pode isolar grandes quantidades do gene de
+          interesse e utilizá-lo para diversos propósitos.
+        </p>
+        <p>
+          Essa tecnologia foi usada para a produção de hormônios do crescimento
+          humano(hGH), já que algumas pessoas não produzem em quantidades adequadas
+          e apresentam deficiência no crescimento. Antigamente, para se adquirir o
+          hormônio, extraia-se diretamente das glândulas pituitárias humanas, o que
+          levava a vários riscos. Atualmente, o hGH é geneticamente produzido por vetores
+          <span class="nome-cientifico" lang="la">E. Coli</span>, o que é muito mais barato, rápido e seguro.
+        </p>
+      </section>
+
+      <section class="topico">
+        <h3>Selecionar o DNA desejado</h3>
+        <p>
+          Para separar uma parte específica do DNA, os engenheiros genéticos
+          utilizam de <strong>enzimas de restrição</strong>. Elas são uma classe
+          de enzimas que clivam(digerem) o DNA e estão presentes em diversas
+          bactérias.
+        </p>
+        <p>
+          Essas enzimas já haviam sido observadas a muito tempo por pesquisadores.
+          Eles observaram que quando bacteriófagos tentavam infectar bactérias que
+          não eram suas hospedeiras naturais eles tinham o seu DNA destruído pelas
+          enzimas de restrição presente nelas.
+        </p>
+        <p>
+          Assim, os pesquisadores utilizaram a forma purificada dessas enzimas
+          para a separação de certas partes específicas do DNA. O que é altamente
+          eficiente já que cada enzima digere somente uma determinada sequência de
+          bases nucleotídicas no DNA e sempre gerando um corte específico.
+        </p>
+        <p>
+          Algumas enzimas clivam o DNA em um mesmo ponto, produzindo extremidades
+          cegas. Outras Fazem cortes escalonados nas duas fitas, as extremidades
+          escalonadas(extremidades coesivas) são utilizadas na engenharia genética
+          para unir duas peças de DNA diferentes.
+        </p>
+      </section>
+
+      <section class="topico">
+        <h3>Selecionando vetores</h3>
+        <p>O principal motivo dos vetores é funcionar como um veículo para a replicação de sequências de DNA.</p>
+        <p>
+          Assim, diversas moléculas de DNA podem ser usadas como vetores para o
+          processo, basta que sejam auto replicativas. Isso, pois quando estiver
+          dentro da célula, o vetor seja capaz de se replicar-se.
+        </p>
+        <p>
+          Além disso, avalia-se a preservação, proteção do DNA e o tamanho,
+          pois moléculas menores são mais fáceis de manipular em relação às
+          grandes, que são mais frágeis.
+        </p>
+        <p>
+          Outro tipo de vetor são os plasmídeos, chamados de
+          <strong>vetores biofuncionais</strong>. Sua principal vantagem é que
+          eles podem mover sequências de DNA clonadas de um organismo para outro d
+          iferente, como de uma bactéria para um fungo. Assim, ele é muito útil
+          para o processo de modificação genética de organismos multicelulares.
+        </p>
+        <p>
+          Também podemos utilizar o DNA viral como vetor. Diferente dos plasmídeos,
+          ele consegue aceitar fragmentos de DNA exógenos de tamanhos muito maiores.
+          O DNA colocado no vírus pode ser clonado nas células que são suas hospedeiras
+          naturais. Retrovírus, adenovírus e herpesvírus são usados para inserir genes
+          corretivos em células humanas que contenham genes defeituosos.
+        </p>
+      </section>
+
+      <section class="topico">
+        <h3>Inserção de DNA exógeno nas células</h3>
+        <p>
+          Para a produção do rDNA as moléculas de DNA devem ser manipuladas fora
+          da célula e depois introduzidas em células vivas. O método para inserir
+          o rDNA depende do vetor e da célula hospedeira.
+        </p>
+        <p>
+          Um plasmídeo, por exemplo, para ser inserido em uma célula utiliza um
+          processo chamado de <strong>transformação</strong>. Nele, as células
+          captam o DNA do ambiente circundante. As células que realizam a transformação
+          naturalmente são chamadas de competentes, já as que não a realizam naturalmente
+          são incubadas em uma solução de CaCl (Cloreto de Cálcio) e depois
+          misturadas com o DNA clonado e submetidas a um choque térmico moderado,
+          para que possam realizar a transformação.
+        </p>
+        <p>
+          Outro processo é a <strong>eletroporação</strong>, em que as células
+          são submetidas a uma corrente elétrica abrindo microporos na parede
+          celular, onde o DNA atravessa para dentro da célula.
+        </p>
+        <p>
+          Também há o processo de <strong>fusão</strong>. Nele adiciona-se
+          polietilenoglicol em protoplastos que estão em solução, o que aumenta
+          sua taxa de fusão. A nova célula híbrida tem o DNA derivado das duas
+          células “parentais” e pode sofrer uma recombinação natural.
+        </p>
+        <p>
+          Em células vegetais, o DNA é disparado por meio das paredes de celulose
+          usando uma pistola de genes. A pistola está carregada com partículas
+          microscópicas de tungstênio ou ouro cobertas com DNA e são lançadas por
+          uma explosão de hélio.
+        </p>
+        <p>
+          Em células animais o DNA é inserido por <strong>microinjeção</strong>,
+          com o uso de uma micropipeta de vidro com o diâmetro menor que o da célula.
+          Ela perfura a membrana plasmática e o DNA é inserido por meio dela.
+        </p>
+      </section>
+
+      <section class="topico">
+        <h3>Obtenção do DNA</h3>
+        <p>Há dois meios de recuperar o DNA clonado:</p>
+        <h4>1. Biblioteca de genes</h4>
+        <p>
+          Essas bibliotecas são formadas por um conjunto de clones com diferentes
+          fragmentos de DNA. Cada “livro” é uma linhagem bacteriana ou fago que contém
+          1 fragmento. Elas são fundamentais para a manutenção e recuperação de clones.
+        </p>
+        <p>
+          Os fragmentos de cada clone foram adquiridos pelo genoma completo da
+          célula modificada que sofreu uma lise e que seu DNA precipitado foi
+          separado por enzimas de restrição. Assim, os fragmentos de cada clone
+          formam o genoma completo de uma célula modificada.
+        </p>
+        <h4>2. DNA sintético:</h4>
+        <p>
+          Em certas circunstâncias, os genes podem ser produzidos <em>in vitro</em>,
+          com o uso de máquinas de síntese de DNA.
+        </p>
+        <p>
+          Nessas máquinas é usado um teclado para entrar a sequência de nucleotídeos
+          desejados. Então um microprocessador controla a síntese do DNA a partir do
+          suprimento de nucleotídeos armazenados e dos demais reagentes necessários.
+          Porém, apenas cadeias de 120 nucleotídeos podem ser sintetizados por este
+          método. Deste modo para criar cadeias maiores, devem ser sintetizados
+          fragmentos e depois uni-los para formar a cadeia completa.
+        </p>
+        <p>A maior dificuldade para essa abordagem é que deve ser conhecida a cadeia do gene para que possa ser sintetizada.</p>
+      </section>
+
+      <section class="topico">
+        <h3>Aplicações da engenharia genética</h3>
+        <h4>1. Aplicações terapêuticas</h4>
+        <p>
+          Uma aplicação é a produção de insulina. Ela é uma proteína produzida
+          pelo pâncreas que regula a absorção de glicose do sangue.
+        </p>
+        <p>
+          Pessoas com diabetes utilizam injeções de insulina obtida do pâncreas
+          de animais abatidos, o que era bem caro e ineficiente. Assim, devido ao
+          alto valor da insulina humana e a sua pequena quantidade de nucleotídeos,
+          a indústria farmacêutica buscou a produção sintética desse hormônio.
+        </p>
+        <p>
+          Foram construídos os genes sintéticos, que foram inseridos em um vetor
+          plasmidial e ligado à extremidade de um gene codificando a enzima ß-galactosidase.
+          Assim, foram usadas duas culturas bacterianas de <strong>E. Coli</strong>, cada uma
+          produzindo uma das cadeias polipeptídicas da insulina. Por fim, as cadeias
+          produzidas eram recuperadas da bactérias, separados da ß-galactosidase e
+          unidos para produzir a insulina humana.
+        </p>
+        <h4>2. Aplicações na Agricultura</h4>
+        <p>
+          Os seres humanos sempre fizeram uma seleção genética de plantas que
+          fossem mais desejáveis para eles, mas esse processo sempre demandou
+          muito tempo e trabalho.
+        </p>
+        <p>
+          Atualmente, o cruzamento e a produção de plantas foi extremamente
+          modificado pelo uso de células vegetais multiplicadas em cultura.
+          Clones de células vegetais podem ser multiplicados em grande número e
+          depois induzidas a regenerarem plantas completas, que irão gerar sementes.
+        </p>
+        <p>
+          Para isso, o DNA recombinante é introduzido nas células vegetais por
+          meio do <strong>plasmídeo TI</strong> presente na bactérias
+          <span class="nome-cientifico" lang="la">Agrobacterium</span>
+          <span class="nome-cientifico" lang="la">tumefaciens</span>.
+          Quando essa bactéria infecta as plantas, uma parte do plasmídeo TI,
+          o T-DNA, estimula a multiplicação celular no local, formando um tipo
+          de tumor.
+        </p>
+        <p>
+          Assim, os cientistas usam o plasmídeo TI como um meio de transportar o
+          DNA geneticamente modificado para a planta. Eles inserem os genes exógenos
+          no T-DNA e re-introduzem o plasmídeo na bactéria e usam-na para inserir
+          o plasmídeo TI recombinante em uma célula vegetal. Ela por sua vez, pode
+          ser utilizada para gerar uma nova planta que expresse o gene exógeno.
+        </p>
+        <h4>3. Aplicações científicas</h4>
+        <p>
+          A biotecnologia está bem próxima da nanotecnologia, que se baseia na
+          criação de circuitos eletrônicos ao nível molecular da matéria. Nela
+          há computadores e robôs do tamanho de moléculas que podem ser usados
+          na detecção de contaminação alimentar, doenças em plantas, como armas
+          biológicas e muitas outras funcionalidades.
+        </p>
+        <p>
+          Com o avanço cada vez maior da nanotecnologia, cada vez ela necessita
+          de peças cada vez mais pequenas. Algo que algumas bactérias podem fornecer.
+          Pesquisadores da Associação Norte Americana de Investigações Geológicas têm
+          cultivado bactérias anaeróbicas capazes de reduzir o selênio tóxico (Se<sup>4+</sup>)
+          em selênio elementar (Se<sup>0</sup>) não tóxico estruturados em nanoesferas, que pode
+          ser utilizado para criação e desenvolvimento de equipamentos na nanotecnologia.
+        </p>
+      </section>
+
+      <section class="topico">
+        <h3>Recomendações de vídeos</h3>
+        <p>
+          Nós recomendamos 2 vídeos do canal <span lang="de">Kurzgesagt</span> – <span lang="en">In a Nutshell</span>. O
+          primeiro fala sobre o uso da engenharia genética em alimentos; O segundo
+          fala sobre o uso do DNA recombinante para retardar o envelhecimento humano:
+        </p>
+        <a href="https://www.youtube.com/watch?v=7TmcXYp8xu4&t=0s" lang="en">Are GMOs Good or Bad? Genetic Engineering & Our Food</a>
+        <a href="https://www.youtube.com/watch?v=jAhjPd4uNFY" lang="en">Genetic Engineering Will Change Everything Forever – CRISPR</a>
+        <p>Você chegou ao final da matéria. Complete o questionário a seguir para desbloquear a próxima:</p>
+      </section>
+      
+      <div class="align-btn-center"><a href="questionario.html" class="botao-link">Ir ao questionário</a></div>
+    </main>
+
+    <!--========================Rodapé da página=============================-->
+    <footer>
+      <!--=================Envia o usuário de volta ao topo==================-->
+      <section id="volta-topo">
+        <span class="seta-cima" aria-hidden="true"></span><br>
+        <a href="#main-header">Voltar ao topo</a>
+      </section>
+
+      <!--=========================Créditos==================================-->
+      <section id="final-footer">
+        <article>
+          <h2>Criadores:</h2>
+          <ul>
+            <li>Fátima de Cássia</li>
+            <li>Mariana de Lourdes</li>
+            <li>Rubia Souza</li>
+            <li><a href="creditos.html">Agradecimentos especiais</a></li>
+          </ul>
+        </article>
+
+        <section>
+          <h2>Apoio de:</h2>
+          <img src="imgs/logos/CEFET-MG.png" alt="Logo do CEFET de Minas Gerais" title="Centro Federal de Educação Tecnológica de Minas Gerais" class="contribuintes">
+        </section>
+      </section>
+
+      <a href="#menus" class="links-voltar">Voltar ao menu</a>
+      <a href="#conteudo-principal" class="links-voltar">Voltar ao Conteúdo</a>
+
+      <!--==============Nav com atalhos de accesskey da página===============-->
+      <nav class="oculto" aria-hidden="true">
+        <a href="#conteudo-principal" accesskey="1" tabindex="-1" class="oculto"></a>
+        <a href="#menus" accesskey="2" tabindex="-1" class="oculto"></a>
+        <a href="mapa-site.html" accesskey="3" tabindex="-1" class="oculto"></a>
+        <a href="acessibilidade-site.html" accesskey="4" tabindex="-1" class="oculto"></a>
+        <a href="#menu-nav-acessivel" accesskey="5" tabindex="-1" class="oculto"></a>
+      </nav>
+    </footer>
+
+    <!--========================Scripts JS===================================-->
+    <script src="scripts/header-script.js" charset="utf-8"></script>
+    <script src="scripts/materia-script.js" charset="utf-8"></script>
+    <script src="scripts/bibliotecas/inert-script.js" charset="utf-8"></script>
+    <script src="scripts/responsive-menu-script.js" charset="utf-8"></script>
+    <script src="scripts/acessibilidade-script.js" charset="utf-8"></script>
+  </body>
+</html>

@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="pt-BR" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Rubia Souza">
+    <meta name="keywords" content="acessibilidade,leitor de tela,screen reader,biologia,vírus,célula,bactéria,fungo,célula animal,célula vegetal,microbiologia,escola,deficientes,ensino,baixa visão,CEFET,CEFET MG,iniciação científica,deficiente visual,estudo">
+    <meta name="description" content="Conteudo de microbiologia dispinível a todos dando foco à acessibilidade de deficientes na web">
+
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Lobster+Two|Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main-style.css">
+    <link rel="stylesheet" href="styles/mapa-site-style.css">
+    <link rel="stylesheet" href="styles/cores-style.css">
+    <link rel="stylesheet" href="styles/medias-style.css">
+    <link rel="shortcut icon" type="image/png" href="imgs/icons/favicon.png">
+    <title>Mapa do site</title>
+  </head>
+  <body>
+    <header id="main-header">
+      <!--============Nav para agilizar a navegação pelo teclado=============-->
+      <nav id="menu-nav-acessivel" class="sobe-menu-nav-acessivel">
+        <ul>
+          <li><a href="#conteudo-principal" class="itens-menu-acessivel">Ir para o conteúdo da página<sup aria-hidden="true">[1]</sup><span class="texto-escondido">, atalho: alt + 1</span></a></li>
+          <li><a href="#menus" class="itens-menu-acessivel">Ir para o menu<sup aria-hidden="true">[2]</sup><span class="texto-escondido">, atalho: alt + 2</span></a></li>
+          <li><a href="mapa-site.html" class="itens-menu-acessivel">Ir para o mapa do site<sup aria-hidden="true">[3]</sup><span class="texto-escondido">, atalho: alt + 3</span></a></li>
+        </ul>
+      </nav>
+
+      <section id="menus">
+        <!--=========Menu principal com links para regiões do site===========-->
+        <nav id="menu-nav-principal">
+          <ul>
+            <li><a href="index.html">Página inicial</a></li>
+            <li><a href="mapa-site.html">Mapa do site<sup aria-hidden="true">[3]</sup><span class="texto-escondido">, atalho: alt + 3</span></a></li>
+            <li><a href="sobre-projeto.html">Sobre o projeto</a></li>
+            <li><a href="acessibilidade-site.html">Acessibilidade do site<sup aria-hidden="true">[4]</sup><span class="texto-escondido">, atalho: alt + 4</span></a></li>
+          </ul>
+        </nav>
+
+        <!--========Menu com opções para deixar o site mais acessivel========-->
+        <section id="menu-acessibilidade">
+          <ul>
+            <li aria-hidden="true">Contraste</li>
+            <li><button class="botao-contraste botao-imgs" data-contraste="negativo" aria-label="Mudar as cores da página para as escuras"><img src="imgs/icons/quadrado-preto.png" title="Mudar as cores da página para as escuras" alt="Mudar as cores da página para as escuras" class="img-contraste"></button></li>
+            <li><button class="botao-contraste botao-imgs" data-contraste="padrao" aria-label="Mudar as cores da página para as padrões"><img src="imgs/icons/quadrado-branco.png" title="Mudar as cores da página para as padrões" alt="Mudar as cores da página para as padrões" class="img-contraste"></button></li>
+            <li aria-hidden="true">Fonte</li>
+            <li><button class="botao-fonte" data-fonte="+" aria-label="Aumentar a fonte"><span aria-hidden="true">A+</span></button></li>
+            <li><button class="botao-fonte" data-fonte="0" aria-label="Voltar a fonte padrão"><span aria-hidden="true">A°</span></button></li>
+            <li><button class="botao-fonte" data-fonte="-" aria-label="Diminuir a fonte"><span aria-hidden="true">A-</span></button></li>
+          </ul>
+        </section>
+
+        <!--======================Responsive Menu============================-->
+        <section id="menu-responsive">
+          <button id="botao-hamburguer"><img src="imgs/icons/burguer-menu.png" title="Abrir o menu do site" class="img-hamburguer contraste-altera-img"></button>
+          <img src="imgs/icons/virus.png" alt="Um vírus, que é a logo do site." class="img-virus-responsive contraste-altera-img" aria-hidden="true">
+        </section>
+      </section>
+
+      <!--=============Div abaixo dos menus com a logo do site===============-->
+      <section id="imagem-logo">
+        <span><h1>Microbiologia para Todos</h1></span>
+      </section>
+    </header>
+
+    <aside id="menu-esquerda-group">
+      <section id="menu-esquerda" class="some-menu">
+        <button id="botao-fecha-menu" class="botao-imgs"><img src="imgs/icons/fecha-menu.png" alt="Fechar o menu" title="Fechar o menu" id="img-fecha-menu" class="contraste-altera-img"></button>
+        <img src="imgs/icons/virus.png" alt="Um vírus, que é a logo do site." aria-hidden="true" class="contraste-altera-img">
+        <ul>
+          <li><a href="index.html">Página inicial</a></li>
+          <li><a href="mapa-site.html">Mapa do site</a></li>
+          <li><a href="sobre-projeto.html">Sobre o projeto</a></li>
+          <li><a href="acessibilidade-site.html">Acessibilidade do site</a></li>
+        </ul>
+        <section>
+          <ul>
+            <li aria-hidden="true">Contraste</li>
+            <li><button class="botao-contraste botao-imgs" data-contraste="negativo" aria-label="Mudar as cores da página para as escuras"><img src="imgs/icons/quadrado-preto.png" title="Mudar as cores da página para as escuras" alt="Mudar as cores da página para as escuras" class="img-contraste"></button></li>
+            <li><button class="botao-contraste botao-imgs" data-contraste="padrao" aria-label="Mudar as cores da página para as padrões"><img src="imgs/icons/quadrado-branco.png" title="Mudar as cores da página para as padrões" alt="Mudar as cores da página para as padrões" class="img-contraste"></button></li>
+          </ul>
+          <ul>
+            <li aria-hidden="true">Fonte</li>
+            <li><button class="botao-fonte" data-fonte="+" aria-label="Aumentar a fonte"><span aria-hidden="true">A+</span></button></li>
+            <li><button class="botao-fonte" data-fonte="0" aria-label="Voltar a fonte padrão"><span aria-hidden="true">A°</span></button></li>
+            <li><button class="botao-fonte" data-fonte="-" aria-label="Diminuir a fonte"><span aria-hidden="true">A-</span></button></li>
+          </ul>
+        </section>
+      </section>
+      <div id="div-modal" class="some-div-modal" aria-hidden="true"></div>
+    </aside>
+
+    <!--===================Conteudo principal da página======================-->
+    <main id="conteudo-principal">
+      <p class="local-site"><strong>Você está em:</strong> <a href="index.html">Página inicial</a> > mapa do site.</p>
+      <h2>Mapa do site</h2>
+
+      <section>
+        <article class="secao-site">
+          <h3><a href="taxonomia.html">Taxonomia</a></h3>
+          <ul>
+            <li>Nomenclatura científica</li>
+            <li>Os três domínios</li>
+            <li>Hierarquia taxonômica</li>
+            <li>
+              Classificação dos eucariontes
+              <ul>
+                <li>Reino <span lang="la">Fungi</span></li>
+                <li>Reino <span lang="la">Plantae</span></li>
+                <li>Reino <span lang="la">Animalia</span></li>
+              </ul>
+            </li>
+            <li>Classificação dos vírus</li>
+          </ul>
+        </article>
+
+        <article class="secao-site">
+          <h3><a href="celulas.html">Citologia</a></h3>
+          <ul>
+            <li>
+              Células procariontes
+              <ul>
+                <li>Estruturas externas à parede celular</li>
+                <li>
+                  Parede celular procariótica
+                  <ul>
+                    <li>Dano a parede celular</li>
+                  </ul>
+                </li>
+                <li>
+                  Estruturas internas a parede celular
+                  <ul>
+                    <li>Membrana plasmática</li>
+                    <li>Citoplasma</li>
+                    <li>Nucleóide</li>
+                    <li>Ribossomos</li>
+                    <li>Endósporos</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              Células Eucariontes
+              <ul>
+                <li>Estruturas externas à parede celular</li>
+                <li>Parede celular eucariótica</li>
+                <li>
+                  Estruturas internas a parede celular
+                  <ul>
+                    <li>Membrana plasmática</li>
+                    <li>Citoplasma</li>
+                    <li>Ribossomos</li>
+                    <li>Peroxissomos</li>
+                    <li>Retículo Endoplasmático Liso(R.E.L)</li>
+                    <li>Retículo Endoplasmático Rugoso(R.E.R)</li>
+                    <li>Complexo de Golgi:</li>
+                    <li>Lisossomo</li>
+                    <li>Mitocôndria</li>
+                    <li>Centríolos</li>
+                    <li>Cloroplasto</li>
+                    <li>Vacúolo</li>
+                    <li>Núcleo</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </article>
+
+        <article class="secao-site">
+          <h3><a href="procariontes.html">Procariontes: Domínio <span lang="la">Bacteria</span> e <span lang="la">Archaea</span></a></h3>
+          <ul>
+            <li>
+              Domínio <span lang="la">Bacteria</span>
+              <ul>
+                <li>
+                  Tipos
+                  <ul>
+                    <li>Gram-negativas</li>
+                    <li>Gram-positivas</li>
+                  </ul>
+                </li>
+                <li>
+                  Importância das bactérias
+                  <ul>
+                    <li>Mutualismo</li>
+                    <li>Ciclo do nitrogênio</li>
+                    <li>Biorremediação</li>
+                    <li>Bioindicadores</li>
+                    <li>Biotecnologia</li>
+                    <li>Bactérias causadoras de doenças</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>Domínio <span lang="la">Archaea</span></li>
+          </ul>
+        </article>
+
+        <article class="secao-site">
+          <h3><a href="eucariontes.html">Eucariontes: Reino <span lang="la">Protista</span> e <span lang="la">Fungi</span></a></h3>
+          <ul>
+            <li>
+              Reino Protista
+              <ul>
+                <li>
+                  Protozoários
+                  <ul>
+                    <li>Reprodução assexuada</li>
+                    <li>Reprodução sexuada</li>
+                  </ul>
+                </li>
+                <li>
+                  Algas
+                  <ul>
+                    <li>Reprodução assexuada</li>
+                    <li>Reprodução sexuada</li>
+                  </ul>
+                </li>
+                <li>Importância dos seres protistas</li>
+              </ul>
+            </li>
+            <li>
+              Reino <span lang="Fungi">Fungi</span>
+              <ul>
+                <li>Importância dos fungos</li>
+              </ul>
+            </li>
+            <li>Liquens:</li>
+          </ul>
+        </article>
+
+        <article class="secao-site">
+          <h3><a href="virus.html">Vírus</a></h3>
+          <ul>
+            <li>Características gerais</li>
+            <li>Teoria de surgimento dos vírus</li>
+            <li>
+              Estruturas virais:
+              <ul>
+                <li>Ácido nucleico</li>
+                <li>Capsídeo</li>
+                <li>Envelope</li>
+              </ul>
+            </li>
+            <li>Tipos</li>
+            <li>Vírus DNA e vírus RNA</li>
+            <li>Especificidade do hospedeiro</li>
+            <li>Multiplicação viral</li>
+            <li>Viroses</li>
+          </ul>
+        </article>
+
+        <article class="secao-site">
+          <h3><a href="biotec.html">Biotecnologia</a></h3>
+          <ul>
+            <li>Tecnologia do DNA recombinante</li>
+            <li>Visão geral da tecnologia do DNA recombinante</li>
+            <li>Selecionar o DNA desejado</li>
+            <li>Selecionando vetores</li>
+            <li>Inserção de DNA exógeno nas células</li>
+            <li>
+              Obtenção do DNA
+              <ul>
+                <li>Biblioteca de genes</li>
+                <li>DNA sintético</li>
+              </ul>
+            </li>
+            <li>
+              Aplicações da engenharia genética
+              <ul>
+                <li>Aplicações terapêuticas</li>
+                <li>Aplicações na Agricultura</li>
+                <li>Aplicações científicas</li>
+              </ul>
+            </li>
+            <li>Recomendações de vídeos</li>
+          </ul>
+        </article>
+
+        <article class="secao-site">
+          <h3><a href="acessibilidade-site.html">Acessibilidade do site</a></h3>
+          <ul>
+            <li>Atalhos do site</li>
+            <li>Atalhos do Questionário</li>
+            <li>Botões contraste</li>
+            <li>Botões alterar fonte</li>
+            <li>Zoom</li>
+            <li>Menu navegação auxiliar</li>
+            <li>Mapa do site</li>
+            <li>Código fonte</li>
+            <li>Leitores de tela</li>
+          </ul>
+        </article>
+
+        <article class="secao-site">
+          <h3><a href="sobre-projeto.html">Sobre o projeto</a></h3>
+          <ul>
+            <li>Quem somos e qual o objetivo do projeto?</li>
+            <li>Qual o objetivo deste site?</li>
+            <li>Qual o conteúdo do site?</li>
+            <li>Outros projetos</li>
+            <li>O que motivou o projeto?</li>
+          </ul>
+        </article>
+
+        <article class="secao-site">
+          <h3><a href="creditos.html">Créditos</a></h3>
+          <ul>
+            <li>Adaptação dos conteúdos</li>
+            <li>Artistas e fotógrafos</li>
+            <li>Desenvolvedor do site</li>
+            <li>Orientadoras do projeto</li>
+            <li>Questões</li>
+            <li>Referência Bibliográfica</li>
+          </ul>
+        </article>
+      </section>
+    </main>
+
+    <!--========================Rodapé da página=============================-->
+    <footer>
+      <!--=================Envia o usuário de volta ao topo==================-->
+      <section id="volta-topo">
+        <span class="seta-cima" aria-hidden="true"></span><br>
+        <a href="#main-header">Voltar ao topo</a>
+      </section>
+
+      <!--=========================Créditos==================================-->
+      <section id="final-footer">
+        <article>
+          <h2>Criadores:</h2>
+          <ul>
+            <li>Fátima de Cássia</li>
+            <li>Mariana de Lourdes</li>
+            <li>Rubia Souza</li>
+            <li><a href="creditos.html">Agradecimentos especiais</a></li>
+          </ul>
+        </article>
+
+        <section>
+          <h2>Apoio de:</h2>
+          <img src="imgs/logos/CEFET-MG.png" alt="Logo do CEFET de Minas Gerais" title="Centro Federal de Educação Tecnológica de Minas Gerais" class="contribuintes">
+        </section>
+      </section>
+
+      <a href="#menus" class="links-voltar">Voltar ao menu</a>
+      <a href="#conteudo-principal" class="links-voltar">Voltar ao Conteúdo</a>
+
+      <!--==============Nav com atalhos de accesskey da página===============-->
+      <nav class="oculto" aria-hidden="true">
+        <a href="#conteudo-principal" accesskey="1" tabindex="-1" class="oculto"></a>
+        <a href="#menus" accesskey="2" tabindex="-1" class="oculto"></a>
+        <a href="mapa-site.html" accesskey="3" tabindex="-1" class="oculto"></a>
+        <a href="acessibilidade-site.html" accesskey="4" tabindex="-1" class="oculto"></a>
+        <a href="#menu-nav-acessivel" accesskey="5" tabindex="-1" class="oculto"></a>
+      </nav>
+    </footer>
+
+    <!--========================Scripts JS===================================-->
+    <script src="scripts/header-script.js" charset="utf-8"></script>
+    <script src="scripts/bibliotecas/inert-script.js" charset="utf-8"></script>
+    <script src="scripts/responsive-menu-script.js" charset="utf-8"></script>
+    <script src="scripts/acessibilidade-script.js" charset="utf-8"></script>
+  </body>
+</html>

@@ -1,0 +1,212 @@
+/*------------------------------------Geral-----------------------------------*/
+*::selection{
+  background-color: #2B9ACC;
+  color: white;
+}
+
+body{
+  background-color: #333333;
+}
+
+p, a, li, figcaption{
+  color: #CCCCCC;
+}
+
+p{
+  color: #CCCCCC;
+}
+
+a{
+  color: #21AEEF;
+}
+
+a:visited{
+  color: #21AEEF;
+}
+
+figure > img{
+  box-shadow: 0px 2px 2px 0px rgba(12, 12, 12, 0.13);
+}
+
+figcaption{
+  border-top: 1px solid #2992C2;
+}
+
+
+.botao-link:visited{
+  color: white
+}
+
+.botao, .botao-link{
+  background-color: #2992C2;
+  border: 1px solid #2992C2;
+  color: white;
+}
+
+.desabilitado{
+  background-color: #CCCCCC;
+  border: 1px solid #CCCCCC;
+}
+
+.botao:hover, .botao:focus, .botao-link:hover, .botao-link:focus{
+  background-color: #34A2D1;
+  border-color: #34A2D1;
+}
+
+.botao a{
+  color: white;
+}
+
+/*------------------------------------Header----------------------------------*/
+#menus{
+  background-color:rgba(0, 0, 0, 0.7);
+}
+
+#menu-nav-principal, #menu-acessibilidade{
+  background-color: rgba(0, 0, 0, 0.7);
+  box-shadow: 0px 3px 0px 0px rgba(12, 12, 12, 0.13);
+}
+
+#menu-nav-principal a, #menu-acessibilidade li, #menu-esquerda a, #menu-esquerda li{
+  color: white;
+}
+
+#menu-nav-principal a:hover, #menu-nav-principal a:focus, #menu-esquerda a:focus, #menu-esquerda a:hover{
+  color: #21AEEF;
+}
+
+img[src$="imgs/icons/quadrado-preto.png"], img[src$="imgs/icons/quadrado-branco.png"]{
+  border: 1px solid #2B2B2B;
+}
+
+.botao-fonte{
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+}
+
+.botao-fonte:hover, .botao-fonte:focus{
+  background-color: white;
+  color: black;
+}
+
+/*---Menu-nav-acessivel */
+#menu-nav-acessivel{
+  background-color: #2B9ACC;
+}
+
+#menu-nav-acessivel a{
+  color: #D8D8D0;
+}
+
+#menu-nav-acessivel ul li{
+  border-left: 1px solid #2185AF;
+}
+
+/*---Estilizando img e logo */
+#imagem-logo > span > h1{
+  color: #D8D8D0;
+}
+
+#imagem-logo{
+  border-top: 1px solid #2B2B2B;
+  border-bottom: 1px solid #2B2B2B;
+}
+
+#imagem-logo > span{
+  background-color: rgba(11, 11, 11, 0.6);
+}
+
+/*------------------------------------Main------------------------------------*/
+
+main{
+  background-color: #262626;
+  border-right: 1px solid #2B2B2B;
+  border-left: 1px solid #2B2B2B;
+  box-shadow: 4px 4px 5px 0px rgba(12,12,12,1);
+}
+
+main h2{
+  background-color: #2992C2; /*#9BCE07*/
+  color: #E4FBF6;
+}
+
+main h3, main h4{
+  color: #E4FBF6;
+}
+
+main h5{
+  color: #D0D8D6;
+}
+
+/*-----------------------------------Footer-----------------------------------*/
+footer{
+  background-color: #171717;
+}
+
+.seta-cima{ /* Gera a seta para cima, na parte de voltar ao topo no footer */
+  border-color: #21AEEF; /* indica a cor da seta */
+}
+
+#volta-topo a{
+  color: white;
+}
+
+#volta-topo{
+  background-color: #262626;
+  border-top: 12px solid #171717;
+}
+
+#final-footer{
+  background-color: #171717;
+}
+
+#final-footer h2{
+  color: #21AEEF;
+  border-bottom: 2px solid #CCCCCC;
+}
+
+#final-footer li{
+  color: #CCCCCC;
+}
+
+#final-footer a{
+  color: #21AEEF;
+}
+
+.links-voltar{
+  color: #474747;
+}
+
+.links-voltar:visited{
+  color: #474747;
+}
+
+/*--------------------------Páginas Específicas-------------------------------*/
+
+/*--- Index*/
+#playerStatus{
+  background-color: #131313;
+}
+
+#playerStatus > a{
+  background-color: #2992C2;
+  color: #E4FBF6;
+}
+
+#playerStatus p{
+  color: #E4FBF6;
+}
+
+/*--- Estilizando a barra de progresso*/
+#barra-progresso{
+  background-color: #CCCCCC;
+}
+
+#barra-progresso > div{
+  background-color: #2992C2;
+}
+
+#barra-progresso > div > p{
+  color: #FEFEFE;
+}

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-BR" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Rubia Souza">
+    <meta name="keywords" content="acessibilidade,leitor de tela,screen reader,biologia,vírus,célula,bactéria,fungo,célula animal,célula vegetal,microbiologia,escola,deficientes,ensino,baixa visão,CEFET,CEFET MG,iniciação científica,deficiente visual,estudo">
+    <meta name="description" content="Conteudo de microbiologia dispinível a todos dando foco à acessibilidade de deficientes na web">
+
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Lobster+Two|Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main-style.css">
+    <link rel="stylesheet" href="styles/cores-style.css">
+    <link rel="stylesheet" href="styles/medias-style.css">
+    <link rel="shortcut icon" type="image/png" href="imgs/icons/favicon.png">
+    <title>Créditos</title>
+  </head>
+  <body>
+    <header id="main-header">
+      <!--============Nav para agilizar a navegação pelo teclado=============-->
+      <nav id="menu-nav-acessivel" class="sobe-menu-nav-acessivel">
+        <ul>
+          <li><a href="#conteudo-principal" class="itens-menu-acessivel">Ir para o conteúdo da página<sup aria-hidden="true">[1]</sup><span class="texto-escondido">, atalho: alt + 1</span></a></li>
+          <li><a href="#menus" class="itens-menu-acessivel">Ir para o menu<sup aria-hidden="true">[2]</sup><span class="texto-escondido">, atalho: alt + 2</span></a></li>
+          <li><a href="mapa-site.html" class="itens-menu-acessivel">Ir para o mapa do site<sup aria-hidden="true">[3]</sup><span class="texto-escondido">, atalho: alt + 3</span></a></li>
+        </ul>
+      </nav>
+
+      <section id="menus">
+        <!--=========Menu principal com links para regiões do site===========-->
+        <nav id="menu-nav-principal">
+          <ul>
+            <li><a href="index.html">Página inicial</a></li>
+            <li><a href="mapa-site.html">Mapa do site<sup aria-hidden="true">[3]</sup><span class="texto-escondido">, atalho: alt + 3</span></a></li>
+            <li><a href="sobre-projeto.html">Sobre o projeto</a></li>
+            <li><a href="acessibilidade-site.html">Acessibilidade do site<sup aria-hidden="true">[4]</sup><span class="texto-escondido">, atalho: alt + 4</span></a></li>
+          </ul>
+        </nav>
+
+        <!--========Menu com opções para deixar o site mais acessivel========-->
+        <section id="menu-acessibilidade">
+          <ul>
+            <li aria-hidden="true">Contraste</li>
+            <li><button class="botao-contraste botao-imgs" data-contraste="negativo" aria-label="Mudar as cores da página para as escuras"><img src="imgs/icons/quadrado-preto.png" title="Mudar as cores da página para as escuras" alt="Mudar as cores da página para as escuras" class="img-contraste"></button></li>
+            <li><button class="botao-contraste botao-imgs" data-contraste="padrao" aria-label="Mudar as cores da página para as padrões"><img src="imgs/icons/quadrado-branco.png" title="Mudar as cores da página para as padrões" alt="Mudar as cores da página para as padrões" class="img-contraste"></button></li>
+            <li aria-hidden="true">Fonte</li>
+            <li><button class="botao-fonte" data-fonte="+" aria-label="Aumentar a fonte"><span aria-hidden="true">A+</span></button></li>
+            <li><button class="botao-fonte" data-fonte="0" aria-label="Voltar a fonte padrão"><span aria-hidden="true">A°</span></button></li>
+            <li><button class="botao-fonte" data-fonte="-" aria-label="Diminuir a fonte"><span aria-hidden="true">A-</span></button></li>
+          </ul>
+        </section>
+
+        <!--======================Responsive Menu============================-->
+        <section id="menu-responsive">
+          <button id="botao-hamburguer"><img src="imgs/icons/burguer-menu.png" title="Abrir o menu do site" class="img-hamburguer contraste-altera-img"></button>
+          <img src="imgs/icons/virus.png" alt="Um vírus, que é a logo do site." class="img-virus-responsive contraste-altera-img" aria-hidden="true">
+        </section>
+      </section>
+
+      <!--=============Div abaixo dos menus com a logo do site===============-->
+      <section id="imagem-logo">
+        <span><h1>Microbiologia para Todos</h1></span>
+      </section>
+    </header>
+
+    <aside id="menu-esquerda-group">
+      <section id="menu-esquerda" class="some-menu">
+        <button id="botao-fecha-menu" class="botao-imgs"><img src="imgs/icons/fecha-menu.png" alt="Fechar o menu" title="Fechar o menu" id="img-fecha-menu" class="contraste-altera-img"></button>
+        <img src="imgs/icons/virus.png" alt="Um vírus, que é a logo do site." aria-hidden="true" class="contraste-altera-img">
+        <ul>
+          <li><a href="index.html">Página inicial</a></li>
+          <li><a href="mapa-site.html">Mapa do site</a></li>
+          <li><a href="sobre-projeto.html">Sobre o projeto</a></li>
+          <li><a href="acessibilidade-site.html">Acessibilidade do site</a></li>
+        </ul>
+        <section>
+          <ul>
+            <li aria-hidden="true">Contraste</li>
+            <li><button class="botao-contraste botao-imgs" data-contraste="negativo" aria-label="Mudar as cores da página para as escuras"><img src="imgs/icons/quadrado-preto.png" title="Mudar as cores da página para as escuras" alt="Mudar as cores da página para as escuras" class="img-contraste"></button></li>
+            <li><button class="botao-contraste botao-imgs" data-contraste="padrao" aria-label="Mudar as cores da página para as padrões"><img src="imgs/icons/quadrado-branco.png" title="Mudar as cores da página para as padrões" alt="Mudar as cores da página para as padrões" class="img-contraste"></button></li>
+          </ul>
+          <ul>
+            <li aria-hidden="true">Fonte</li>
+            <li><button class="botao-fonte" data-fonte="+" aria-label="Aumentar a fonte"><span aria-hidden="true">A+</span></button></li>
+            <li><button class="botao-fonte" data-fonte="0" aria-label="Voltar a fonte padrão"><span aria-hidden="true">A°</span></button></li>
+            <li><button class="botao-fonte" data-fonte="-" aria-label="Diminuir a fonte"><span aria-hidden="true">A-</span></button></li>
+          </ul>
+        </section>
+      </section>
+      <div id="div-modal" class="some-div-modal" aria-hidden="true"></div>
+    </aside>
+
+    <!--===================Conteudo principal da página======================-->
+    <main id="conteudo-principal">
+      <p class="local-site"><strong>Você está em:</strong> <a href="index.html">Página inicial</a> > créditos.</p>
+      <h2>Créditos</h2>
+      <section class="topico">
+        <h3>Adaptação dos conteúdos</h3>
+        <p>Rubia Souza Moreira de Souza.</p>
+      </section>
+      <section class="topico">
+        <h3>Artistas e fotógrafos</h3>
+        <ul>
+          <li><a href="https://unsplash.com/@andyc">Andy Chilton</a>.</li>
+          <li><a href="https://pixabay.com/pt/users/chezbeate-1519166/">Chezbeate</a>.</li>
+          <li><a href="https://pixabay.com/pt/users/ejaugsburg-148268/">Ejaugsburg</a>.</li>
+          <li><a href="https://www.freepik.com/">Freepik</a> de <a href="https://www.flaticon.com/ ">Flaticon</a>.</li>
+          <li><a href="https://www.pexels.com/@kaiquestr">Kaique Rocha</a>.</li>
+          <li><a href="https://unsplash.com/@zeldygirl">Madison Grooms</a>.</li>
+          <li><a href="https://www.pexels.com/@matej-117839">Matej</a>.</li>
+          <li><a href="https://www.pexels.com/@pixabay">Pixabay</a>.</li>
+        </ul>
+      </section>
+      <section class="topico">
+        <h3>Desenvolvedor do site</h3>
+        <p>Rubia Souza Moreira de Souza.</p>
+      </section>
+      <section class="topico">
+        <h3>Orientadoras do projeto</h3>
+        <ul>
+          <li>Fátima de Cássia Oliveira Gomes</li>
+          <li>Mariana de Lourdes Almeida Vieira</li>
+        </ul>
+      </section>
+      <section class="topico">
+        <h3>Questões</h3>
+        <p>Todas as questões utilizadas no questionário foram retiradas de vestibulares ou sites. Cada questão tem seu crédito ao respectivo desenvolvedor.</p>
+      </section>
+      <section class="topico">
+        <h3>Referência Bibliográfica</h3>
+        <p>MICROBIOLOGIA 10ª edição, por Gerard J. Tortora, Berdell R. Funke e Christine L. Case.</p>
+      </section>
+    </main>
+
+    <!--========================Rodapé da página=============================-->
+    <footer>
+      <!--=================Envia o usuário de volta ao topo==================-->
+      <section id="volta-topo">
+        <span class="seta-cima" aria-hidden="true"></span><br>
+        <a href="#main-header">Voltar ao topo</a>
+      </section>
+
+      <!--=========================Créditos==================================-->
+      <section id="final-footer">
+        <article>
+          <h2>Criadores:</h2>
+          <ul>
+            <li>Fátima de Cássia</li>
+            <li>Mariana de Lourdes</li>
+            <li>Rubia Souza</li>
+            <li><a href="creditos.html">Agradecimentos especiais</a></li>
+          </ul>
+        </article>
+
+        <section>
+          <h2>Apoio de:</h2>
+          <img src="imgs/logos/CEFET-MG.png" alt="Logo do CEFET de Minas Gerais" title="Centro Federal de Educação Tecnológica de Minas Gerais" class="contribuintes">
+        </section>
+      </section>
+
+      <a href="#menus" class="links-voltar">Voltar ao menu</a>
+      <a href="#conteudo-principal" class="links-voltar">Voltar ao Conteúdo</a>
+
+      <!--==============Nav com atalhos de accesskey da página===============-->
+      <nav class="oculto" aria-hidden="true">
+        <a href="#conteudo-principal" accesskey="1" tabindex="-1" class="oculto"></a>
+        <a href="#menus" accesskey="2" tabindex="-1" class="oculto"></a>
+        <a href="mapa-site.html" accesskey="3" tabindex="-1" class="oculto"></a>
+        <a href="acessibilidade-site.html" accesskey="4" tabindex="-1" class="oculto"></a>
+        <a href="#menu-nav-acessivel" accesskey="5" tabindex="-1" class="oculto"></a>
+      </nav>
+    </footer>
+
+    <!--========================Scripts JS===================================-->
+    <script src="scripts/header-script.js" charset="utf-8"></script>
+    <script src="scripts/bibliotecas/inert-script.js" charset="utf-8"></script>
+    <script src="scripts/responsive-menu-script.js" charset="utf-8"></script>
+    <script src="scripts/acessibilidade-script.js" charset="utf-8"></script>
+  </body>
+</html>

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="pt-BR" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Rubia Souza">
+    <meta name="keywords" content="acessibilidade,leitor de tela,screen reader,biologia,vírus,célula,bactéria,fungo,célula animal,célula vegetal,microbiologia,escola,deficientes,ensino,baixa visão,CEFET,CEFET MG,iniciação científica,deficiente visual,estudo">
+    <meta name="description" content="Conteudo de microbiologia dispinível a todos dando foco à acessibilidade de deficientes na web">
+
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Lobster+Two|Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main-style.css">
+    <link rel="stylesheet" href="styles/cores-style.css">
+    <link rel="stylesheet" href="styles/sobre-projeto-style.css">
+    <link rel="stylesheet" href="styles/medias-style.css">
+    <link rel="shortcut icon" type="image/png" href="imgs/icons/favicon.png">
+    <title>Sobre o Projeto</title>
+  </head>
+  <body>
+    <header id="main-header">
+      <!--============Nav para agilizar a navegação pelo teclado=============-->
+      <nav id="menu-nav-acessivel" class="sobe-menu-nav-acessivel">
+        <ul>
+          <li><a href="#conteudo-principal" class="itens-menu-acessivel">Ir para o conteúdo da página<sup aria-hidden="true">[1]</sup><span class="texto-escondido">, atalho: alt + 1</span></a></li>
+          <li><a href="#menus" class="itens-menu-acessivel">Ir para o menu<sup aria-hidden="true">[2]</sup><span class="texto-escondido">, atalho: alt + 2</span></a></li>
+          <li><a href="mapa-site.html" class="itens-menu-acessivel">Ir para o mapa do site<sup aria-hidden="true">[3]</sup><span class="texto-escondido">, atalho: alt + 3</span></a></li>
+        </ul>
+      </nav>
+
+      <section id="menus">
+        <!--=========Menu principal com links para regiões do site===========-->
+        <nav id="menu-nav-principal">
+          <ul>
+            <li><a href="index.html">Página inicial</a></li>
+            <li><a href="mapa-site.html">Mapa do site<sup aria-hidden="true">[3]</sup><span class="texto-escondido">, atalho: alt + 3</span></a></li>
+            <li><a href="sobre-projeto.html">Sobre o projeto</a></li>
+            <li><a href="acessibilidade-site.html">Acessibilidade do site<sup aria-hidden="true">[4]</sup><span class="texto-escondido">, atalho: alt + 4</span></a></li>
+          </ul>
+        </nav>
+
+        <!--========Menu com opções para deixar o site mais acessivel========-->
+        <section id="menu-acessibilidade">
+          <ul>
+            <li aria-hidden="true">Contraste</li>
+            <li><button class="botao-contraste botao-imgs" data-contraste="negativo" aria-label="Mudar as cores da página para as escuras"><img src="imgs/icons/quadrado-preto.png" title="Mudar as cores da página para as escuras" alt="Mudar as cores da página para as escuras" class="img-contraste"></button></li>
+            <li><button class="botao-contraste botao-imgs" data-contraste="padrao" aria-label="Mudar as cores da página para as padrões"><img src="imgs/icons/quadrado-branco.png" title="Mudar as cores da página para as padrões" alt="Mudar as cores da página para as padrões" class="img-contraste"></button></li>
+            <li aria-hidden="true">Fonte</li>
+            <li><button class="botao-fonte" data-fonte="+" aria-label="Aumentar a fonte"><span aria-hidden="true">A+</span></button></li>
+            <li><button class="botao-fonte" data-fonte="0" aria-label="Voltar a fonte padrão"><span aria-hidden="true">A°</span></button></li>
+            <li><button class="botao-fonte" data-fonte="-" aria-label="Diminuir a fonte"><span aria-hidden="true">A-</span></button></li>
+          </ul>
+        </section>
+
+        <!--======================Responsive Menu============================-->
+        <section id="menu-responsive">
+          <button id="botao-hamburguer"><img src="imgs/icons/burguer-menu.png" title="Abrir o menu do site" class="img-hamburguer contraste-altera-img"></button>
+          <img src="imgs/icons/virus.png" alt="Um vírus, que é a logo do site." class="img-virus-responsive contraste-altera-img" aria-hidden="true">
+        </section>
+      </section>
+
+      <!--=============Div abaixo dos menus com a logo do site===============-->
+      <section id="imagem-logo">
+        <span><h1>Microbiologia para Todos</h1></span>
+      </section>
+    </header>
+
+    <aside id="menu-esquerda-group">
+      <section id="menu-esquerda" class="some-menu">
+        <button id="botao-fecha-menu" class="botao-imgs"><img src="imgs/icons/fecha-menu.png" alt="Fechar o menu" title="Fechar o menu" id="img-fecha-menu" class="contraste-altera-img"></button>
+        <img src="imgs/icons/virus.png" alt="Um vírus, que é a logo do site." aria-hidden="true" class="contraste-altera-img">
+        <ul>
+          <li><a href="index.html">Página inicial</a></li>
+          <li><a href="mapa-site.html">Mapa do site</a></li>
+          <li><a href="sobre-projeto.html">Sobre o projeto</a></li>
+          <li><a href="acessibilidade-site.html">Acessibilidade do site</a></li>
+        </ul>
+        <section>
+          <ul>
+            <li aria-hidden="true">Contraste</li>
+            <li><button class="botao-contraste botao-imgs" data-contraste="negativo" aria-label="Mudar as cores da página para as escuras"><img src="imgs/icons/quadrado-preto.png" title="Mudar as cores da página para as escuras" alt="Mudar as cores da página para as escuras" class="img-contraste"></button></li>
+            <li><button class="botao-contraste botao-imgs" data-contraste="padrao" aria-label="Mudar as cores da página para as padrões"><img src="imgs/icons/quadrado-branco.png" title="Mudar as cores da página para as padrões" alt="Mudar as cores da página para as padrões" class="img-contraste"></button></li>
+          </ul>
+          <ul>
+            <li aria-hidden="true">Fonte</li>
+            <li><button class="botao-fonte" data-fonte="+" aria-label="Aumentar a fonte"><span aria-hidden="true">A+</span></button></li>
+            <li><button class="botao-fonte" data-fonte="0" aria-label="Voltar a fonte padrão"><span aria-hidden="true">A°</span></button></li>
+            <li><button class="botao-fonte" data-fonte="-" aria-label="Diminuir a fonte"><span aria-hidden="true">A-</span></button></li>
+          </ul>
+        </section>
+      </section>
+      <div id="div-modal" class="some-div-modal" aria-hidden="true"></div>
+    </aside>
+
+    <!--===================Conteudo principal da página======================-->
+    <main id="conteudo-principal">
+      <p class="local-site"><strong>Você está em:</strong> <a href="index.html">Página inicial</a> > sobre o projeto.</p>
+      <h2>Sobre o Projeto</h2>
+      <section class="topico">
+        <h3>Quem somos e qual o objetivo do projeto?</h3>
+        <p>
+          Nós somos um projeto de pesquisa da escola CEFET de Minas Gerais.
+          E devido às dificuldades associadas ao processo de ensino-aprendizagem
+          de Ciências, que geralmente ocorrem por causa do aspecto abstrato da
+          área e é intensificado quando os alunos apresentam algum tipo de
+          deficiência principalmente a visual, já que diversos conteúdos estão
+          relacionados a essa percepção, o nosso projeto propõe-se a desenvolver
+          recursos didáticos para suprir a escassez destes no âmbito escolar e
+          gerar um ensino mais inclusivo.
+        </p>
+      </section>
+
+      <section class="topico">
+        <h3>Qual o objetivo deste site?</h3>
+        <p>
+          O site busca agir nos mesmos objetivos citados anteriormente,
+          disponibilizando o conteúdo de microbiologia virtualmente, assim sendo
+          um recurso de custo praticamente 0 e fácil reprodutibilidade e acesso
+          por conta de qualquer escola. Além disso, toda sua estrutura, código
+          fonte, design e funcionalidades foram criadas para que tanto alunos
+          videntes, quanto alunos com baixa visão ou cegos, que utilizam leitores
+          de tela, possam ter acesso e utilizar o conteúdo do site. Todos os
+          recursos de acessibilidade que o site implementa estão descritos na
+          página <a href="acessibilidade-site.html">acessibilidade do site</a>
+          e estão de acordo com as diretrizes do Modelo de Acessibilidade em
+          Governo Eletrônico Versão 3.1 e com as normas da W3C.
+        </p>
+      </section>
+
+      <section class="topico">
+        <h3>Qual o conteúdo do site?</h3>
+        <p>O site se foca na área da microbiologia abordando os assuntos:</p>
+        <ul>
+          <li><a href="taxonomia.html">Taxonomia</a></li>
+          <li><a href="celulas.html">Citologia</a></li>
+          <li><a href="procariontes.html">Procariontes: Domínio <span lang="la">Bacteria</span> e <span lang="la">Archaea</span></a></li>
+          <li><a href="eucariontes.html">Eucariotos: Domínio <span lang="la">Eukarya</span></a></li>
+          <li><a href="virus.html">Vírus</a></li>
+          <li><a href="biotec.html">Biotecnologia</a></li>
+        </ul>
+        <p>
+          Para verificar mais detalhadamente os conteúdos abordados pelo
+          site basta ir em: <a href="index.html">Matéria de biologia</a>.
+        </p>
+      </section>
+
+      <section class="topico">
+        <h3>Outros projetos</h3>
+        <p>
+          Outras partes do projeto foram a elaboração e desenvolvimento de modelos
+          3D que podem ser reproduzidos por meio de impressoras 3D.
+        </p>
+
+        <section class="topico" id="galeria-modelos">
+          <figure>
+            <img src="imgs/imgs-materia/modelo-6.jpeg" alt="">
+            <figcaption>Imagem 1, Todos os modelos</a></figcaption>
+          </figure>
+          <figure>
+            <img src="imgs/imgs-materia/modelo-2.jpeg" alt="">
+            <figcaption>Imagem 2, Bacteriófago</a></figcaption>
+          </figure>
+          <figure>
+            <img src="imgs/imgs-materia/modelo-5.jpeg" alt="">
+            <figcaption>Imagem 3, Célula animal</a></figcaption>
+          </figure>
+          <figure>
+            <img src="imgs/imgs-materia/modelo-4.jpeg" alt="">
+            <figcaption>Imagem 4, Célula vegetal</a></figcaption>
+          </figure>
+          <figure>
+            <img src="imgs/imgs-materia/modelo-3.jpeg" alt="">
+            <figcaption>Imagem 5, Parede celular</a></figcaption>
+          </figure>
+          <figure>
+            <img src="imgs/imgs-materia/modelo-1.jpeg" alt="">
+            <figcaption>Imagem 6, Vírus parasita</a></figcaption>
+          </figure>
+          <figure>
+            <img src="imgs/imgs-materia/modelo-7.jpeg" alt="">
+            <figcaption>Imagem 7, Modelos de cima</a></figcaption>
+          </figure>
+        </section>
+
+        <p>
+          Os modelos foram construídos com diferentes texturas, para que o
+          deficiente visual consiga diferenciar as seções da célula a partir do
+          tato. E com diferentes contrastes de cores, para que os alunos com baixa
+          visão também diferencie as regiões dos modelos.
+        </p>
+
+        <p>
+          Os modelos passaram por testes e relatos de alunos que possuem alguma
+          deficiência visual para sua validação e aprimoramento. Assim, os modelos
+          chegaram não somente a atender alunos cegos e de baixa visão como também
+          auxiliou no ensino de alunos videntes.
+        </p>
+      </section>
+
+      <section class="topico">
+        <h3>O que motivou o projeto?</h3>
+
+        <p>Uma série de fatores levaram ao estímulo do projeto.</p>
+
+        <p>
+          Como dito anteriormente, um fator fundamental são as dificuldades do ensino do
+          conteúdo de Ciências por ser muito abstrato e que se basea muito
+          nas percepções visuais.
+        </p>
+
+        <p>
+          Outro fator, é que com a reserva de vagas para
+          pessoas deficientes visuais nos cursos técnicos do CEFET-MG e em outras
+          instituições de ensino, elas devem maximizar o desenvolvimento acadêmico
+          e social dos estudantes com deficiência, tomando ações como a adoção de
+          práticas pedagógicas inclusivas e o desenvolvimento de materiais didáticos
+          e de tecnologias assistivas(como este site) a esse público. Mas muitas
+          escolas brasileiras não conseguem oferecer a inclusão necessária ou
+          até mesmo a infra-estrutura básica.
+        </p>
+      </section>
+    </main>
+
+    <!--========================Rodapé da página=============================-->
+    <footer>
+      <!--=================Envia o usuário de volta ao topo==================-->
+      <section id="volta-topo">
+        <span class="seta-cima" aria-hidden="true"></span><br>
+        <a href="#main-header">Voltar ao topo</a>
+      </section>
+
+      <!--=========================Créditos==================================-->
+      <section id="final-footer">
+        <article>
+          <h2>Criadores:</h2>
+          <ul>
+            <li>Fátima de Cássia</li>
+            <li>Mariana de Lourdes</li>
+            <li>Rubia Souza</li>
+            <li><a href="creditos.html">Agradecimentos especiais</a></li>
+          </ul>
+        </article>
+
+        <section>
+          <h2>Apoio de:</h2>
+          <img src="imgs/logos/CEFET-MG.png" alt="Logo do CEFET de Minas Gerais" title="Centro Federal de Educação Tecnológica de Minas Gerais" class="contribuintes">
+        </section>
+      </section>
+
+      <a href="#menus" class="links-voltar">Voltar ao menu</a>
+      <a href="#conteudo-principal" class="links-voltar">Voltar ao Conteúdo</a>
+
+      <!--==============Nav com atalhos de accesskey da página===============-->
+      <nav class="oculto" aria-hidden="true">
+        <a href="#conteudo-principal" accesskey="1" tabindex="-1" class="oculto"></a>
+        <a href="#menus" accesskey="2" tabindex="-1" class="oculto"></a>
+        <a href="mapa-site.html" accesskey="3" tabindex="-1" class="oculto"></a>
+        <a href="acessibilidade-site.html" accesskey="4" tabindex="-1" class="oculto"></a>
+        <a href="#menu-nav-acessivel" accesskey="5" tabindex="-1" class="oculto"></a>
+      </nav>
+    </footer>
+
+    <!--========================Scripts JS===================================-->
+    <script src="scripts/header-script.js" charset="utf-8"></script>
+    <script src="scripts/bibliotecas/inert-script.js" charset="utf-8"></script>
+    <script src="scripts/responsive-menu-script.js" charset="utf-8"></script>
+    <script src="scripts/acessibilidade-script.js" charset="utf-8"></script>
+  </body>
+</html>

@@ -1,0 +1,216 @@
+*::selection{
+  background-color: #759B05; /* #212121 #ACD631 */
+  color: white;
+}
+
+body{
+  background-color: #E6E6DC;
+}
+
+p, a, li, figcaption{
+  color: #515151;
+}
+
+p{
+  color: #515151;
+}
+
+a{
+  color: #769E11;
+}
+
+a:visited{
+  color: #769E11;
+}
+
+figure > img{
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.16);
+}
+
+figcaption{
+  border-top: 1px solid #769E11;
+}
+
+.botao-link:visited{
+  color: white
+}
+
+.botao, .botao-link{
+  background-color: #7AA311;
+  border: 1px solid #7AA311;
+  color: white;
+}
+
+.desabilitado{
+  background-color: #262626;
+  border: 1px solid #262626;
+}
+
+.botao:hover, .botao:focus, .botao-link:hover, .botao-link:focus{
+  background-color: #8EBA0D;
+  border-color: #8EBA0D;
+}
+
+.botao a{
+  color: white;
+}
+/*------------------------------------Header----------------------------------*/
+#menus{
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+#menu-nav-principal, #menu-acessibilidade{
+  background-color: rgba(255, 255, 255, 0.74);
+  box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.13);
+}
+
+#menu-nav-principal a, #menu-acessibilidade li, #menu-esquerda a, #menu-esquerda li{
+  color: #212121;
+}
+
+#menu-nav-principal a:hover, #menu-nav-principal a:focus, #menu-esquerda a:hover, #menu-esquerda a:focus{
+  color: #769E11;
+}
+
+.botao-fonte{
+  background-color: transparent;
+  border: 1px solid black;
+  color: black;
+}
+
+.botao-fonte:hover, .botao-fonte:focus{
+  background-color: black;
+  color: white;
+}
+
+.img-contraste{
+  border: 1px solid black;
+}
+
+/*---Menu-nav-acessivel */
+#menu-nav-acessivel{
+  background-color: #769E11;
+  border: 1px solid #729910;
+  border-top: none;
+}
+
+#menu-nav-acessivel ul li{
+  border-left: 1px solid #62840b;
+}
+
+#menu-nav-acessivel a{
+  color: white;
+}
+
+/*---Estilizando img e logo */
+#imagem-logo > span > h1{
+  color: white;
+}
+
+#imagem-logo{
+  border-top: 1px solid #666160;
+  border-bottom: 1px solid #666160;
+}
+
+#imagem-logo > span{
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/*------------------------------------Main------------------------------------*/
+
+main{
+  background-color: #FFFFFF;
+  border-right: 1px solid #E5E5E5;
+  border-left: 1px solid #E5E5E5;
+  box-shadow: 4px 4px 5px 0px rgba(214, 214, 214, 1);
+}
+
+main h2{
+  background-color: #769E11; /*#9BCE07 #85AF07*/
+  color: #E4FBF6;
+}
+
+main h3, main h4{
+  color: #070707;
+}
+
+main h5{
+  color: #333030;
+}
+
+/*-----------------------------------Footer-----------------------------------*/
+footer{
+  background-color: #171717;
+}
+
+.seta-cima{ /* Gera a seta para cima, na parte de voltar ao topo no footer */
+  border-color: #769E11; /* indica a cor da seta */
+}
+
+#volta-topo a{
+  color: white; /* antes: #81AD13 */
+}
+
+#volta-topo{
+  background-color: #222222;
+  border-top: 12px solid #171717;
+}
+
+#final-footer{
+  background-color: #171717;
+}
+
+#final-footer h2{
+  color: #9BCE07;
+  border-bottom: 2px solid white;
+}
+
+#final-footer li{
+  color: white;
+}
+
+#final-footer a{
+  color: #9BCE07;
+}
+
+.links-voltar{
+  color: #474747;
+}
+
+.links-voltar:visited{
+  color: #474747;
+}
+
+img[src$="imgs/logos/CEFET-MG.png"]{
+  background-color: white;
+  border: 1px solid white;
+}
+
+/*--------------------------Páginas Específicas-------------------------------*/
+
+/*--- Index*/
+#playerStatus{
+  background-color: #131313;
+}
+
+#playerStatus > a{
+  background-color: #769E11;
+  color: #E4FBF6;
+}
+
+#playerStatus p{
+  color: #E4FBF6;
+}
+
+/*--- Estilizando a barra de progresso*/
+#barra-progresso{
+  background-color: #222222;
+}
+
+#barra-progresso > div{
+  background-color: #769E11;
+}
+
+#barra-progresso > div > p{
+  color: white;
+}

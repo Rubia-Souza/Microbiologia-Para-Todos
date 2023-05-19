@@ -1,0 +1,121 @@
+::selection{
+  background-color: #2B9ACC;
+  color: white;
+}
+
+body{
+  color: #E4FBF6;
+  background-color: #191919;
+}
+
+main > section:last-of-type{
+  border-top: 1px solid #D4D4D4;
+}
+
+main > h1{
+  color: #E4FBF6;
+  border-bottom: 1px solid #D4D4D4;
+}
+
+main > .questao > section > label{
+  border: 1px solid #D4D4D4;
+  box-shadow: 4px 4px 5px 0px rgba(12,12,12,1);
+}
+
+main > .questao > section > label:hover, main > .questao > section > label:focus-within{
+  background-color: white;
+  color: black;
+}
+
+main > section:last-of-type > button{
+  color: white;
+}
+
+main > section:last-of-type > #pular-btn{
+  background-color: #D80027;
+}
+
+main > section:last-of-type > button > img{
+  background-color: white;
+}
+
+main > section:last-of-type > #confirmar-btn{
+  background-color: #769E11;
+}
+
+main > section:last-of-type > #confirmar-btn:disabled, main > section:last-of-type > #pular-btn:disabled{
+  background-color: #808080;
+}
+/*------------------------Quiz completo style---------------------------------*/
+
+.main-final > ul > li{
+  color: #FEFEFE;
+}
+
+.botao-link{
+  border: none;
+  background-color: #0B7096;
+  color: white;
+}
+
+.botao-link:hover, .botao-link:focus{
+  background-color: #34A2D1;
+  border-color: #34A2D1;
+}
+
+.botao-link:visited{
+  color: white;
+}
+
+
+.acerto{
+  background-color: #0B7096;
+}
+
+.erro{
+  background-color: #AA2E2C;
+}
+
+#barra-progresso{
+  background-color: #E2E2E2;
+  width: 100%;
+}
+
+#barra-progresso > div{
+  background-color: #0B7096;
+}
+
+#barra-progresso > div > p{
+  color: #FEFEFE;
+}
+/*----------------------------------------------------------------------------*/
+#menu-acessibilidade{
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+#menu-acessibilidade > button{
+  background-color: transparent;
+}
+
+#menu-acessibilidade li{
+  color: black;
+}
+
+.botao-contraste{
+  background-color: transparent;
+}
+
+.botao-fonte{
+  background-color: transparent;
+  border: 1px solid black;
+  color: black;
+}
+
+.botao-fonte:hover, .botao-fonte:focus{
+  background-color: black;
+  color: white;
+}
+
+img[src$="imgs/icons/quadrado-branco.png"]{
+  border: 1px solid #2B2B2B;
+}

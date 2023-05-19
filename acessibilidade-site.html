@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pt-BR" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Rubia Souza">
+    <meta name="keywords" content="acessibilidade,leitor de tela,screen reader,biologia,vírus,célula,bactéria,fungo,célula animal,célula vegetal,microbiologia,escola,deficientes,ensino,baixa visão,CEFET,CEFET MG,iniciação científica,deficiente visual,estudo">
+    <meta name="description" content="Conteudo de microbiologia dispinível a todos dando foco à acessibilidade de deficientes na web">
+
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Lobster+Two|Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main-style.css">
+    <link rel="stylesheet" href="styles/cores-style.css">
+    <link rel="stylesheet" href="styles/medias-style.css">
+    <link rel="shortcut icon" type="image/png" href="imgs/icons/favicon.png">
+    <title>Acessibilidade do site</title>
+  </head>
+  <body>
+    <header id="main-header">
+      <!--============Nav para agilizar a navegação pelo teclado=============-->
+      <nav id="menu-nav-acessivel" class="sobe-menu-nav-acessivel">
+        <ul>
+          <li><a href="#conteudo-principal" class="itens-menu-acessivel">Ir para o conteúdo da página<sup aria-hidden="true">[1]</sup><span class="texto-escondido">, atalho: alt + 1</span></a></li>
+          <li><a href="#menus" class="itens-menu-acessivel">Ir para o menu<sup aria-hidden="true">[2]</sup><span class="texto-escondido">, atalho: alt + 2</span></a></li>
+          <li><a href="mapa-site.html" class="itens-menu-acessivel">Ir para o mapa do site<sup aria-hidden="true">[3]</sup><span class="texto-escondido">, atalho: alt + 3</span></a></li>
+        </ul>
+      </nav>
+
+      <section id="menus">
+        <!--=========Menu principal com links para regiões do site===========-->
+        <nav id="menu-nav-principal">
+          <ul>
+            <li><a href="index.html">Página inicial</a></li>
+            <li><a href="mapa-site.html">Mapa do site<sup aria-hidden="true">[3]</sup><span class="texto-escondido">, atalho: alt + 3</span></a></li>
+            <li><a href="sobre-projeto.html">Sobre o projeto</a></li>
+            <li><a href="acessibilidade-site.html">Acessibilidade do site<sup aria-hidden="true">[4]</sup><span class="texto-escondido">, atalho: alt + 4</span></a></li>
+          </ul>
+        </nav>
+
+        <!--========Menu com opções para deixar o site mais acessivel========-->
+        <section id="menu-acessibilidade">
+          <ul>
+            <li aria-hidden="true">Contraste</li>
+            <li><button class="botao-contraste botao-imgs" data-contraste="negativo" aria-label="Mudar as cores da página para as escuras"><img src="imgs/icons/quadrado-preto.png" title="Mudar as cores da página para as escuras" alt="Mudar as cores da página para as escuras" class="img-contraste"></button></li>
+            <li><button class="botao-contraste botao-imgs" data-contraste="padrao" aria-label="Mudar as cores da página para as padrões"><img src="imgs/icons/quadrado-branco.png" title="Mudar as cores da página para as padrões" alt="Mudar as cores da página para as padrões" class="img-contraste"></button></li>
+            <li aria-hidden="true">Fonte</li>
+            <li><button class="botao-fonte" data-fonte="+" aria-label="Aumentar a fonte"><span aria-hidden="true">A+</span></button></li>
+            <li><button class="botao-fonte" data-fonte="0" aria-label="Voltar a fonte padrão"><span aria-hidden="true">A°</span></button></li>
+            <li><button class="botao-fonte" data-fonte="-" aria-label="Diminuir a fonte"><span aria-hidden="true">A-</span></button></li>
+          </ul>
+        </section>
+
+        <!--======================Responsive Menu============================-->
+        <section id="menu-responsive">
+          <button id="botao-hamburguer"><img src="imgs/icons/burguer-menu.png" title="Abrir o menu do site" class="img-hamburguer contraste-altera-img"></button>
+          <img src="imgs/icons/virus.png" alt="Um vírus, que é a logo do site." class="img-virus-responsive contraste-altera-img" aria-hidden="true">
+        </section>
+      </section>
+
+      <!--=============Div abaixo dos menus com a logo do site===============-->
+      <section id="imagem-logo">
+        <span><h1>Microbiologia para Todos</h1></span>
+      </section>
+    </header>
+
+    <aside id="menu-esquerda-group">
+      <section id="menu-esquerda" class="some-menu">
+        <button id="botao-fecha-menu" class="botao-imgs"><img src="imgs/icons/fecha-menu.png" alt="Fechar o menu" title="Fechar o menu" id="img-fecha-menu" class="contraste-altera-img"></button>
+        <img src="imgs/icons/virus.png" alt="Um vírus, que é a logo do site." aria-hidden="true" class="contraste-altera-img">
+        <ul>
+          <li><a href="index.html">Página inicial</a></li>
+          <li><a href="mapa-site.html">Mapa do site</a></li>
+          <li><a href="sobre-projeto.html">Sobre o projeto</a></li>
+          <li><a href="acessibilidade-site.html">Acessibilidade do site</a></li>
+        </ul>
+        <section>
+          <ul>
+            <li aria-hidden="true">Contraste</li>
+            <li><button class="botao-contraste botao-imgs" data-contraste="negativo" aria-label="Mudar as cores da página para as escuras"><img src="imgs/icons/quadrado-preto.png" title="Mudar as cores da página para as escuras" alt="Mudar as cores da página para as escuras" class="img-contraste"></button></li>
+            <li><button class="botao-contraste botao-imgs" data-contraste="padrao" aria-label="Mudar as cores da página para as padrões"><img src="imgs/icons/quadrado-branco.png" title="Mudar as cores da página para as padrões" alt="Mudar as cores da página para as padrões" class="img-contraste"></button></li>
+          </ul>
+          <ul>
+            <li aria-hidden="true">Fonte</li>
+            <li><button class="botao-fonte" data-fonte="+" aria-label="Aumentar a fonte"><span aria-hidden="true">A+</span></button></li>
+            <li><button class="botao-fonte" data-fonte="0" aria-label="Voltar a fonte padrão"><span aria-hidden="true">A°</span></button></li>
+            <li><button class="botao-fonte" data-fonte="-" aria-label="Diminuir a fonte"><span aria-hidden="true">A-</span></button></li>
+          </ul>
+        </section>
+      </section>
+      <div id="div-modal" class="some-div-modal" aria-hidden="true"></div>
+    </aside>
+
+    <!--===================Conteudo principal da página======================-->
+    <main id="conteudo-principal">
+      <p class="local-site"><strong>Você está em:</strong> <a href="index.html">Página inicial</a> > acessibilidade do site.</p>
+      <h2>Acessibilidade do Site</h2>
+      <section class="topico">
+        <p>
+          Está página lista e descreve o funcionamento de todos os recursos de
+          acessibilidade que o site possui.
+        </p>
+      </section>
+
+      <section class="topico">
+        <h3>Atalhos do site</h3>
+        <p>
+          Abaixo estão listados os atalhos do site que podem ser usados pelo
+          teclado:
+        </p>
+        <h4>Usando o Google Chrome, Microsoft Edge, Opera ou Safari:</h4>
+        <ul>
+          <li><strong>Alt + 1:</strong> Direciona o foco diretamente para o conteúdo da página.</li>
+          <li><strong>Alt + 2:</strong> Direciona o foco para o menu principal do site.</li>
+          <li><strong>Alt + 3:</strong> O direciona para a página mapa do site.</li>
+          <li><strong>Alt + 4:</strong> O direciona para a página Acessibilidade do site, que é a página atual.</li>
+          <li><strong>Alt + 5:</strong> Direciona o foco para o menu de navegação auxiliar.</li>
+        </ul>
+        <h4>Usando o Safari no Mac OS:</h4>
+        <p>
+          Ao invés de pressionar <strong>Alt+Número</strong> você deve pressionar
+          <strong>Ctrl+Alt+Número</strong>.
+        </p>
+        <h4>Usando o Mozilla Firefox:</h4>
+        <p>
+          Caso esteja usando o mozilla firefox no Windows você deve, ao invés de pressionar
+          <strong>Alt+Número</strong> você deverá pressionar <strong>Shift+Alt+Número</strong>.
+          Caso esteja usando no Mac OS você deverá pressionar <strong>Ctrl+Alt+Número</strong>.
+        </p>
+        <h4>Utilizando versões antigas do Opera:</h4>
+        <p>
+          Se caso o seu navegador for o Opera e sua versão for a 12.1 ou anterior, ao invés de
+          pressionar <strong>Alt+Número</strong> você deverá pressionar <strong>Shift+Esc+Número</strong>.
+        </p>
+        <h3>Atalhos do Questionário:</h3>
+        <p>
+          Enquanto estiver na página do questionário os atalhos ainda serão as
+          mesmas combinações, mas com funções diferentes:
+        </p>
+        <ul>
+          <li><strong>Alt + 1:</strong> Direciona o foco para a questão atual.</li>
+          <li><strong>Alt + 2:</strong> Envia o foco para o botão de pular a questão.</li>
+          <li><strong>Alt + 3:</strong> Envia o foco para o botão de confirmar a questão.</li>
+          <li><strong>Alt + 4:</strong> Envia o foco ao menu com as opções de acessibilidade.</li>
+          <li><strong>Alt + 5:</strong> O direciona para a página inicial.</li>
+        </ul>
+      </section>
+
+      <section class="topico">
+        <h3>Botões contraste</h3>
+        <p>
+          Ao lado direito do menu principal há dois botões que alteram o contraste
+          de cores do site.
+        </p>
+        <ul>
+          <li><button class="botao-contraste botao-imgs" data-contraste="negativo" aria-label="Círculo preto"><img src="imgs/icons/quadrado-preto.png" title="Mudar as cores da página para as escuras" alt="Mudar as cores da página para as escuras" class="img-contraste"></button> Altera o contraste do site para cores mais escuras</li>
+          <li><button class="botao-contraste botao-imgs" data-contraste="padrao" aria-label="Círculo branco"><img src="imgs/icons/quadrado-branco.png" title="Mudar as cores da página para as padrões" alt="Mudar as cores da página para as padrões" class="img-contraste"></button> Volta o contraste do site para as cores padrões</li>
+        </ul>
+      </section>
+
+      <section class="topico">
+        <h3>Botões alterar a fonte</h3>
+        <p>
+          Também ao lado direito do menu principal há três botões, A+, A° e A-, que
+          alteram o tamanho da fonte do conteúdo do site:
+        </p>
+        <ul>
+          <li><button class="botao-fonte" data-fonte="+" aria-label="A+"><span aria-hidden="true">A+</span></button> : Aumentar o tamanho das fontes do site.</li>
+          <li><button class="botao-fonte" data-fonte="0" aria-label="A°"><span aria-hidden="true">A°</span></button> : Volta às fontes ao tamanho padrão.</li>
+          <li><button class="botao-fonte" data-fonte="-" aria-label="A-"><span aria-hidden="true">A-</span></button> : Reduz o tamanho das fontes do site.</li>
+        </ul>
+      </section>
+
+      <section class="topico">
+        <h3>Zoom</h3>
+        <p>
+          O navegador dá a possibilidade de ampliar o site, pelos comandos:
+        </p>
+        <ul>
+          <li><strong>Aumentar o zoom:</strong> Basta pressionar <strong>Ctrl</strong> e a tecla <strong>+ <span aria-hidden="true">(mais)</span></strong> juntas.</li>
+          <li><strong>Voltar ao zoom padrão:</strong> Basta pressionar <strong>Ctrl</strong> e a tecla <strong>0 <span aria-hidden="true">(zero)</span></strong> ao mesmo tempo.</li>
+          <li><strong>Reduzir o zoom:</strong> Basta pressionar <strong>Ctrl</strong> e a tecla <strong>- (menos)</strong>.</li>
+        </ul>
+        <p>
+          Pode-se usar o zoom juntamente com os botões de aumentar a fonte para
+          facilitar a visualização do conteúdo.
+        </p>
+      </section>
+
+      <section class="topico">
+        <h3>Menu navegação auxiliar</h3>
+        <p>
+          Ele é um menu oculto que aparece no topo da tela ao receber o foco.
+          Nele há três links:
+        </p>
+        <ul>
+          <li><strong>Ir para o menu: </strong> Envia o foco ao menu principal.</li>
+          <li><strong>Ir para o conteúdo da página: </strong> Envia o foco direto ao conteúdo da página.</li>
+          <li><strong>Ir para o mapa do site: </strong> O direciona para o mapa do site.</li>
+        </ul>
+      </section>
+
+      <section class="topico">
+        <h3>Mapa do site</h3>
+        <p>
+          Essa região reúne, de maneira organizada, vários links que o
+          envia para qualquer região específica do site. Para acessá-lo você pode:
+          utilizar o atalho <strong>Alt+3</strong>(ou outro comando de acordo com o navegador),
+          acessar o link no menu principal, no menu de navegação auxiliar ou
+          acessar o link a seguir: <a href="mapa-site.html">Mapa do site</a>.
+        </p>
+      </section>
+
+      <section class="topico">
+        <h3>Código fonte</h3>
+        <p>
+          O código fonte desse site foi cuidadosamente feito para que fosse funcional,
+          acessível, responsivo e que todo o site possa ser acessado pelo teclado.
+        </p>
+      </section>
+
+      <section class="topico">
+        <h3>Leitores de tela</h3>
+        <p>
+          O site está adaptado para uso de leitores de tela, que são ferramentas
+          usadas por deficientes visuais para fazer uma leitura do que há na tela e
+          descreve-los para o usúario em forma de audio. Abaixo há dois links
+          para <span lang="en">download</span> dos seus respectivos leitores de
+          tela.
+        </p>
+        <ul>
+          <li>
+            <strong><a href="https://www.nvaccess.org/download/">NVDA:</a></strong>
+            Leitor de tela totalmente gratuito e utilizado para os testes de
+            desenvolvimento do site.
+          </li>
+          <li>
+            <strong><a href="https://www.freedomscientific.com/Downloads/JAWS">Jaws:</a></strong>
+            Um leitor de tela altamente eficiente, mas para utiliza-lo por
+            longos períodos de tempo deve-se adiquirir uma licença paga. Deste
+            modo, torna-se inacessível a muitos. Há uma versão de teste que pode
+            ser utilizada por um certo período de tempo.
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <!--========================Rodapé da página=============================-->
+    <footer>
+      <!--=================Envia o usuário de volta ao topo==================-->
+      <section id="volta-topo">
+        <span class="seta-cima" aria-hidden="true"></span><br>
+        <a href="#main-header">Voltar ao topo</a>
+      </section>
+
+      <!--=========================Créditos==================================-->
+      <section id="final-footer">
+        <article>
+          <h2>Criadores:</h2>
+          <ul>
+            <li>Fátima de Cássia</li>
+            <li>Mariana de Lourdes</li>
+            <li>Rubia Souza</li>
+            <li><a href="creditos.html">Agradecimentos especiais</a></li>
+          </ul>
+        </article>
+
+        <section>
+          <h2>Apoio de:</h2>
+          <img src="imgs/logos/CEFET-MG.png" alt="Logo do CEFET de Minas Gerais" title="Centro Federal de Educação Tecnológica de Minas Gerais" class="contribuintes">
+        </section>
+      </section>
+
+      <a href="#menus" class="links-voltar">Voltar ao menu</a>
+      <a href="#conteudo-principal" class="links-voltar">Voltar ao Conteúdo</a>
+
+      <!--==============Nav com atalhos de accesskey da página===============-->
+      <nav class="oculto" aria-hidden="true">
+        <a href="#conteudo-principal" accesskey="1" tabindex="-1" class="oculto"></a>
+        <a href="#menus" accesskey="2" tabindex="-1" class="oculto"></a>
+        <a href="mapa-site.html" accesskey="3" tabindex="-1" class="oculto"></a>
+        <a href="acessibilidade-site.html" accesskey="4" tabindex="-1" class="oculto"></a>
+        <a href="#menu-nav-acessivel" accesskey="5" tabindex="-1" class="oculto"></a>
+      </nav>
+    </footer>
+
+    <!--========================Scripts JS===================================-->
+    <script src="scripts/header-script.js" charset="utf-8"></script>
+    <script src="scripts/bibliotecas/inert-script.js" charset="utf-8"></script>
+    <script src="scripts/responsive-menu-script.js" charset="utf-8"></script>
+    <script src="scripts/acessibilidade-script.js" charset="utf-8"></script>
+  </body>
+</html>

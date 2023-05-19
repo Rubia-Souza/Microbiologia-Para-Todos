@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="pt-BR" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Rubia Souza">
+    <meta name="keywords" content="acessibilidade,leitor de tela,screen reader,biologia,vírus,célula,bactéria,fungo,célula animal,célula vegetal,microbiologia,escola,deficientes,ensino,baixa visão,CEFET,CEFET MG,iniciação científica,deficiente visual,estudo">
+    <meta name="description" content="Conteudo de microbiologia dispinível a todos dando foco à acessibilidade de deficientes na web">
+
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Lobster+Two|Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main-style.css">
+    <link rel="stylesheet" href="styles/cores-style.css">
+    <link rel="stylesheet" href="styles/medias-style.css">
+    <link rel="shortcut icon" type="image/png" href="imgs/icons/favicon.png">
+    <title>Taxonomia</title>
+  </head>
+  <body>
+    <header id="main-header">
+      <!--============Nav para agilizar a navegação pelo teclado=============-->
+      <nav id="menu-nav-acessivel" class="sobe-menu-nav-acessivel">
+        <ul>
+          <li><a href="#conteudo-principal" class="itens-menu-acessivel">Ir para o conteúdo da página<sup aria-hidden="true">[1]</sup><span class="texto-escondido">, atalho: alt + 1</span></a></li>
+          <li><a href="#menus" class="itens-menu-acessivel">Ir para o menu<sup aria-hidden="true">[2]</sup><span class="texto-escondido">, atalho: alt + 2</span></a></li>
+          <li><a href="mapa-site.html" class="itens-menu-acessivel">Ir para o mapa do site<sup aria-hidden="true">[3]</sup><span class="texto-escondido">, atalho: alt + 3</span></a></li>
+        </ul>
+      </nav>
+
+      <section id="menus">
+        <!--=========Menu principal com links para regiões do site===========-->
+        <nav id="menu-nav-principal">
+          <ul>
+            <li><a href="index.html">Página inicial</a></li>
+            <li><a href="mapa-site.html">Mapa do site<sup aria-hidden="true">[3]</sup><span class="texto-escondido">, atalho: alt + 3</span></a></li>
+            <li><a href="sobre-projeto.html">Sobre o projeto</a></li>
+            <li><a href="acessibilidade-site.html">Acessibilidade do site<sup aria-hidden="true">[4]</sup><span class="texto-escondido">, atalho: alt + 4</span></a></li>
+          </ul>
+        </nav>
+
+        <!--========Menu com opções para deixar o site mais acessivel========-->
+        <section id="menu-acessibilidade">
+          <ul>
+            <li aria-hidden="true">Contraste</li>
+            <li><button class="botao-contraste botao-imgs" data-contraste="negativo" aria-label="Mudar as cores da página para as escuras"><img src="imgs/icons/quadrado-preto.png" title="Mudar as cores da página para as escuras" alt="Mudar as cores da página para as escuras" class="img-contraste"></button></li>
+            <li><button class="botao-contraste botao-imgs" data-contraste="padrao" aria-label="Mudar as cores da página para as padrões"><img src="imgs/icons/quadrado-branco.png" title="Mudar as cores da página para as padrões" alt="Mudar as cores da página para as padrões" class="img-contraste"></button></li>
+            <li aria-hidden="true">Fonte</li>
+            <li><button class="botao-fonte" data-fonte="+" aria-label="Aumentar a fonte"><span aria-hidden="true">A+</span></button></li>
+            <li><button class="botao-fonte" data-fonte="0" aria-label="Voltar a fonte padrão"><span aria-hidden="true">A°</span></button></li>
+            <li><button class="botao-fonte" data-fonte="-" aria-label="Diminuir a fonte"><span aria-hidden="true">A-</span></button></li>
+          </ul>
+        </section>
+
+        <!--======================Responsive Menu============================-->
+        <section id="menu-responsive">
+          <button id="botao-hamburguer"><img src="imgs/icons/burguer-menu.png" title="Abrir o menu do site" class="img-hamburguer contraste-altera-img"></button>
+          <img src="imgs/icons/virus.png" alt="Um vírus, que é a logo do site." class="img-virus-responsive contraste-altera-img" aria-hidden="true">
+        </section>
+      </section>
+
+      <!--=============Div abaixo dos menus com a logo do site===============-->
+      <section id="imagem-logo">
+        <span><h1>Microbiologia para Todos</h1></span>
+      </section>
+    </header>
+
+    <aside id="menu-esquerda-group">
+      <section id="menu-esquerda" class="some-menu">
+        <button id="botao-fecha-menu" class="botao-imgs"><img src="imgs/icons/fecha-menu.png" alt="Fechar o menu" title="Fechar o menu" id="img-fecha-menu" class="contraste-altera-img"></button>
+        <img src="imgs/icons/virus.png" alt="Um vírus, que é a logo do site." aria-hidden="true" class="contraste-altera-img">
+        <ul>
+          <li><a href="index.html">Página inicial</a></li>
+          <li><a href="mapa-site.html">Mapa do site</a></li>
+          <li><a href="sobre-projeto.html">Sobre o projeto</a></li>
+          <li><a href="acessibilidade-site.html">Acessibilidade do site</a></li>
+        </ul>
+        <section>
+          <ul>
+            <li aria-hidden="true">Contraste</li>
+            <li><button class="botao-contraste botao-imgs" data-contraste="negativo" aria-label="Mudar as cores da página para as escuras"><img src="imgs/icons/quadrado-preto.png" title="Mudar as cores da página para as escuras" alt="Mudar as cores da página para as escuras" class="img-contraste"></button></li>
+            <li><button class="botao-contraste botao-imgs" data-contraste="padrao" aria-label="Mudar as cores da página para as padrões"><img src="imgs/icons/quadrado-branco.png" title="Mudar as cores da página para as padrões" alt="Mudar as cores da página para as padrões" class="img-contraste"></button></li>
+          </ul>
+          <ul>
+            <li aria-hidden="true">Fonte</li>
+            <li><button class="botao-fonte" data-fonte="+" aria-label="Aumentar a fonte"><span aria-hidden="true">A+</span></button></li>
+            <li><button class="botao-fonte" data-fonte="0" aria-label="Voltar a fonte padrão"><span aria-hidden="true">A°</span></button></li>
+            <li><button class="botao-fonte" data-fonte="-" aria-label="Diminuir a fonte"><span aria-hidden="true">A-</span></button></li>
+          </ul>
+        </section>
+      </section>
+      <div id="div-modal" class="some-div-modal" aria-hidden="true"></div>
+    </aside>
+
+    <!--===================Conteudo principal da página======================-->
+    <main id="conteudo-principal">
+      <p class="local-site"><strong>Você está em:</strong> <a href="index.html">Página inicial</a> > Taxonomia.</p>
+      <h2>Taxonomia</h2>
+
+      <section class="topico">
+        <h3>Nomenclatura científica:</h3>
+        <p>
+          Todos os nomes científicos seguem um padrão de escrita e destaque no
+          texto. Eles sempre são escritos em latim por ser considerada uma
+          língua morta, assim não estaria privilegiando nenhuma outra língua e
+          dando uma forma única de escrita ao nome, assim qualquer cientista
+          poderia reconhecer o nome independente da sua língua falada.
+        </p>
+        <p>
+          Além disso, o padrão de formatação do nome no texto é do seguinte
+          modo:
+        </p>
+        <ul>
+          <li>Deve ser um nome binomial</li>
+          <li>A primeira letra do primeiro nome deve ser maiúscula</li>
+          <li>Deve vir em destaque no texto, em itálico e/ou negrito</li>
+        </ul>
+        <p>Um exemplo de um nome científico seria: </p>
+        <p class="text-center">
+          <span class="nome-cientifico" lang="la">Ascaris</span> <span class="nome-cientifico" lang="la">lumbricoides</span>
+        </p>
+        <p>
+          Mas por que um nome binomial? Isso, pois ele é derivado de uma
+          junção do Gênero e do Epíteto específico do ser vivo, temas que
+          iremos definir mais a frente.
+        </p>
+      </section>
+
+      <section class="topico">
+        <h3>Os três domínios:</h3>
+        <div class="text-center">
+          <figure class="topico-img-left">
+            <img src="imgs/imgs-materia/3dominios.jpg" alt="Cladograma com a divisão dos 6 reinos, aproximando-se nos 3 domínios e unindo-se a um ancestral comum">
+            <figcaption>Imagem 1, Autor <a href="http://gabrielmarques25128.blogspot.com/2012/06/cladograma.html">Gabriel Marques</a></figcaption>
+          </figure>
+        </div>
+        <p>
+          Eles são a divisão mais alta e abrangente até o momento, que utiliza
+          o RNA ribossômico das células para fazer a separação dos seres vivos.
+        </p>
+        <p>
+          <strong>Observação:</strong> Além da diferença de rRNA, eles também se
+          distinguem em estruturas lipídicas da membrana plasmática, nas
+          moléculas de RNA de transferência e na sensibilidade a antibióticos.
+        </p>
+        <p>Assim os 3 domínios formados são:</p>
+        <ul>
+          <li>
+            <strong><span lang="la">Eukarya</span>:</strong> Formado pelos seres eucariontes como
+            animais, plantas, fungos e protozoários
+          </li>
+          <li>
+            <strong><span lang="la">Bacteria</span>:</strong> Formado por todos procariotos como os
+            do reino monera
+          </li>
+          <li>
+            <strong><span lang="la">Archaea</span>:</strong> Formado por procariotos que não possuem
+            peptideoglicana nas paredes celulares. Geralmente são encontrados
+            em ambientes de condições extremas, como altas temperaturas ou alta
+            salinidade
+          </li>
+        </ul>
+      </section>
+
+      <section class="topico">
+        <h3>Hierarquia taxonômica:</h3>
+        <p>
+          Ela agrupa os seres vivos em uma série de divisões de acordo com as
+          características genéticas e semelhanças com seus ancestrais. Este
+          agrupamento é feito com as seguintes divisões, indo do mais abrangente
+          para o mais específico:
+        </p>
+        <ul>
+          <li>Domínio</li>
+          <li>Reino</li>
+          <li>Filo</li>
+          <li>Classe</li>
+          <li>Ordem</li>
+          <li>Família</li>
+          <li>Gênero</li>
+          <li>Espécie</li>
+        </ul>
+        <p>Além disso na divisão o Reino pode ser dividido em:</p>
+        <ul>
+          <li>Monera</li>
+          <li>Protista</li>
+          <li>Fungi</li>
+          <li>Plantae</li>
+          <li>Animalia</li>
+        </ul>
+        <p>
+          Quanto mais acima na classificação, mais próximo você estará do
+          ancestral em comum das espécies. E quanto mais abaixo, mais próximo
+          das espécies que encontramos atualmente, você estará.
+        </p>
+        <p>
+          Com essa classificação é possível ver que o Gênero é a divisão mais
+          específica anterior a Espécie que podemos ter. Por isso ele, junto ao
+          Epíteto específico, formam o nome da Espécie.
+        </p>
+      </section>
+
+      <section class="topico">
+        <h3>Classificação dos eucariontes:</h3>
+        <p>
+          Estão presentes apenas no domínio <span lang="la">Eukarya</span>. E podem ser
+          <strong>simples:</strong> como algumas algas e protozoários do reino
+          protista por serem unicelulares. Ou <strong>complexos:</strong>
+          Seres pluricelulares.
+        </p>
+        <p>Dentre os seres pluricelulares podemos citar:</p>
+        <h4>Reino Fungi:</h4>
+        <p>
+          Que também inclui seres unicelulares como as leveduras, mas é em
+          sua maioria formado por seres multicelulares como os bolores e o
+          cogumelos.
+        </p>
+        <p>
+          As células dos seres multicelulares se unem e formam hifas que,
+          em conjunto, formam o micélio.
+        </p>
+        <p>
+          Estes seres adquirem nutrientes por meio da decomposição de matéria
+          orgânica morta, sendo fundamental para o ciclo da matéria.
+        </p>
+        <h4>Reino Plantae:</h4>
+        <p>
+          Todos os seus seres são multicelulares e utilizam da fotossíntese
+          para obter energia. <br> Eles são divididos em 4 tipos:
+        </p>
+        <ul>
+          <li>Briófitas</li>
+          <li>Pteridófitas</li>
+          <li>Gimnospermas</li>
+          <li>Angiospermas</li>
+        </ul>
+        <h4>Reino Animalia:</h4>
+        <p>
+          Por fim, os seres do reino animalia são todos multicelulares e
+          heterótrofos, ou seja, não produzem o próprio alimento.
+          <br> Eles são divididos em:
+        </p>
+        <ul>
+          <li>
+            Invertebrados
+            <ul>
+              <li>Poríferos</li>
+              <li>Cnidários</li>
+              <li>Platelmintos</li>
+              <li>Nematelmintos</li>
+              <li>Anelídeos</li>
+              <li>Moluscos</li>
+              <li>Artrópodes</li>
+              <li>Equinodermos</li>
+            </ul>
+          </li>
+          <li>
+            Vertebrados
+            <ul>
+              <li>
+                Peixes
+                <ul>
+                  <li>Ósseos</li>
+                  <li>Cartilaginosos</li>
+                </ul>
+              </li>
+              <li>Anfíbios</li>
+              <li>Répteis</li>
+              <li>Aves</li>
+              <li>Mamíferos</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+
+      <section class="topico">
+        <h3>Classificação dos vírus:</h3>
+        <p>
+          Uma espécie viral é determinada pelas similaridades entre elas,
+          pela sua morfologia, genes e enzimas. Isso, pois os vírus não são
+          tecnicamente classificados como seres vivos, assim não sendo incluídos
+          em nenhum dos Reinos.
+        </p>
+        <p>
+          Já o porquê deles não serem caracterizados como seres vivos, seria
+          por 3 principais fatores:
+        </p>
+        <ul>
+          <li>Não possuem células</li>
+          <li>Não possuem metabolismo próprio</li>
+          <li>Dependem de outros seres para se reproduzir</li>
+        </ul>
+        <p>
+          Assim, atualmente, nós agrupamos os vírus em famílias com base no
+          tipo de ácido nucleico que eles possuem, em sua estratégia de
+          replicação e na sua morfologia. E uma Espécie viral seriam aqueles
+          que compartilham a mesma informação genética.
+        </p>
+        <p>Você chegou ao final da matéria. Complete o questionário a seguir para desbloquear a próxima:</p>
+      </section>
+
+      <div class="align-btn-center"><a href="questionario.html" class="botao-link">Ir ao questionário</a></div>
+    </main>
+
+    <!--========================Rodapé da página=============================-->
+    <footer>
+      <!--=================Envia o usuário de volta ao topo==================-->
+      <section id="volta-topo">
+        <span class="seta-cima" aria-hidden="true"></span><br>
+        <a href="#main-header">Voltar ao topo</a>
+      </section>
+
+      <!--=========================Créditos==================================-->
+      <section id="final-footer">
+        <article>
+          <h2>Criadores:</h2>
+          <ul>
+            <li>Fátima de Cássia</li>
+            <li>Mariana de Lourdes</li>
+            <li>Rubia Souza</li>
+            <li><a href="creditos.html">Agradecimentos especiais</a></li>
+          </ul>
+        </article>
+
+        <section>
+          <h2>Apoio de:</h2>
+          <img src="imgs/logos/CEFET-MG.png" alt="Logo do CEFET de Minas Gerais" title="Centro Federal de Educação Tecnológica de Minas Gerais" class="contribuintes">
+        </section>
+      </section>
+
+      <a href="#menus" class="links-voltar">Voltar ao menu</a>
+      <a href="#conteudo-principal" class="links-voltar">Voltar ao Conteúdo</a>
+
+      <!--==============Nav com atalhos de accesskey da página===============-->
+      <nav class="oculto" aria-hidden="true">
+        <a href="#conteudo-principal" accesskey="1" tabindex="-1" class="oculto"></a>
+        <a href="#menus" accesskey="2" tabindex="-1" class="oculto"></a>
+        <a href="mapa-site.html" accesskey="3" tabindex="-1" class="oculto"></a>
+        <a href="acessibilidade-site.html" accesskey="4" tabindex="-1" class="oculto"></a>
+        <a href="#menu-nav-acessivel" accesskey="5" tabindex="-1" class="oculto"></a>
+      </nav>
+    </footer>
+
+    <!--========================Scripts JS===================================-->
+    <script src="scripts/header-script.js" charset="utf-8"></script>
+    <script src="scripts/materia-script.js" charset="utf-8"></script>
+    <script src="scripts/bibliotecas/inert-script.js" charset="utf-8"></script>
+    <script src="scripts/responsive-menu-script.js" charset="utf-8"></script>
+    <script src="scripts/acessibilidade-script.js" charset="utf-8"></script>
+  </body>
+</html>

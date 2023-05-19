@@ -1,0 +1,295 @@
+*{
+  transition: color 2000ms linear;
+  transition: background-color 1000ms linear;
+}
+
+body{
+  font-weight: lighter;
+  overflow-x: hidden;
+  font-family: "Raleway", sans-serif;
+  margin: 0 0;
+  font-size: 1.25em;
+}
+
+main{
+  padding-top: 0.5%;
+  padding-bottom: 2rem;
+}
+
+.questao{
+  text-align: center;
+  position: relative;
+  margin: 0 6.3%;
+  top: 0px;
+  left: 0px;
+  max-width: 90%;
+  padding: 0.6em 0.6em;
+  opacity: 1;
+  transition: left 2100ms ease-in-out, top 2100ms ease-in-out, opacity 1000ms ease-in;
+}
+
+main > .questao-escondida{
+  position: fixed;
+  left: 200%;
+  z-index: 0;
+  opacity: 0;
+  top: 0%;
+}
+
+main > .questao-respondida{
+  position: relative;
+  left: -200%;
+  z-index: 0;
+  opacity: 0;
+  top: 0%;
+}
+
+main > section:last-of-type{
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 100;
+  width: 100%;
+  padding: 0.5em 0;
+  height: 5.7em;
+  margin-top: 3%;
+}
+
+main > h1{
+  text-align: center;
+  font-weight: normal;
+  font-family: "Comfortaa", sans-serif;
+  font-size: 1.8em;
+  padding-bottom: 0.7em;
+  margin-bottom: 0.7em;
+}
+
+main > h1:focus{
+  outline: none;
+}
+
+main > .questao > section{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+main > .questao > section > label{
+  cursor: pointer;
+  position: relative;
+  white-space: normal;
+  text-align: center;
+  box-sizing: border-box;
+  border-radius: 10px;
+  margin: 1.5% 0%;
+  padding: 0.5em 0.6em;
+  min-height: 4em;
+  width: 25em;
+  max-width: 28em;
+  transition: background-color 500ms ease;
+}
+
+main > .questao > section > label:active{
+  top: 1px;
+  left: 1px;
+}
+
+main > section:last-of-type > button{
+  cursor: pointer;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: none;
+  font-weight: lighter;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.1em;
+  padding: 0 0.2%;
+  min-width: 7.5em;
+  height: 2.3em;
+  border-radius: 30px;
+  transition: background-color 300ms ease;
+}
+
+main > section:last-of-type > button > img{
+  user-select: none;
+  user-drag: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  padding: 0.2em 0.2em;
+}
+/*------------------------Quiz completo style---------------------------------*/
+.main-final{
+  text-align: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.main-final > p{
+  margin: 0.5rem auto;
+}
+
+.main-final > ul{
+  list-style: none;
+  margin-bottom: 1.8rem;
+  padding-left: 0;
+}
+
+.main-final > ul > li{
+  border-radius: 10px;
+  margin: 0.7rem 10%;
+  padding: 0.6rem 0.3rem;
+}
+
+.main-final-falhou{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.main-final-falhou > h1{
+  margin-bottom: 1em;
+}
+
+.main-final-falhou > p{
+  margin-bottom: 1em;
+}
+
+.botao-link{
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  font-size: 1em;
+  padding: 0.85rem 1.25rem;
+  margin: 0.5rem auto;
+  border-radius: 5px;
+  transition: background-color 500ms ease-out;
+}
+
+#barra-progresso{
+  box-sizing: border-box;
+  border-radius: 30px;
+  margin-bottom: 1.7rem;
+  padding: 0.2em 0.2em;
+}
+
+#barra-progresso > div{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  box-sizing: border-box;
+  width: 2em;
+  border-radius: 30px;
+  height: 1.8em;
+  transition: width 1200ms ease;
+}
+
+#barra-progresso > div > p{
+  margin-right: 0.3rem;
+}
+
+/*----------------------------------------------------------------------------*/
+#menu-acessibilidade{
+  position: fixed;
+  box-sizing: border-box;
+  padding: 0.156rem 0.156rem;
+  padding-top: 0.7rem;
+  z-index: 999;
+  left: 1.5%;
+  border-radius: 8px;
+  transition: top ease-out 700ms;
+}
+
+#div-modal{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  top: 0;
+  left: 0;
+}
+
+#menu-acessibilidade > button{
+  cursor: pointer;
+  box-sizing: content-box;
+  position: relative;
+  border: 0px;
+  padding: 0 0;
+  margin: 0 0;
+  margin-top: 0.5rem;
+  left: calc(50% - 12px);
+}
+
+#menu-acessibilidade > button > img{
+  height: 24px;
+  width: 24px;
+}
+
+#menu-acessibilidade li{
+  list-style: none;
+  font-family: "Comfortaa", sans-serif;
+  margin: 0.27rem 0;
+  font-size: 1rem;
+}
+
+#menu-acessibilidade ul{
+  text-align: center;
+  white-space: nowrap;
+  padding-left: 0;
+}
+
+#menu-acessibilidade > ul:first-of-type{
+  margin: 0px 0px;
+}
+
+#menu-acessibilidade > ul:last-of-type{
+  margin-top: 0.7rem;
+  margin-bottom: 0px;
+}
+
+.botao-contraste{
+  border: none;
+}
+
+.botao-fonte{
+  user-select: none;
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 0.3rem 0.3rem;
+  transition: background-color 550ms ease-out;
+  transition: color 550ms ease-out;
+}
+
+.img-contraste{
+  user-select: none;
+  cursor: pointer;
+  user-drag: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  border-radius: 50%;
+  padding: 0em 0em;
+  width: 0.66599em;
+  height: 0.6699em;
+  font-size: 2em;
+}
+/*----------------------------------------------------------------------------*/
+
+.oculto{
+  display: none;
+  height: 0;
+  width: 0;
+  opacity: 0;
+}
